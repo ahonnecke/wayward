@@ -1,0 +1,18 @@
+[project]
+name = "wayward"
+version = "0.1.0"
+description = "Watch folder and move files based on type."
+authors = [
+    {name = "Ashton Honnecke", email = "ashton@pixelstub.com"},
+]
+dependencies = []
+requires-python = ">=3.8"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-pep517>=1.0", "argdantic", "watchdog"]
+build-backend = "pdm.pep517.api"
+
+
+[tool.pdm]
