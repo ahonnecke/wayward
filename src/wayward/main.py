@@ -6,10 +6,7 @@ import time
 from functools import cached_property
 from pathlib import Path
 
-import boto3
-import requests
-from argdantic import ArgParser
-from botocore.exceptions import ClientError
+from devtools import debug
 from watchdog.events import FileSystemEventHandler
 from watchdog.observers import Observer
 
@@ -39,118 +36,50 @@ class Handler(FileSystemEventHandler):
     def __init__(self, onchange):
         self.onchange = onchange
 
-    @staticmethod
-    def on_any_event(event):
+    def on_any_event(self, event):
         if event.is_directory:
             return None
 
         elif event.event_type == "created":
             # Take any action here when a file is first created.
             print(f"Received created event - {event.src_path}.")
+            return self.handle_created(event)
 
         elif event.event_type == "modified":
             # Taken any action here when a file is modified.
             print(f"Received modified event - {event.src_path}.")
 
-        onchange()
+    def handle_created(self, event):
+        debug(event)
+
+        file_path = Path(event.src_path)
+        print(file_path.suffix)
+        if file_path.suffix == ".bin":
+            print("found bin file")
+            os.rename(event.src_path, f"/home/ahonnecke/qmk/{file_path.name}")
 
 
-class LambdaWrapper:
-    def __init__(self, profile_name, function_name, local_root):
-        self.profile_name = profile_name
-        self.function_name = function_name
-        self.local_root = local_root
+class FileSorter:
+    def __init__(self, rules: dict):
+        self.rules = rules
 
-    @cached_property
-    def session(self):
-        return boto3.Session(profile_name=self.profile_name)
-
-    @cached_property
-    def lambda_client(self):
-        return self.session.client("lambda")
+    def handle_file(self):
+        pass
 
 
-class LambdaReloader(LambdaWrapper):
-    @property
-    def archive(self):
-        return ".".join([self.function_name, "zip"])
-
-    def is_downloaded(self):
-        return os.path.isdir(self.function_name)
-
-    def download_function_code(self):
-        response = self.lambda_client.get_function(FunctionName=self.function_name)
-        zip_url = response["Code"]["Location"]
-
-        r = requests.get(zip_url, allow_redirects=True)
-        open(self.archive, "wb").write(r.content)
-
-        shutil.unpack_archive(self.archive, self.function_name)
-
-    def update_function_code(self):
-        """
-        Updates the code for a Lambda function by submitting a .zip archive that contains
-        the code for the function.
-
-        :param deployment_package: The function code to update, packaged as bytes in
-                                   .zip format.
-        :return: Data about the update, including the status.
-        """
-        deployment_package = self.make_archive(self.function_name)
-
-        try:
-            response = self.lambda_client.update_function_code(
-                FunctionName=self.function_name, ZipFile=deployment_package
-            )
-        except ClientError as err:
-            logger.error(
-                "Couldn't update function %s. Here's why: %s: %s",
-                self.function_name,
-                err.response["Error"]["Code"],
-                err.response["Error"]["Message"],
-            )
-            raise
-        else:
-            return response
-
-    def make_archive(self, name):
-        shutil.make_archive(name, "zip", name)
-        with open(self.archive, "rb") as file_data:
-            return file_data.read()
-
-
-parser = ArgParser()
-
-
-@parser.command()
-def main(
-    profile_name: str,
-    function_name: str,
-    hot_reload: bool = False,
-):
+def main():
     """Entrypoint for AWS lambda hot reloader, CLI args in signature."""
     ROOT = Path.cwd()
+    observed = Path("/home/ahonnecke/Downloads/")
 
-    PROFILE = profile_name
+    # todo: if dir, move file, if executable execute executable on file
+    rules = {"bin": "/home/ahonnecke/qmk"}
+    sorter = FileSorter(rules)
 
-    reloader = LambdaReloader(PROFILE, function_name, ROOT)
+    w = Watcher(observed, Handler(onchange=sorter.handle_file()))
 
-    # TODO: perform the download and compare
-    if not reloader.is_downloaded():
-        # If there no code, then the user likely wants to download the lambda
-        reloader.download_function_code()
-    elif hot_reload:
-        pass
-        # # If there IS code, then the user likely wants to upload the lambda
-        # # TODO: implement dir watching
-        # project = ROOT + function_name
-
-        # w = Watcher(project, Handler(onchange = reloader.update_function_code(function_name)))
-        # w.run()
-
-    elif not hot_reload:
-        reloader.update_function_code()
+    w.run()
 
 
 if __name__ == "__main__":
-    parser()
+    main()
