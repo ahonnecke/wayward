@@ -57,6 +57,12 @@ class Handler(FileSystemEventHandler):
         if file_path.suffix == ".bin":
             print("found bin file")
             os.rename(event.src_path, f"/home/ahonnecke/qmk/{file_path.name}")
+        elif file_path.suffix == ".cdlc":
+            os.system("convert_rocksmith.sh")
+        elif file_path.suffix in [".png", ".jpg", ".jpeg", ".tiff", ".bmp", ".gif"]:
+            os.rename(
+                event.src_path, f"/home/ahonnecke/Downloads/images/{file_path.name}"
+            )
 
 
 class FileSorter:
