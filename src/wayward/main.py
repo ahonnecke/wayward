@@ -115,6 +115,7 @@ class Handler(FileSystemEventHandler):
         print("File file_path has stabilized")
 
         # TODO: make the file handler dynamic
+        # TODO: make simple move file behavior dict based
         # ie. return self.handle_{file_path.suffix}
         if file_path.suffix == ".bin":
             os.rename(file_path, f"/home/ahonnecke/qmk/{file_path.name}")
@@ -122,6 +123,8 @@ class Handler(FileSystemEventHandler):
             self.handle_psarc(event)
         elif file_path.suffix in [".png", ".jpg", ".jpeg", ".tiff", ".bmp", ".gif"]:
             os.rename(file_path, f"/home/ahonnecke/Downloads/images/{file_path.name}")
+        elif file_path.suffix in [".stl"]:
+            os.rename(file_path, f"/home/ahonnecke/stl/{file_path.name}")
 
 
 class FileSorter:
