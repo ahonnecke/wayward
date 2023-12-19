@@ -106,6 +106,10 @@ class Handler(FileSystemEventHandler):
 
         self.wait_for_file(file_path)
 
+        if file_path.suffix == ".part":
+            #Firefox partial download, ignore.
+            return
+
         # Wait for file to stabilize
         historicalSize = -1
         while historicalSize != os.path.getsize(file_path):
@@ -117,6 +121,7 @@ class Handler(FileSystemEventHandler):
         # TODO: make the file handler dynamic
         # TODO: make simple move file behavior dict based
         # ie. return self.handle_{file_path.suffix}
+
         if file_path.suffix == ".bin":
             os.rename(file_path, f"/home/ahonnecke/qmk/{file_path.name}")
         elif file_path.suffix == ".psarc":
