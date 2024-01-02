@@ -46,35 +46,33 @@ class Handler(FileSystemEventHandler):
             print(f"Received created or modified - {event.src_path}.")
             return self.handle_created(event)
 
-        def sanitize_file(self, current):
-            new = re.sub(r"[^\w_. -]", "_", current).replace(" ", "_")
-            if new != current:
-                print(f"{current} => {new}")
-                os.rename(current, new)
+    def sanitize_file(self, current):
+        new = re.sub(r"[^\w_. -]", "_", current).replace(" ", "_")
+        if new != current:
+            print(f"{current} => {new}")
+            os.rename(current, new)
 
-        def sanitize_psarcs_in_dir(self, dirpath):
-            print(f"Sanitizing filenames in {dirpath}")
-            for file in dirpath.glob("*.psarc*"):
-                self.sanitize_file(file.name)
+    def sanitize_psarcs_in_dir(self, dirpath):
+        print(f"Sanitizing filenames in {dirpath}")
+        for file in dirpath.glob("*.psarc*"):
+            self.sanitize_file(file.name)
 
     def remote_move_cdlc(self, event):
-        REMOTE_DEST = Path("ahonnecke@rocksmithy:/Users/ahonnecke/dlc/")
-        BACKUP_DEST = Path("/home/ahonnecke/cldc/shipped/")
+        REMOTE_DEST = Path("ahonnecke@rocksmithytoo:/Users/ahonnecke/dlc/")
+        BACKUP_DEST = Path("/home/ahonnecke/nasty/music/Rocksmith_CDLC/unverified")
 
         for filename in os.listdir(self.BUILDSPACE):
+            filepath = f"{self.BUILDSPACE}/{filename}"
+
             result = subprocess.run(
-                [
-                    "scp",
-                    filename,
-                    f"{REMOTE_DEST}/{filename}",
-                    "&&",
-                    "mv",
-                    f"{self.BUILDSPACE}/{filename}",
-                    BACKUP_DEST,
-                ],
+                ["scp", filepath, f"{REMOTE_DEST}/{filename}"],
                 stdout=subprocess.PIPE,
             )
             print(result.stdout)
+            result = subprocess.run(
+                ["cp", filepath, f"{BACKUP_DEST}/{filename}"],
+                stdout=subprocess.PIPE,
+            )
 
     def wait_for_file(self, file_path):
         # Wait for file to stabilized
@@ -96,7 +94,7 @@ class Handler(FileSystemEventHandler):
             stdout=subprocess.PIPE,
         )
         print(result.stdout)
-        self.remote_move(event)
+        self.remote_move_cdlc(event)
 
     def handle_created(self, event):
         file_path = Path(event.src_path)
@@ -107,16 +105,19 @@ class Handler(FileSystemEventHandler):
         self.wait_for_file(file_path)
 
         if file_path.suffix == ".part":
-            #Firefox partial download, ignore.
+            # Firefox partial download, ignore.
             return
 
         # Wait for file to stabilize
-        historicalSize = -1
-        while historicalSize != os.path.getsize(file_path):
-            historicalSize = os.path.getsize(file_path)
+        historical_size = -1
+        while historical_size != os.path.getsize(file_path):
+            historical_size = os.path.getsize(file_path)
             time.sleep(1)
 
-        print("File file_path has stabilized")
+        print(f"File file_path has stabilized at {historical_size}")
+
+        if historical_size < 1:
+            return
 
         # TODO: make the file handler dynamic
         # TODO: make simple move file behavior dict based
