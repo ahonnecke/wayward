@@ -102,11 +102,11 @@ class Handler(FileSystemEventHandler):
             # event was deletion or move
             return
 
-        self.wait_for_file(file_path)
-
         if file_path.suffix == ".part":
             # Firefox partial download, ignore.
             return
+
+        self.wait_for_file(file_path)
 
         # Wait for file to stabilize
         historical_size = -1
