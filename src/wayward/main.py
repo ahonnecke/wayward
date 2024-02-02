@@ -47,15 +47,20 @@ class Handler(FileSystemEventHandler):
             return self.handle_created(event)
 
     def sanitize_file(self, current):
-        new = re.sub(r"[^\w_. -]", "_", current).replace(" ", "_")
+        dirname = current.parent
+        new = re.sub(r"[^\w_. -]", "_", current.name).replace(" ", "_")
         if new != current:
-            print(f"{current} => {new}")
-            os.rename(current, new)
+            from_path = Path(f"{dirname}/{current.name}")
+            to_path = Path(f"{dirname}/{new}")
+            print(f"{from_path} => {to_path}")
+            os.rename(from_path, to_path)
+            return to_path
 
     def sanitize_psarcs_in_dir(self, dirpath):
         print(f"Sanitizing filenames in {dirpath}")
         for file in dirpath.glob("*.psarc*"):
-            self.sanitize_file(file.name)
+            if new_path := self.sanitize_file(file):
+                return new_path
 
     def remote_move_cdlc(self, event):
         REMOTE_DEST = Path("ahonnecke@rocksmithytoo:/Users/ahonnecke/dlc/")
@@ -95,6 +100,16 @@ class Handler(FileSystemEventHandler):
         )
         print(result.stdout)
         self.remote_move_cdlc(event)
+
+    def handle_touchterrain(self, event):
+        TOUCH_TERRAIN = Path("/home/ahonnecke/stl/USGS/touchterrain/")
+
+        # if file of the form "757876378581.zip"
+        # extract file number
+        destination = Path(TOUCH_TERRAIN + "/" + zip_number)
+        # mkdir destination
+        # extract zip to destination
+        # rm zip
 
     def handle_created(self, event):
         file_path = Path(event.src_path)
