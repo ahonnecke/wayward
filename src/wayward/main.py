@@ -48,11 +48,12 @@ class Handler(FileSystemEventHandler):
 
     def sanitize_file(self, current):
         dirname = current.parent
-        new = re.sub(r"[^\w_. -]", "_", current.name).replace(" ", "_")
-        if new != current:
-            from_path = Path(f"{dirname}/{current.name}")
-            to_path = Path(f"{dirname}/{new}")
-            print(f"{from_path} => {to_path}")
+        new = Path(re.sub(r"[^\w_. -]", "_", current.name).replace(" ", "_"))
+        from_path = Path(f"{dirname}/{current.name}")
+        to_path = Path(f"{dirname}/{new}")
+
+        if from_path != to_path:
+            print(f"Renaming {from_path} => {to_path}")
             os.rename(from_path, to_path)
             return to_path
 
@@ -63,6 +64,7 @@ class Handler(FileSystemEventHandler):
                 return new_path
 
     def remote_move_cdlc(self, event):
+        print("Moving CDLC to remote host")
         REMOTE_DEST = Path("ahonnecke@rocksmithytoo:/Users/ahonnecke/dlc/")
         BACKUP_DEST = Path("/home/ahonnecke/nasty/music/Rocksmith_CDLC/unverified")
 
@@ -73,11 +75,13 @@ class Handler(FileSystemEventHandler):
                 ["scp", filepath, f"{REMOTE_DEST}/{filename}"],
                 stdout=subprocess.PIPE,
             )
-            print(result.stdout)
             result = subprocess.run(
                 ["cp", filepath, f"{BACKUP_DEST}/{filename}"],
                 stdout=subprocess.PIPE,
             )
+            print(f"Copied {filepath} to remote host {REMOTE_DEST}.")
+            os.remove(filepath)
+            print(f"Removed {filepath}.")
 
     def wait_for_file(self, file_path):
         # Wait for file to stabilized
@@ -92,13 +96,14 @@ class Handler(FileSystemEventHandler):
 
         PYROCKSMITH = Path("/home/ahonnecke/.pyenv/shims/pyrocksmith")
 
-        os.rename(event.src_path, f"{self.BUILDSPACE}/{file_path.name}")
+        fullpath = f"{self.BUILDSPACE}/{file_path.name}"
+        os.rename(event.src_path, fullpath)
         self.sanitize_psarcs_in_dir(self.BUILDSPACE)
         result = subprocess.run(
-            [PYROCKSMITH, "--convert", f"{self.BUILDSPACE}/{file_path.name}"],
+            [PYROCKSMITH, "--convert", fullpath],
             stdout=subprocess.PIPE,
         )
-        print(result.stdout)
+        print(f"Processed {fullpath} with pyrocksmith.")
         self.remote_move_cdlc(event)
 
     def handle_touchterrain(self, event):
