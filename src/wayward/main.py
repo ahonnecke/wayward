@@ -64,6 +64,8 @@ class Handler(FileSystemEventHandler):
                 return new_path
 
     def remote_move_cdlc(self, event):
+        psarc_pattern = "_m.psarc"
+
         print("Moving CDLC to remote host")
         REMOTE_DEST = Path("ahonnecke@rocksmithytoo:/Users/ahonnecke/dlc/")
         BACKUP_DEST = Path("/home/ahonnecke/nasty/music/Rocksmith_CDLC/unverified")
@@ -71,15 +73,17 @@ class Handler(FileSystemEventHandler):
         for filename in os.listdir(self.BUILDSPACE):
             filepath = f"{self.BUILDSPACE}/{filename}"
 
-            result = subprocess.run(
-                ["scp", filepath, f"{REMOTE_DEST}/{filename}"],
-                stdout=subprocess.PIPE,
-            )
-            result = subprocess.run(
-                ["cp", filepath, f"{BACKUP_DEST}/{filename}"],
-                stdout=subprocess.PIPE,
-            )
-            print(f"Copied {filepath} to remote host {REMOTE_DEST}.")
+            if psarc_pattern in filename:
+                result = subprocess.run(
+                    ["scp", filepath, f"{REMOTE_DEST}/{filename}"],
+                    stdout=subprocess.PIPE,
+                )
+                result = subprocess.run(
+                    ["cp", filepath, f"{BACKUP_DEST}/{filename}"],
+                    stdout=subprocess.PIPE,
+                )
+                print(f"Copied {filepath} to remote host {REMOTE_DEST}.")
+
             os.remove(filepath)
             print(f"Removed {filepath}.")
 
