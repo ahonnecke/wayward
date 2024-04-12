@@ -47,7 +47,7 @@ class Handler(FileSystemEventHandler):
             return self.handle_created(event)
 
     def sanitize_file(self, current):
-        dirname = current.parent
+        dirname = current.parent.absolute()
         new = Path(re.sub(r"[^\w_. -]", "_", current.name).replace(" ", "_"))
         from_path = Path(f"{dirname}/{current.name}")
         to_path = Path(f"{dirname}/{new}")
@@ -90,8 +90,8 @@ class Handler(FileSystemEventHandler):
     def wait_for_file(self, file_path):
         # Wait for file to stabilized
         historicalSize = -1
-        while historicalSize != os.path.getsize(file_path):
-            historicalSize = os.path.getsize(file_path)
+        while historicalSize != os.path.getsize(str(file_path)):
+            historicalSize = os.path.getsize(str(file_path))
             time.sleep(1)
         return True
 
@@ -121,12 +121,12 @@ class Handler(FileSystemEventHandler):
         # rm zip
 
     def handle_created(self, event):
-        file_path = Path(event.src_path)
+        file_path = Path(event.src_path).resolve()
         if not file_path.is_file():
             # event was deletion or move
             return
 
-        if file_path.suffix == ".part":
+        if file_path.suffix == ".part" or file_path.name.endswith(".part"):
             # Firefox partial download, ignore.
             return
 
@@ -138,7 +138,7 @@ class Handler(FileSystemEventHandler):
             historical_size = os.path.getsize(file_path)
             time.sleep(1)
 
-        print(f"File file_path has stabilized at {historical_size}")
+        logger.info(f"File {file_path} has stabilized at {historical_size}")
 
         if historical_size < 1:
             return
@@ -151,9 +151,16 @@ class Handler(FileSystemEventHandler):
             os.rename(file_path, f"/home/ahonnecke/qmk/{file_path.name}")
         elif file_path.suffix == ".psarc":
             self.handle_psarc(event)
-        elif file_path.suffix in [".png", ".jpg", ".jpeg", ".tiff", ".bmp", ".gif"]:
+        elif file_path.suffix.lower() in [
+            ".png",
+            ".jpg",
+            ".jpeg",
+            ".tiff",
+            ".bmp",
+            ".gif",
+        ]:
             os.rename(file_path, f"/home/ahonnecke/Downloads/images/{file_path.name}")
-        elif file_path.suffix in [".stl"]:
+        elif file_path.suffix.lower() in [".stl"]:
             os.rename(file_path, f"/home/ahonnecke/stl/{file_path.name}")
 
 
@@ -180,4 +187,5 @@ def main():
 
 
 if __name__ == "__main__":
+    logging.basicConfig(level=logging.INFO)
     main()
