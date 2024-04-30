@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from datetime import datetime
 import logging
 import os
 import re
@@ -120,6 +121,25 @@ class Handler(FileSystemEventHandler):
         # extract zip to destination
         # rm zip
 
+    def rename_picture_from_contents(self, path: Path):
+        RENAMER = "/home/ahonnecke/bin/rename_picure_from_contents.py"
+        cmd = [
+            RENAMER,
+            str(path),
+        ]
+
+        proc = subprocess.Popen(
+            cmd,
+            stdout=subprocess.PIPE,  # Capture stdout
+            stderr=subprocess.PIPE,  # Capture stderr
+        )
+        stdout, stderr = proc.communicate()
+
+        if not stdout:
+            raise RuntimeError(stderr.decode())
+
+        return stdout.decode().strip()
+
     def handle_created(self, event):
         file_path = Path(event.src_path).resolve()
         if not file_path.is_file():
@@ -159,7 +179,20 @@ class Handler(FileSystemEventHandler):
             ".bmp",
             ".gif",
         ]:
-            os.rename(file_path, f"/home/ahonnecke/Downloads/images/{file_path.name}")
+            if "shot_" == file_path.name.lower()[0:5]:
+                ymd = datetime.today().strftime("%Y-%m-%d")
+                dirname = os.path.join("/home/ahonnecke/screenshots", ymd)
+                Path(dirname).mkdir(parents=True, exist_ok=True)
+
+                new_path = Path(os.path.join(dirname, file_path.name))
+                os.rename(file_path, new_path)
+
+                # Screenshot from flameshot
+                self.rename_picture_from_contents(new_path)
+            else:
+                os.rename(
+                    file_path, f"/home/ahonnecke/Downloads/images/{file_path.name}"
+                )
         elif file_path.suffix.lower() in [".stl"]:
             os.rename(file_path, f"/home/ahonnecke/stl/{file_path.name}")
 
