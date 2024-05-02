@@ -1,7 +1,6 @@
-#!/bin/env python
+#!/bin/env python3.11
 import argparse
 import collections
-from hmac import new
 import subprocess
 import os
 from typing import Tuple
@@ -9,7 +8,40 @@ from typing import Tuple
 
 def is_good_fileword(word: str) -> bool:
     _word = word.lower().replace("...", "")
-    if _word in ["the", "image", "has"]:
+    if _word in [
+        "the",
+        "image",
+        "has",
+        "for",
+        "and",
+        "with",
+        "from",
+        "this",
+        "that",
+        "and",
+        "but",
+        "not",
+        "are",
+        "you",
+        "your",
+        "our",
+        "all",
+        "any",
+        "can",
+        "may",
+        "will",
+        "was",
+        "were",
+        "has",
+        "had",
+        "have",
+        "been",
+        "being",
+        "does",
+        "did",
+        "doing",
+        "done",
+    ]:
         return False
     if len(_word) < 3:
         return False
@@ -24,26 +56,29 @@ def llm_generate_image_description(path) -> Tuple[str, str]:
             f"{LLAVA} not found. Please download and specify the correct path."
         )
 
-    GRAMMAR = "root ::= [a-z]+ ([a-z]+)+"
-
+    TEMP = 0.2
+    NGL = 0
+    TOKENS = 32
     cmd = [
         "/bin/bash",
         LLAVA,
         "--image",
         path,
         "--temp",
-        "0.2",
+        str(TEMP),
         "-ngl",
-        "0",
+        str(NGL),
         "-n",
-        "10",
+        str(TOKENS),
         "-p",
         "'### User: The image has...\n### Assistant:'",
         "--silent-prompt",
         "--simple-io",
         "--log-disable",
     ]
-    print(" ".join(cmd))
+    print("\n\n--------------------------------------------------")
+    print(" \\\n".join(cmd))
+    print("--------------------------------------------------\n\n")
 
     proc = subprocess.Popen(
         cmd,
@@ -63,13 +98,15 @@ def llm_generate_image_description(path) -> Tuple[str, str]:
     return ("_".join(unzipped), description)
 
 
-def main(raw_path):
+def main(args):
+    raw_path = args.path
     filepath = os.path.abspath(raw_path)
     if not os.path.exists(filepath):
         print(f"{filepath}: file not found")
         return
 
-    newname, desription = llm_generate_image_description(filepath)
+    newname, description = llm_generate_image_description(filepath)
+    newpath = False
 
     if newname:
         newname = newname.split(".")[0].replace(" ", "_")
@@ -77,11 +114,16 @@ def main(raw_path):
         newpath = os.path.join(os.path.dirname(filepath), newname)
         print(newpath)
 
-    print(newname)
-
-    if newpath != filepath:
+    if newpath and newpath != filepath:
         print(f"Renaming {filepath} to {newpath}")
         os.rename(filepath, newpath)
+
+    if args.description:
+        # Write the contents to a file
+        description_file = f"{newpath}.txt"
+        print(f"Writing description: {description} to ({description_file})")
+        with open(description_file, "w") as f:
+            f.write(description)
 
 
 if __name__ == "__main__":
@@ -89,5 +131,11 @@ if __name__ == "__main__":
         description="Rename pictures using LLAVA and Mistral models"
     )
     parser.add_argument("path", help="Paths to file")
+    parser.add_argument(
+        "--description",
+        action=argparse.BooleanOptionalAction,
+        default=True,
+        help="Create a text file with the full description of the image.",
+    )
     args = parser.parse_args()
-    main(args.path)
+    main(args)

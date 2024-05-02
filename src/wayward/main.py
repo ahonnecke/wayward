@@ -1,12 +1,15 @@
 #!/usr/bin/env python3
 from datetime import datetime
 import logging
+from os import getpid
+from sys import argv, exit
+import psutil
 import os
 import re
 import subprocess
 import time
 from pathlib import Path
-
+import setproctitle
 from devtools import debug
 from watchdog.events import FileSystemEventHandler
 from watchdog.observers import Observer
@@ -122,6 +125,7 @@ class Handler(FileSystemEventHandler):
         # rm zip
 
     def rename_picture_from_contents(self, path: Path):
+        print("Renaming picture from contents...")
         RENAMER = "/home/ahonnecke/bin/rename_picure_from_contents.py"
         cmd = [
             RENAMER,
@@ -205,8 +209,26 @@ class FileSorter:
         pass
 
 
+def ensure_process_is_not_running(process_name: str) -> None:
+    mypid = getpid()
+    for process in psutil.process_iter():
+        if process.pid != mypid:
+            try:
+                _ = process.cmdline()
+            except psutil.NoSuchProcess:
+                continue
+
+            for path in _:
+                if process_name in path:
+                    print("process found, terminating...")
+                    process.terminate()
+
+
 def main():
     """Entrypoint for AWS lambda hot reloader, CLI args in signature."""
+
+    setproctitle.setproctitle("wayward")
+    ensure_process_is_not_running("wayward")
     ROOT = Path.cwd()
     observed = Path("/home/ahonnecke/Downloads/")
 
