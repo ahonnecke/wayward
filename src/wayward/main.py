@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
+import argparse
 from datetime import datetime
 import logging
 from os import getpid
-from sys import argv, exit
 from typing import List
 import psutil
 import os
@@ -11,15 +11,14 @@ import subprocess
 import time
 from pathlib import Path
 import setproctitle
-from devtools import debug
 from watchdog.events import FileSystemEventHandler
 from watchdog.observers import Observer
-import logging
 import logging.handlers
 import daemon
 
 
-logger = logging.getLogger(__name__)
+NAME = "wayward"
+logger = logging.getLogger(NAME)
 
 
 class Watcher:
@@ -34,7 +33,7 @@ class Watcher:
         try:
             while True:
                 time.sleep(5)
-        except:
+        except:  # noqa: E722
             self.observer.stop()
             logger.error("Error")
 
@@ -46,16 +45,163 @@ class FileTypeHandler:
         self.file_filter = file_filter
         self.file_handler = file_handler
 
+    def __str__(self) -> str:
+        return f"{self.__class__.__name__}: {self.file_filter.__name__}"
+
     def handle(self, path):
         if self.file_filter(path):
-            logger.info(f"Handling file... {path}.")
+            logger.info(f"Handling file... {path} with {self}")
             return self.file_handler(path)
+
+    def sanitize_file(self, current):
+        dirname = current.parent.absolute()
+        new = Path(re.sub(r"[^\w_. -]", "_", current.name).replace(" ", "_"))
+        from_path = Path(f"{dirname}/{current.name}")
+        to_path = Path(f"{dirname}/{new}")
+
+        if from_path != to_path:
+            logger.info(f"Renaming {from_path} => {to_path}")
+            os.rename(from_path, to_path)
+            return to_path
+
+    def is_image(self, path) -> bool:
+        return path.suffix.lower() in [
+            ".png",
+            ".jpg",
+            ".jpeg",
+            ".tiff",
+            ".bmp",
+            ".gif",
+        ]
+
+    def is_screen_shot(self, path) -> bool:
+        return self.is_image(path) and "shot_" == path.name.lower()[0:5]
+
+    def rename_picture_from_contents(self, path: Path):
+        logger.info("Renaming picture from contents...")
+        RENAMER = "/home/ahonnecke/bin/rename_picure_from_contents.py"
+        cmd = [
+            RENAMER,
+            str(path),
+        ]
+
+        proc = subprocess.Popen(
+            cmd,
+            stdout=subprocess.PIPE,  # Capture stdout
+            stderr=subprocess.PIPE,  # Capture stderr
+        )
+        stdout, stderr = proc.communicate()
+
+        if not stdout:
+            raise RuntimeError(stderr.decode())
+
+        return stdout.decode().strip()
+
+
+class PsarcHandler(FileTypeHandler):
+    def __init__(self):
+        self.BUILDSPACE = Path("/home/ahonnecke/cdlc_buildspace")
+        self.PYROCKSMITH = Path("/home/ahonnecke/.pyenv/shims/pyrocksmith")
+
+    def file_filter(self, path) -> bool:
+        return path.suffix == ".psarc"
+
+    def sanitize_psarcs_in_dir(self, dirpath):
+        logger.info(f"Sanitizing filenames in {dirpath}")
+        for file in dirpath.glob("*.psarc*"):
+            if new_path := self.sanitize_file(file):
+                return new_path
+
+    def remote_move_cdlc(self, event):
+        psarc_pattern = "_m.psarc"
+
+        logger.info("Moving CDLC to remote host")
+        REMOTE_DEST = Path("ahonnecke@rocksmithytoo:/Users/ahonnecke/dlc/")
+        BACKUP_DEST = Path("/home/ahonnecke/nasty/music/Rocksmith_CDLC/unverified")
+
+        for filename in os.listdir(self.BUILDSPACE):
+            filepath = f"{self.BUILDSPACE}/{filename}"
+
+            if psarc_pattern in filename:
+                subprocess.run(
+                    ["scp", filepath, f"{REMOTE_DEST}/{filename}"],
+                    stdout=subprocess.PIPE,
+                )
+                subprocess.run(
+                    ["cp", filepath, f"{BACKUP_DEST}/{filename}"],
+                    stdout=subprocess.PIPE,
+                )
+                logger.info(f"Copied {filepath} to remote host {REMOTE_DEST}.")
+
+            os.remove(filepath)
+            logger.info(f"Removed {filepath}.")
+
+    def file_handler(self, path):
+        file_path = Path(path)
+
+        filename = os.path.basename(file_path)
+
+        fullpath = f"{self.BUILDSPACE}/{filename}"
+        os.rename(path, fullpath)
+        self.sanitize_psarcs_in_dir(self.BUILDSPACE)
+        subprocess.run(
+            [self.PYROCKSMITH, "--convert", fullpath],
+            stdout=subprocess.PIPE,
+        )
+        logger.info(f"Processed {fullpath} with pyrocksmith.")
+        self.remote_move_cdlc(fullpath)
+
+
+class ScreenshotHandler(FileTypeHandler):
+    def __init__(self):
+        self.DEST = Path("/home/ahonnecke/screenshots")
+
+    def file_filter(self, path) -> bool:
+        return self.is_screen_shot(path)
+
+    def file_handler(self, path):
+        ymd = datetime.today().strftime("%Y-%m-%d")
+        dirname = os.path.join(self.DEST, ymd)
+        Path(dirname).mkdir(parents=True, exist_ok=True)
+
+        new_path = Path(os.path.join(dirname, path.name))
+        os.rename(path, new_path)
+
+        # Screenshot from flameshot
+        self.rename_picture_from_contents(new_path)
+
+
+class ImageHandler(FileTypeHandler):
+    def __init__(self):
+        self.DEST = Path("/home/ahonnecke/Downloads/images")
+
+    def file_filter(self, path) -> bool:
+        return self.is_image(path) and not self.is_screen_shot(path)
+
+    def file_handler(self, path):
+        ymd = datetime.today().strftime("%Y-%m-%d")
+        dirname = os.path.join(self.DEST, ymd)
+        Path(dirname).mkdir(parents=True, exist_ok=True)
+
+        new_path = Path(os.path.join(dirname, path.name))
+        os.rename(path, new_path)
+
+
+class QmkHandler(FileTypeHandler):
+    def __init__(self):
+        self.DEST = Path("/home/ahonnecke/qmk/")
+
+    def file_filter(self, path) -> bool:
+        # TODO: figure out how to filter for qmk files, not just .bin
+        return path.suffix == ".bin"
+
+    def file_handler(self, path):
+        return os.rename(path, os.path.join(self.DEST, path.name))
 
 
 class Handler(FileSystemEventHandler):
     def __init__(self, file_handlers: List[FileTypeHandler]):
         self.file_handlers = file_handlers
-        self.BUILDSPACE = Path("/home/ahonnecke/cdlc_buildspace")
 
     def on_any_event(self, event):
         if event.is_directory:
@@ -77,58 +223,13 @@ class Handler(FileSystemEventHandler):
             os.rename(from_path, to_path)
             return to_path
 
-    def sanitize_psarcs_in_dir(self, dirpath):
-        logger.info(f"Sanitizing filenames in {dirpath}")
-        for file in dirpath.glob("*.psarc*"):
-            if new_path := self.sanitize_file(file):
-                return new_path
-
-    def remote_move_cdlc(self, event):
-        psarc_pattern = "_m.psarc"
-
-        logger.info("Moving CDLC to remote host")
-        REMOTE_DEST = Path("ahonnecke@rocksmithytoo:/Users/ahonnecke/dlc/")
-        BACKUP_DEST = Path("/home/ahonnecke/nasty/music/Rocksmith_CDLC/unverified")
-
-        for filename in os.listdir(self.BUILDSPACE):
-            filepath = f"{self.BUILDSPACE}/{filename}"
-
-            if psarc_pattern in filename:
-                result = subprocess.run(
-                    ["scp", filepath, f"{REMOTE_DEST}/{filename}"],
-                    stdout=subprocess.PIPE,
-                )
-                result = subprocess.run(
-                    ["cp", filepath, f"{BACKUP_DEST}/{filename}"],
-                    stdout=subprocess.PIPE,
-                )
-                logger.info(f"Copied {filepath} to remote host {REMOTE_DEST}.")
-
-            os.remove(filepath)
-            logger.info(f"Removed {filepath}.")
-
     def wait_for_file(self, file_path):
-        # Wait for file to stabilized
+        # Wait for file size to stabilize
         historicalSize = -1
         while historicalSize != os.path.getsize(str(file_path)):
             historicalSize = os.path.getsize(str(file_path))
             time.sleep(1)
         return True
-
-    def handle_psarc(self, event):
-        file_path = Path(event.src_path)
-
-        PYROCKSMITH = Path("/home/ahonnecke/.pyenv/shims/pyrocksmith")
-
-        fullpath = f"{self.BUILDSPACE}/{file_path.name}"
-        os.rename(event.src_path, fullpath)
-        self.sanitize_psarcs_in_dir(self.BUILDSPACE)
-        result = subprocess.run(
-            [PYROCKSMITH, "--convert", fullpath],
-            stdout=subprocess.PIPE,
-        )
-        logger.info(f"Processed {fullpath} with pyrocksmith.")
-        self.remote_move_cdlc(event)
 
     def handle_touchterrain(self, event):
         TOUCH_TERRAIN = Path("/home/ahonnecke/stl/USGS/touchterrain/")
@@ -136,26 +237,6 @@ class Handler(FileSystemEventHandler):
 
         destination = os.path.join(TOUCH_TERRAIN, os.path.basename(file_path))
         os.rename(event.src_path, destination)
-
-    def rename_picture_from_contents(self, path: Path):
-        logger.info("Renaming picture from contents...")
-        RENAMER = "/home/ahonnecke/bin/rename_picure_from_contents.py"
-        cmd = [
-            RENAMER,
-            str(path),
-        ]
-
-        proc = subprocess.Popen(
-            cmd,
-            stdout=subprocess.PIPE,  # Capture stdout
-            stderr=subprocess.PIPE,  # Capture stderr
-        )
-        stdout, stderr = proc.communicate()
-
-        if not stdout:
-            raise RuntimeError(stderr.decode())
-
-        return stdout.decode().strip()
 
     def handle_created(self, event):
         file_path = Path(event.src_path).resolve()
@@ -180,49 +261,8 @@ class Handler(FileSystemEventHandler):
         if historical_size < 1:
             return
 
-        # TODO: make the file handler dynamic
-        # TODO: make simple move file behavior dict based
-        # ie. return self.handle_{file_path.suffix}
-
-        if file_path.suffix == ".bin":
-            os.rename(file_path, f"/home/ahonnecke/qmk/{file_path.name}")
-        elif file_path.suffix == ".psarc":
-            self.handle_psarc(event)
-        elif file_path.suffix.lower() in [
-            ".png",
-            ".jpg",
-            ".jpeg",
-            ".tiff",
-            ".bmp",
-            ".gif",
-        ]:
-            if "shot_" == file_path.name.lower()[0:5]:
-                ymd = datetime.today().strftime("%Y-%m-%d")
-                dirname = os.path.join("/home/ahonnecke/screenshots", ymd)
-                Path(dirname).mkdir(parents=True, exist_ok=True)
-
-                new_path = Path(os.path.join(dirname, file_path.name))
-                os.rename(file_path, new_path)
-
-                # Screenshot from flameshot
-                self.rename_picture_from_contents(new_path)
-            else:
-                os.rename(
-                    file_path, f"/home/ahonnecke/Downloads/images/{file_path.name}"
-                )
-        # elif file_path.suffix.lower() in [".stl"]:
-        #     os.rename(file_path, f"/home/ahonnecke/stl/{file_path.name}")
-
         for handler in self.file_handlers:
             handler.handle(file_path)
-
-
-class FileSorter:
-    def __init__(self, rules: dict):
-        self.rules = rules
-
-    def handle_file(self):
-        pass
 
 
 def ensure_process_is_not_running(process_name: str) -> None:
@@ -235,24 +275,25 @@ def ensure_process_is_not_running(process_name: str) -> None:
                 continue
 
             for path in _:
-                if process_name in path:
-                    logger.info("process found, terminating...")
-                    process.terminate()
+                if process_name == path:
+                    logger.info("daemon already running, exiting...")
+                    exit(-2)
 
 
 def main():
     """Entrypoint for wayward, file download handler."""
 
-    setproctitle.setproctitle("wayward")
-    ensure_process_is_not_running("wayward")
-    ROOT = Path.cwd()
-
-    observed = Path("/home/ahonnecke/Downloads/")
+    setproctitle.setproctitle(NAME)
+    ensure_process_is_not_running(NAME)
 
     w = Watcher(
-        observed,
+        Path("/home/ahonnecke/Downloads/"),
         Handler(
             file_handlers=[
+                ScreenshotHandler(),
+                ImageHandler(),
+                PsarcHandler(),
+                QmkHandler(),
                 FileTypeHandler(
                     file_filter=lambda path: path.suffix == ".stl",
                     file_handler=lambda path: os.rename(
@@ -270,5 +311,23 @@ if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
     handler = logging.handlers.SysLogHandler(address="/dev/log")
     logger.addHandler(handler)
-    with daemon.DaemonContext():
+
+    tmphandler = logging.FileHandler(os.path.join("/tmp/", f"{NAME}.log"), "a+")
+    logger.addHandler(tmphandler)
+
+    parser = argparse.ArgumentParser(
+        description="Watch for new files in a directory and process them accoringly."
+    )
+    parser.add_argument(
+        "--daemon",
+        action=argparse.BooleanOptionalAction,
+        default=True,
+        help="Run as background daemon.",
+    )
+    args = parser.parse_args()
+
+    if args.daemon:
+        with daemon.DaemonContext():
+            main()
+    else:
         main()
