@@ -3,6 +3,7 @@ from datetime import datetime
 import logging
 from os import getpid
 from sys import argv, exit
+from typing import List
 import psutil
 import os
 import re
@@ -13,6 +14,10 @@ import setproctitle
 from devtools import debug
 from watchdog.events import FileSystemEventHandler
 from watchdog.observers import Observer
+import logging
+import logging.handlers
+import daemon
+
 
 logger = logging.getLogger(__name__)
 
@@ -31,14 +36,25 @@ class Watcher:
                 time.sleep(5)
         except:
             self.observer.stop()
-            print("Error")
+            logger.error("Error")
 
         self.observer.join()
 
 
+class FileTypeHandler:
+    def __init__(self, file_filter, file_handler):
+        self.file_filter = file_filter
+        self.file_handler = file_handler
+
+    def handle(self, path):
+        if self.file_filter(path):
+            logger.info(f"Handling file... {path}.")
+            return self.file_handler(path)
+
+
 class Handler(FileSystemEventHandler):
-    def __init__(self, onchange):
-        self.onchange = onchange
+    def __init__(self, file_handlers: List[FileTypeHandler]):
+        self.file_handlers = file_handlers
         self.BUILDSPACE = Path("/home/ahonnecke/cdlc_buildspace")
 
     def on_any_event(self, event):
@@ -47,7 +63,7 @@ class Handler(FileSystemEventHandler):
 
         elif event.event_type == "created" or event.event_type == "modified":
             # Take any action here when a file is first created.
-            print(f"Received created or modified - {event.src_path}.")
+            logger.info(f"Received created or modified - {event.src_path}.")
             return self.handle_created(event)
 
     def sanitize_file(self, current):
@@ -57,12 +73,12 @@ class Handler(FileSystemEventHandler):
         to_path = Path(f"{dirname}/{new}")
 
         if from_path != to_path:
-            print(f"Renaming {from_path} => {to_path}")
+            logger.info(f"Renaming {from_path} => {to_path}")
             os.rename(from_path, to_path)
             return to_path
 
     def sanitize_psarcs_in_dir(self, dirpath):
-        print(f"Sanitizing filenames in {dirpath}")
+        logger.info(f"Sanitizing filenames in {dirpath}")
         for file in dirpath.glob("*.psarc*"):
             if new_path := self.sanitize_file(file):
                 return new_path
@@ -70,7 +86,7 @@ class Handler(FileSystemEventHandler):
     def remote_move_cdlc(self, event):
         psarc_pattern = "_m.psarc"
 
-        print("Moving CDLC to remote host")
+        logger.info("Moving CDLC to remote host")
         REMOTE_DEST = Path("ahonnecke@rocksmithytoo:/Users/ahonnecke/dlc/")
         BACKUP_DEST = Path("/home/ahonnecke/nasty/music/Rocksmith_CDLC/unverified")
 
@@ -86,10 +102,10 @@ class Handler(FileSystemEventHandler):
                     ["cp", filepath, f"{BACKUP_DEST}/{filename}"],
                     stdout=subprocess.PIPE,
                 )
-                print(f"Copied {filepath} to remote host {REMOTE_DEST}.")
+                logger.info(f"Copied {filepath} to remote host {REMOTE_DEST}.")
 
             os.remove(filepath)
-            print(f"Removed {filepath}.")
+            logger.info(f"Removed {filepath}.")
 
     def wait_for_file(self, file_path):
         # Wait for file to stabilized
@@ -111,21 +127,18 @@ class Handler(FileSystemEventHandler):
             [PYROCKSMITH, "--convert", fullpath],
             stdout=subprocess.PIPE,
         )
-        print(f"Processed {fullpath} with pyrocksmith.")
+        logger.info(f"Processed {fullpath} with pyrocksmith.")
         self.remote_move_cdlc(event)
 
     def handle_touchterrain(self, event):
         TOUCH_TERRAIN = Path("/home/ahonnecke/stl/USGS/touchterrain/")
+        file_path = Path(event.src_path)
 
-        # if file of the form "757876378581.zip"
-        # extract file number
-        destination = Path(TOUCH_TERRAIN + "/" + zip_number)
-        # mkdir destination
-        # extract zip to destination
-        # rm zip
+        destination = os.path.join(TOUCH_TERRAIN, os.path.basename(file_path))
+        os.rename(event.src_path, destination)
 
     def rename_picture_from_contents(self, path: Path):
-        print("Renaming picture from contents...")
+        logger.info("Renaming picture from contents...")
         RENAMER = "/home/ahonnecke/bin/rename_picure_from_contents.py"
         cmd = [
             RENAMER,
@@ -197,8 +210,11 @@ class Handler(FileSystemEventHandler):
                 os.rename(
                     file_path, f"/home/ahonnecke/Downloads/images/{file_path.name}"
                 )
-        elif file_path.suffix.lower() in [".stl"]:
-            os.rename(file_path, f"/home/ahonnecke/stl/{file_path.name}")
+        # elif file_path.suffix.lower() in [".stl"]:
+        #     os.rename(file_path, f"/home/ahonnecke/stl/{file_path.name}")
+
+        for handler in self.file_handlers:
+            handler.handle(file_path)
 
 
 class FileSorter:
@@ -220,27 +236,39 @@ def ensure_process_is_not_running(process_name: str) -> None:
 
             for path in _:
                 if process_name in path:
-                    print("process found, terminating...")
+                    logger.info("process found, terminating...")
                     process.terminate()
 
 
 def main():
-    """Entrypoint for AWS lambda hot reloader, CLI args in signature."""
+    """Entrypoint for wayward, file download handler."""
 
     setproctitle.setproctitle("wayward")
     ensure_process_is_not_running("wayward")
     ROOT = Path.cwd()
+
     observed = Path("/home/ahonnecke/Downloads/")
 
-    # todo: if dir, move file, if executable execute executable on file
-    rules = {"bin": "/home/ahonnecke/qmk"}
-    sorter = FileSorter(rules)
-
-    w = Watcher(observed, Handler(onchange=sorter.handle_file()))
+    w = Watcher(
+        observed,
+        Handler(
+            file_handlers=[
+                FileTypeHandler(
+                    file_filter=lambda path: path.suffix == ".stl",
+                    file_handler=lambda path: os.rename(
+                        path, f"/home/ahonnecke/stl/{path.name}"
+                    ),
+                ),
+            ]
+        ),
+    )
 
     w.run()
 
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
-    main()
+    handler = logging.handlers.SysLogHandler(address="/dev/log")
+    logger.addHandler(handler)
+    with daemon.DaemonContext():
+        main()
