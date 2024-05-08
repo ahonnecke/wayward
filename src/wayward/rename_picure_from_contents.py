@@ -57,8 +57,8 @@ def llm_generate_image_description(path) -> Tuple[str, str]:
         )
 
     TEMP = 0.2
-    NGL = 0
-    TOKENS = 32
+    NGL = 999
+    TOKENS = 64
     cmd = [
         "/bin/bash",
         LLAVA,
