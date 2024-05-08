@@ -1,9 +1,15 @@
 #!/bin/env python3.11
 import argparse
 import collections
+import logging
+from logging.handlers import SysLogHandler
 import subprocess
 import os
+import sys
 from typing import Tuple
+
+NAME = "rename_picture_from_contents"
+logger = logging.getLogger(NAME)
 
 
 def is_good_fileword(word: str) -> bool:
@@ -41,6 +47,9 @@ def is_good_fileword(word: str) -> bool:
         "did",
         "doing",
         "done",
+        ",",
+        ".",
+        '"',
     ]:
         return False
     if len(_word) < 3:
@@ -76,9 +85,9 @@ def llm_generate_image_description(path) -> Tuple[str, str]:
         "--simple-io",
         "--log-disable",
     ]
-    print("\n\n--------------------------------------------------")
-    print(" \\\n".join(cmd))
-    print("--------------------------------------------------\n\n")
+    logger.debug("\n\n--------------------------------------------------")
+    logger.debug(" \\\n".join(cmd))
+    logger.debug("--------------------------------------------------\n\n")
 
     proc = subprocess.Popen(
         cmd,
@@ -102,7 +111,7 @@ def main(args):
     raw_path = args.path
     filepath = os.path.abspath(raw_path)
     if not os.path.exists(filepath):
-        print(f"{filepath}: file not found")
+        logger.debug(f"{filepath}: file not found")
         return
 
     newname, description = llm_generate_image_description(filepath)
@@ -112,21 +121,30 @@ def main(args):
         newname = newname.split(".")[0].replace(" ", "_")
         newname += f".{filepath.split('.')[-1]}"
         newpath = os.path.join(os.path.dirname(filepath), newname)
-        print(newpath)
+        logger.debug(newpath)
 
     if newpath and newpath != filepath:
-        print(f"Renaming {filepath} to {newpath}")
+        logger.debug(f"Renaming {filepath} to {newpath}")
         os.rename(filepath, newpath)
 
     if args.description:
         # Write the contents to a file
         description_file = f"{newpath}.txt"
-        print(f"Writing description: {description} to ({description_file})")
+        logger.debug(f"Writing description: {description} to ({description_file})")
         with open(description_file, "w") as f:
             f.write(description)
 
+    return newpath
+
 
 if __name__ == "__main__":
+    logging.basicConfig(level=logging.INFO)
+    handler = SysLogHandler(address="/dev/log")
+    logger.addHandler(handler)
+
+    tmphandler = logging.FileHandler(os.path.join("/tmp/", f"{NAME}.log"), "a+")
+    logger.addHandler(tmphandler)
+
     parser = argparse.ArgumentParser(
         description="Rename pictures using LLAVA and Mistral models"
     )
@@ -138,4 +156,5 @@ if __name__ == "__main__":
         help="Create a text file with the full description of the image.",
     )
     args = parser.parse_args()
-    main(args)
+    result = main(args)
+    sys.stdout.write(str(result))

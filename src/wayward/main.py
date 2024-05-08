@@ -77,13 +77,30 @@ class FileTypeHandler:
     def is_screen_shot(self, path) -> bool:
         return self.is_image(path) and "shot_" == path.name.lower()[0:5]
 
-    def rename_picture_from_contents(self, path: Path):
+    def rename_picture_from_contents(self, path: Path) -> Path:
         logger.info("Renaming picture from contents...")
         RENAMER = "/home/ahonnecke/bin/rename_picure_from_contents.py"
         cmd = [
             RENAMER,
             str(path),
         ]
+
+        proc = subprocess.Popen(
+            cmd,
+            stdout=subprocess.PIPE,  # Capture stdout
+            stderr=subprocess.PIPE,  # Capture stderr
+        )
+        stdout, stderr = proc.communicate()
+
+        if not stdout:
+            raise RuntimeError(stderr.decode())
+
+        return Path(stdout.decode().strip())
+
+    def ocr_picture(self, path: Path):
+        OCR_BIN = "/home/ahonnecke/bin/ocr_image.py"
+        logger.info(f"OCRing image:{path}")
+        cmd = [OCR_BIN, str(path)]
 
         proc = subprocess.Popen(
             cmd,
@@ -168,7 +185,8 @@ class ScreenshotHandler(FileTypeHandler):
         os.rename(path, new_path)
 
         # Screenshot from flameshot
-        self.rename_picture_from_contents(new_path)
+        better_name = self.rename_picture_from_contents(new_path)
+        self.ocr_picture(better_name)
 
 
 class ImageHandler(FileTypeHandler):
