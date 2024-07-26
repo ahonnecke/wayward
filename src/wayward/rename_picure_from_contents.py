@@ -107,7 +107,7 @@ def llm_generate_image_description(path) -> Tuple[str, str]:
     return ("_".join(unzipped), description)
 
 
-def main(args):
+def main(args) -> str | None:
     raw_path = args.path
     filepath = os.path.abspath(raw_path)
     if not os.path.exists(filepath):
@@ -134,7 +134,7 @@ def main(args):
         with open(description_file, "w") as f:
             f.write(description)
 
-    return newpath
+    return str(newpath)
 
 
 if __name__ == "__main__":
@@ -156,5 +156,9 @@ if __name__ == "__main__":
         help="Create a text file with the full description of the image.",
     )
     args = parser.parse_args()
-    result = main(args)
-    sys.stdout.write(str(result))
+    try:
+        if out := main(args):
+            sys.stdout.write(out)
+    except RuntimeError as e:
+        logger.error("Failed to rename picture.")
+        logger.exception(e)

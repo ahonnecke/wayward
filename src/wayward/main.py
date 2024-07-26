@@ -51,7 +51,11 @@ class FileTypeHandler:
     def handle(self, path):
         if self.file_filter(path):
             logger.info(f"Handling file... {path} with {self}")
-            return self.file_handler(path)
+            try:
+                return self.file_handler(path)
+            except RuntimeError as e:
+                logger.error(f"Failed to handle file ({path}) with {self}.")
+                logger.exception(e)
 
     def sanitize_file(self, current):
         dirname = current.parent.absolute()
@@ -322,7 +326,11 @@ def main():
         ),
     )
 
-    w.run()
+    try:
+        w.run()
+    except RuntimeError as e:
+        logger.error("Failed to process file.")
+        logger.error(e)
 
 
 if __name__ == "__main__":
