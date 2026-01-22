@@ -7,6 +7,7 @@ from typing import List
 import psutil
 import os
 import re
+import shutil
 import subprocess
 import time
 from pathlib import Path
@@ -33,11 +34,13 @@ class Watcher:
         try:
             while True:
                 time.sleep(5)
-        except:  # noqa: E722
+        except KeyboardInterrupt:
+            logger.info("Received interrupt, shutting down...")
+        except Exception as e:
+            logger.error(f"Error: {e}")
+        finally:
             self.observer.stop()
-            logger.error("Error")
-
-        self.observer.join()
+            self.observer.join()
 
 
 class FileTypeHandler:
@@ -127,31 +130,52 @@ class PsarcHandler(FileTypeHandler):
     def file_filter(self, path) -> bool:
         return path.suffix == ".psarc"
 
-    def sanitize_psarcs_in_dir(self, dirpath):
+    def sanitize_psarcs_in_dir(self, dirpath, target_file):
+        """Sanitize all psarc filenames in dir, return new path of target_file."""
         logger.info(f"Sanitizing filenames in {dirpath}")
-        for file in dirpath.glob("*.psarc*"):
-            if new_path := self.sanitize_file(file):
-                return new_path
+        target_basename = os.path.basename(target_file)
+        result_path = target_file
 
-    def remote_move_cdlc(self, event):
+        for file in dirpath.glob("*.psarc*"):
+            new_path = self.sanitize_file(file)
+            if new_path and file.name == target_basename:
+                result_path = str(new_path)
+
+        return result_path
+
+    def remote_move_cdlc(self):
         psarc_pattern = "_m.psarc"
 
         logger.info("Moving CDLC to remote host")
-        REMOTE_DEST = Path("ahonnecke@rocksmithytoo:/Users/ahonnecke/dlc/")
+        REMOTE_DEST = "ahonnecke@rocksmithytoo:/Users/ahonnecke/dlc"
         BACKUP_DEST = Path("/home/ahonnecke/nasty/music/Rocksmith_CDLC/unverified")
 
         for filename in os.listdir(self.BUILDSPACE):
             filepath = f"{self.BUILDSPACE}/{filename}"
 
             if psarc_pattern in filename:
-                subprocess.run(
+                scp_result = subprocess.run(
                     ["scp", filepath, f"{REMOTE_DEST}/{filename}"],
                     stdout=subprocess.PIPE,
+                    stderr=subprocess.PIPE,
                 )
-                subprocess.run(
+                if scp_result.returncode != 0:
+                    logger.error(
+                        f"scp failed for {filepath}: {scp_result.stderr.decode()}"
+                    )
+                    continue
+
+                cp_result = subprocess.run(
                     ["cp", filepath, f"{BACKUP_DEST}/{filename}"],
                     stdout=subprocess.PIPE,
+                    stderr=subprocess.PIPE,
                 )
+                if cp_result.returncode != 0:
+                    logger.error(
+                        f"backup cp failed for {filepath}: {cp_result.stderr.decode()}"
+                    )
+                    continue
+
                 logger.info(f"Copied {filepath} to remote host {REMOTE_DEST}.")
 
             os.remove(filepath)
@@ -159,18 +183,18 @@ class PsarcHandler(FileTypeHandler):
 
     def file_handler(self, path):
         file_path = Path(path)
-
         filename = os.path.basename(file_path)
-
         fullpath = f"{self.BUILDSPACE}/{filename}"
-        os.rename(path, fullpath)
-        self.sanitize_psarcs_in_dir(self.BUILDSPACE)
+
+        shutil.move(path, fullpath)
+        fullpath = self.sanitize_psarcs_in_dir(self.BUILDSPACE, fullpath)
+
         subprocess.run(
             [self.PYROCKSMITH, "--convert", fullpath],
             stdout=subprocess.PIPE,
         )
         logger.info(f"Processed {fullpath} with pyrocksmith.")
-        self.remote_move_cdlc(fullpath)
+        self.remote_move_cdlc()
 
 
 class ScreenshotHandler(FileTypeHandler):
@@ -186,7 +210,7 @@ class ScreenshotHandler(FileTypeHandler):
         Path(dirname).mkdir(parents=True, exist_ok=True)
 
         new_path = Path(os.path.join(dirname, path.name))
-        os.rename(path, new_path)
+        shutil.move(path, new_path)
 
         # Screenshot from flameshot
         better_name = self.rename_picture_from_contents(new_path)
@@ -206,7 +230,7 @@ class ImageHandler(FileTypeHandler):
         Path(dirname).mkdir(parents=True, exist_ok=True)
 
         new_path = Path(os.path.join(dirname, path.name))
-        os.rename(path, new_path)
+        shutil.move(path, new_path)
 
 
 class QmkHandler(FileTypeHandler):
@@ -218,7 +242,7 @@ class QmkHandler(FileTypeHandler):
         return path.suffix == ".bin"
 
     def file_handler(self, path):
-        return os.rename(path, os.path.join(self.DEST, path.name))
+        return shutil.move(path, os.path.join(self.DEST, path.name))
 
 
 class Handler(FileSystemEventHandler):
@@ -234,31 +258,13 @@ class Handler(FileSystemEventHandler):
             logger.info(f"Received created or modified - {event.src_path}.")
             return self.handle_created(event)
 
-    def sanitize_file(self, current):
-        dirname = current.parent.absolute()
-        new = Path(re.sub(r"[^\w_. -]", "_", current.name).replace(" ", "_"))
-        from_path = Path(f"{dirname}/{current.name}")
-        to_path = Path(f"{dirname}/{new}")
-
-        if from_path != to_path:
-            logger.info(f"Renaming {from_path} => {to_path}")
-            os.rename(from_path, to_path)
-            return to_path
-
     def wait_for_file(self, file_path):
-        # Wait for file size to stabilize
-        historicalSize = -1
-        while historicalSize != os.path.getsize(str(file_path)):
-            historicalSize = os.path.getsize(str(file_path))
+        """Wait for file size to stabilize, return final size."""
+        historical_size = -1
+        while historical_size != os.path.getsize(str(file_path)):
+            historical_size = os.path.getsize(str(file_path))
             time.sleep(1)
-        return True
-
-    def handle_touchterrain(self, event):
-        TOUCH_TERRAIN = Path("/home/ahonnecke/stl/USGS/touchterrain/")
-        file_path = Path(event.src_path)
-
-        destination = os.path.join(TOUCH_TERRAIN, os.path.basename(file_path))
-        os.rename(event.src_path, destination)
+        return historical_size
 
     def handle_created(self, event):
         file_path = Path(event.src_path).resolve()
@@ -270,14 +276,7 @@ class Handler(FileSystemEventHandler):
             # Firefox partial download, ignore.
             return
 
-        self.wait_for_file(file_path)
-
-        # Wait for file to stabilize
-        historical_size = -1
-        while historical_size != os.path.getsize(file_path):
-            historical_size = os.path.getsize(file_path)
-            time.sleep(1)
-
+        historical_size = self.wait_for_file(file_path)
         logger.info(f"File {file_path} has stabilized at {historical_size}")
 
         if historical_size < 1:
@@ -318,7 +317,7 @@ def main():
                 QmkHandler(),
                 FileTypeHandler(
                     file_filter=lambda path: path.suffix == ".stl",
-                    file_handler=lambda path: os.rename(
+                    file_handler=lambda path: shutil.move(
                         path, f"/home/ahonnecke/stl/{path.name}"
                     ),
                 ),
