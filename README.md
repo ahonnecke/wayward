@@ -20,19 +20,28 @@ The NAS (`nasty`) is the source of truth for Rocksmith CDLC. The pipeline:
 1. **Download** — `.psarc` lands in `~/Downloads`
 2. **wayward** — detects, converts with `pyrocksmith`, moves both `_m.psarc` and `_p.psarc` to NAS `staging/`
 3. **Play-test** — try songs in Rocksmith after promoting to `live/`
-4. **Promote** — `wayward-promote` moves files from `staging/` to `live/`
-5. **Quarantine** — `wayward-quarantine` isolates bad files
+4. **Promote** — `wayward-promote` moves files from `staging/` to `live/`, then SCPs `_m.psarc` to rocksmithytoo
+5. **Quarantine** — `wayward-quarantine` isolates bad files and removes them from rocksmithytoo
 
 ### NAS Directory Structure
 
 ```
 /nasty/music/Rocksmith_CDLC/
-├── live/           # Verified, game-ready — rocksmithytoo mounts this via NFS
+├── live/           # Verified, game-ready — NAS is source of truth
 ├── staging/        # New downloads awaiting play-test
 └── quarantine/     # Files that crashed the game
 ```
 
-rocksmithytoo mounts `live/` directly via NFS, so promoted files are immediately available to Rocksmith.
+### rocksmithytoo Sync
+
+NFS mount over WiFi is too slow (~540 KB/s) for Rocksmith to read psarcs directly. Instead, `_m.psarc` files are synced to rocksmithytoo's local Steam DLC dir via SCP/rsync:
+
+- **On promote** — each `_m.psarc` is SCPed to `~/Library/Application Support/Steam/steamapps/common/Rocksmith2014/dlc/`
+- **On quarantine** — the file is SSH-removed from rocksmithytoo
+- **On restore** — the file is SCPed back
+- **Catchup** — `wayward-promote --sync` rsyncs all `_m.psarc` files from `live/` to rocksmithytoo
+
+The NFS mount remains at `~/mnt/nasty_cdlc_live` on rocksmithytoo for browsing, but Rocksmith reads from the local Steam DLC dir.
 
 ## Usage
 
@@ -40,15 +49,16 @@ rocksmithytoo mounts `live/` directly via NFS, so promoted files are immediately
 wayward --no-daemon   # Run in foreground, logs to console
 wayward --daemon      # Run in background (default)
 
-# Promote CDLC from staging to live
+# Promote CDLC from staging to live (+ sync to rocksmithytoo)
 wayward-promote --list              # List staging files
-wayward-promote <filename>          # Promote specific file
+wayward-promote <filename>          # Promote specific file, SCP _m.psarc to Mac
 wayward-promote --all               # Promote everything
+wayward-promote --sync              # Rsync all _m.psarc from live/ to rocksmithytoo
 
-# Quarantine bad CDLC
-wayward-quarantine <filename>       # Move to quarantine (checks live/ then staging/)
+# Quarantine bad CDLC (+ remove from rocksmithytoo)
+wayward-quarantine <filename>       # Move to quarantine, rm from Mac
 wayward-quarantine --list           # List quarantined files
-wayward-quarantine --restore <file> # Restore from quarantine to live
+wayward-quarantine --restore <file> # Restore to live, SCP back to Mac
 ```
 
 ## Installation
