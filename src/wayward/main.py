@@ -143,43 +143,20 @@ class PsarcHandler(FileTypeHandler):
 
         return result_path
 
-    def remote_move_cdlc(self):
-        psarc_pattern = "_m.psarc"
+    def move_cdlc_to_staging(self):
+        STAGING_DEST = Path("/home/ahonnecke/nasty/music/Rocksmith_CDLC/staging")
 
-        logger.info("Moving CDLC to remote host")
-        REMOTE_DEST = "ahonnecke@rocksmithytoo:/Users/ahonnecke/dlc"
-        BACKUP_DEST = Path("/home/ahonnecke/nasty/music/Rocksmith_CDLC/unverified")
-
+        logger.info("Moving CDLC to NAS staging")
         for filename in os.listdir(self.BUILDSPACE):
-            filepath = f"{self.BUILDSPACE}/{filename}"
+            filepath = self.BUILDSPACE / filename
 
-            if psarc_pattern in filename:
-                scp_result = subprocess.run(
-                    ["scp", filepath, f"{REMOTE_DEST}/{filename}"],
-                    stdout=subprocess.PIPE,
-                    stderr=subprocess.PIPE,
-                )
-                if scp_result.returncode != 0:
-                    logger.error(
-                        f"scp failed for {filepath}: {scp_result.stderr.decode()}"
-                    )
-                    continue
-
-                cp_result = subprocess.run(
-                    ["cp", filepath, f"{BACKUP_DEST}/{filename}"],
-                    stdout=subprocess.PIPE,
-                    stderr=subprocess.PIPE,
-                )
-                if cp_result.returncode != 0:
-                    logger.error(
-                        f"backup cp failed for {filepath}: {cp_result.stderr.decode()}"
-                    )
-                    continue
-
-                logger.info(f"Copied {filepath} to remote host {REMOTE_DEST}.")
-
-            os.remove(filepath)
-            logger.info(f"Removed {filepath}.")
+            if ".psarc" in filename:
+                dest = STAGING_DEST / filename
+                shutil.move(str(filepath), str(dest))
+                logger.info(f"Moved {filepath} to {dest}")
+            else:
+                os.remove(filepath)
+                logger.info(f"Removed non-psarc {filepath}")
 
     def file_handler(self, path):
         file_path = Path(path)
@@ -194,7 +171,7 @@ class PsarcHandler(FileTypeHandler):
             stdout=subprocess.PIPE,
         )
         logger.info(f"Processed {fullpath} with pyrocksmith.")
-        self.remote_move_cdlc()
+        self.move_cdlc_to_staging()
 
 
 class ScreenshotHandler(FileTypeHandler):

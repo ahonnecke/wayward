@@ -10,6 +10,11 @@ requires-python = ">=3.8"
 readme = "README.md"
 license = {text = "MIT"}
 
+[project.scripts]
+wayward = "wayward.main:main"
+wayward-promote = "wayward.promote:main"
+wayward-quarantine = "wayward.quarantine:main"
+
 [build-system]
 requires = ["pdm-pep517>=1.0", "argdantic", "watchdog"]
 build-backend = "pdm.pep517.api"
