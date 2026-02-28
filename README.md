@@ -8,35 +8,57 @@
 
 - 📂 **Automatic file detection** in `~/Downloads`
 - ⏳ **Waits for file stabilization** to avoid processing incomplete downloads
-- 🎸 **Processes Rocksmith CDLC** with `pyrocksmith`, including renaming, moving, and remote deployment
+- 🎸 **Processes Rocksmith CDLC** with `pyrocksmith`, converts and stages to NAS
 - 🖼️ **Renames screenshots** using OCR to generate human-readable filenames
-- 📤 **Moves processed files** to a remote host (e.g., a Rocksmith machine)
+- 📦 **NAS-based CDLC pipeline** with staging/live/quarantine lifecycle
 - 🧹 **Cleans up local files** after processing to keep things tidy
 
-## Example Output
+## CDLC Pipeline
 
-```shell
-INFO:wayward:Received created or modified - ~/Downloads/Tears-For-Fears_Change_v3_p.psarc.
-INFO:wayward:File has stabilized at 3920142
-INFO:wayward:Handling file with PsarcHandler
-INFO:wayward:Processed with pyrocksmith.
-INFO:wayward:Moved CDLC to remote host
-INFO:wayward:Removed local copy
+The NAS (`nasty`) is the source of truth for Rocksmith CDLC. The pipeline:
+
+1. **Download** — `.psarc` lands in `~/Downloads`
+2. **wayward** — detects, converts with `pyrocksmith`, moves both `_m.psarc` and `_p.psarc` to NAS `staging/`
+3. **Play-test** — try songs in Rocksmith after promoting to `live/`
+4. **Promote** — `wayward-promote` moves files from `staging/` to `live/`
+5. **Quarantine** — `wayward-quarantine` isolates bad files
+
+### NAS Directory Structure
+
 ```
+/nasty/music/Rocksmith_CDLC/
+├── live/           # Verified, game-ready — rocksmithytoo mounts this via NFS
+├── staging/        # New downloads awaiting play-test
+└── quarantine/     # Files that crashed the game
+```
+
+rocksmithytoo mounts `live/` directly via NFS, so promoted files are immediately available to Rocksmith.
 
 ## Usage
 
 ```bash
 wayward --no-daemon   # Run in foreground, logs to console
 wayward --daemon      # Run in background (default)
-```
 
-You can also simulate a new file event by "touching" an existing file:
+# Promote CDLC from staging to live
+wayward-promote --list              # List staging files
+wayward-promote <filename>          # Promote specific file
+wayward-promote --all               # Promote everything
 
-```bash
-touch ~/Downloads/somefile.psarc
+# Quarantine bad CDLC
+wayward-quarantine <filename>       # Move to quarantine (checks live/ then staging/)
+wayward-quarantine --list           # List quarantined files
+wayward-quarantine --restore <file> # Restore from quarantine to live
 ```
 
 ## Installation
 
-Clone the repository and ensure dependencies are installed (such as `pyrocksmith`, `pytesseract`, etc.)
+Clone the repository and install with pip:
+
+```bash
+pip install -e .
+```
+
+This registers `wayward`, `wayward-promote`, and `wayward-quarantine` as CLI commands.
+
+Dependencies: `pyrocksmith`, `watchdog`, `psutil`, `setproctitle`, `python-daemon`.
