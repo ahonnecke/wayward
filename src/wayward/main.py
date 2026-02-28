@@ -144,7 +144,7 @@ class PsarcHandler(FileTypeHandler):
         return result_path
 
     def move_cdlc_to_staging(self):
-        STAGING_DEST = Path("/home/ahonnecke/nasty/music/Rocksmith_CDLC/staging")
+        from wayward.config import STAGING as STAGING_DEST
 
         logger.info("Moving CDLC to NAS staging")
         for filename in os.listdir(self.BUILDSPACE):

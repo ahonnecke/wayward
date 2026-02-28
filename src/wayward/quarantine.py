@@ -1,15 +1,47 @@
 #!/usr/bin/env python3
-"""Move CDLC files to quarantine on the NAS."""
+"""Move CDLC files to quarantine on the NAS, and sync removals/restores to rocksmithytoo."""
 
 import argparse
 import shutil
+import subprocess
 import sys
-from pathlib import Path
 
-CDLC_ROOT = Path("/home/ahonnecke/nasty/music/Rocksmith_CDLC")
-STAGING = CDLC_ROOT / "staging"
-LIVE = CDLC_ROOT / "live"
-QUARANTINE = CDLC_ROOT / "quarantine"
+from wayward.config import LIVE, QUARANTINE, REMOTE_DLC, REMOTE_HOST, STAGING
+
+
+def rm_from_remote(filename: str):
+    """SSH rm a _m.psarc file from rocksmithytoo Steam DLC dir."""
+    if not filename.endswith("_m.psarc"):
+        return
+    remote_path = f"{REMOTE_DLC}{filename}"
+    result = subprocess.run(
+        ["ssh", REMOTE_HOST, "rm", "-f", remote_path],
+        capture_output=True,
+        text=True,
+    )
+    if result.returncode == 0:
+        print(f"  removed from rocksmithytoo: {filename}")
+    else:
+        print(
+            f"  ssh rm failed for {filename}: {result.stderr.strip()}", file=sys.stderr
+        )
+
+
+def scp_to_remote(filename: str):
+    """SCP a single _m.psarc file to the rocksmithytoo Steam DLC dir."""
+    if not filename.endswith("_m.psarc"):
+        return
+    src = LIVE / filename
+    dest = f"{REMOTE_HOST}:{REMOTE_DLC}"
+    result = subprocess.run(
+        ["scp", str(src), dest],
+        capture_output=True,
+        text=True,
+    )
+    if result.returncode == 0:
+        print(f"  synced to rocksmithytoo: {filename}")
+    else:
+        print(f"  scp failed for {filename}: {result.stderr.strip()}", file=sys.stderr)
 
 
 def list_quarantined():
@@ -32,6 +64,7 @@ def quarantine(filenames: list[str]):
         dest = QUARANTINE / name
         shutil.move(str(src), str(dest))
         print(f"Quarantined: {name} (from {src.parent.name}/)")
+        rm_from_remote(name)
 
 
 def restore(filenames: list[str]):
@@ -43,6 +76,7 @@ def restore(filenames: list[str]):
         dest = LIVE / name
         shutil.move(str(src), str(dest))
         print(f"Restored to live: {name}")
+        scp_to_remote(name)
 
 
 def main():
