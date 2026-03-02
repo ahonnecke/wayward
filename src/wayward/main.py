@@ -9,6 +9,7 @@ import os
 import re
 import shutil
 import subprocess
+import sys
 import time
 from pathlib import Path
 import setproctitle
@@ -29,11 +30,18 @@ class Watcher:
         self.event_handler = handler
 
     def run(self):
-        self.observer.schedule(self.event_handler, self.dirpath, recursive=True)
+        self.observer.schedule(self.event_handler, self.dirpath, recursive=False)
         self.observer.start()
         try:
             while True:
                 time.sleep(5)
+                if not self.observer.is_alive():
+                    logger.error("Observer thread died, restarting...")
+                    self.observer = Observer()
+                    self.observer.schedule(
+                        self.event_handler, self.dirpath, recursive=False
+                    )
+                    self.observer.start()
         except KeyboardInterrupt:
             logger.info("Received interrupt, shutting down...")
         except Exception as e:
@@ -238,29 +246,36 @@ class Handler(FileSystemEventHandler):
     def wait_for_file(self, file_path):
         """Wait for file size to stabilize, return final size."""
         historical_size = -1
-        while historical_size != os.path.getsize(str(file_path)):
-            historical_size = os.path.getsize(str(file_path))
+        while True:
+            try:
+                current_size = os.path.getsize(str(file_path))
+            except FileNotFoundError:
+                return 0
+            if current_size == historical_size:
+                return historical_size
+            historical_size = current_size
             time.sleep(1)
-        return historical_size
 
     def handle_created(self, event):
-        file_path = Path(event.src_path).resolve()
-        if not file_path.is_file():
-            # event was deletion or move
-            return
+        try:
+            file_path = Path(event.src_path).resolve()
+            if not file_path.is_file():
+                return
 
-        if file_path.suffix == ".part" or file_path.name.endswith(".part"):
-            # Firefox partial download, ignore.
-            return
+            if file_path.suffix == ".part" or file_path.name.endswith(".part"):
+                return
 
-        historical_size = self.wait_for_file(file_path)
-        logger.info(f"File {file_path} has stabilized at {historical_size}")
+            historical_size = self.wait_for_file(file_path)
+            logger.info(f"File {file_path} has stabilized at {historical_size}")
 
-        if historical_size < 1:
-            return
+            if historical_size < 1:
+                return
 
-        for handler in self.file_handlers:
-            handler.handle(file_path)
+            for handler in self.file_handlers:
+                handler.handle(file_path)
+        except Exception as e:
+            logger.error(f"Error handling {event.src_path}: {e}")
+            logger.exception(e)
 
 
 def ensure_process_is_not_running(process_name: str) -> None:
@@ -268,22 +283,30 @@ def ensure_process_is_not_running(process_name: str) -> None:
     for process in psutil.process_iter():
         if process.pid != mypid:
             try:
-                _ = process.cmdline()
+                cmdline = process.cmdline()
             except psutil.NoSuchProcess:
                 continue
 
-            for path in _:
+            for path in cmdline:
                 if process_name == path:
-                    logger.info("daemon already running, exiting...")
+                    msg = f"daemon already running (pid {process.pid}), exiting..."
+                    logger.info(msg)
+                    print(msg, file=sys.stderr)
                     exit(-2)
 
 
-def main():
-    """Entrypoint for wayward, file download handler."""
+def setup_logging(foreground=False):
+    """Configure logging handlers. Must be called after DaemonContext."""
+    logger.setLevel(logging.INFO)
+    logger.addHandler(logging.handlers.SysLogHandler(address="/dev/log"))
+    logger.addHandler(logging.FileHandler(os.path.join("/tmp/", f"{NAME}.log"), "a+"))
 
-    setproctitle.setproctitle(NAME)
-    ensure_process_is_not_running(NAME)
+    if foreground:
+        logger.addHandler(logging.StreamHandler(sys.stderr))
 
+
+def run():
+    """Watch for file events and dispatch to handlers."""
     w = Watcher(
         Path("/home/ahonnecke/Downloads/"),
         Handler(
@@ -309,16 +332,10 @@ def main():
         logger.error(e)
 
 
-if __name__ == "__main__":
-    logging.basicConfig(level=logging.INFO)
-    handler = logging.handlers.SysLogHandler(address="/dev/log")
-    logger.addHandler(handler)
-
-    tmphandler = logging.FileHandler(os.path.join("/tmp/", f"{NAME}.log"), "a+")
-    logger.addHandler(tmphandler)
-
+def main():
+    """Entrypoint for wayward, file download handler."""
     parser = argparse.ArgumentParser(
-        description="Watch for new files in a directory and process them accoringly."
+        description="Watch for new files in a directory and process them accordingly."
     )
     parser.add_argument(
         "--daemon",
@@ -328,8 +345,13 @@ if __name__ == "__main__":
     )
     args = parser.parse_args()
 
+    setproctitle.setproctitle(NAME)
+    ensure_process_is_not_running(NAME)
+
     if args.daemon:
         with daemon.DaemonContext():
-            main()
+            setup_logging()
+            run()
     else:
-        main()
+        setup_logging(foreground=True)
+        run()
