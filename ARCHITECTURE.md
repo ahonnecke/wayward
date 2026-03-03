@@ -22,7 +22,7 @@ Handler (FileSystemEventHandler)
            │     └─ ~/Downloads/images/YYYY-MM-DD/
            │
            ├─ PsarcHandler  (*.psarc - Rocksmith CDLC)
-           │     └─ pyrocksmith --convert → scp to rocksmithytoo + NAS backup
+           │     └─ pyrocksmith --convert → NAS staging/
            │
            ├─ QmkHandler  (*.bin - keyboard firmware)
            │     └─ ~/qmk/
@@ -33,26 +33,35 @@ Handler (FileSystemEventHandler)
 
 ## Key Implementation Details
 
-| Component                        | Location          | Function                                                 |
-| -------------------------------- | ----------------- | -------------------------------------------------------- |
-| `Watcher`                        | `main.py:24-40`   | Observer lifecycle, 5s poll loop                         |
-| `Handler`                        | `main.py:224-288` | Event filtering, file stabilization                      |
-| `FileTypeHandler`                | `main.py:43-120`  | Base class with `sanitize_file()`, `is_image()`, helpers |
-| `PsarcHandler`                   | `main.py:122-174` | CDLC processing pipeline                                 |
-| `ScreenshotHandler`              | `main.py:176-194` | Date-organized screenshots with AI rename                |
-| `ocr_image.py`                   | `/src/wayward/`   | pytesseract wrapper → `.ocr.txt` sidecar                 |
-| `rename_picure_from_contents.py` | `/src/wayward/`   | LLaVA 7B image captioning → filename                     |
+| Component           | Location  | Function                                                 |
+| ------------------- | --------- | -------------------------------------------------------- |
+| `main()`            | `main.py` | CLI entrypoint: arg parsing, logging, daemon/foreground  |
+| `run()`             | `main.py` | Creates Watcher + handlers, starts event loop            |
+| `Watcher`           | `main.py` | Observer lifecycle, 5s health-check loop, auto-restart   |
+| `Handler`           | `main.py` | Event filtering, file stabilization, exception guarding  |
+| `FileTypeHandler`   | `main.py` | Base class with `sanitize_file()`, `is_image()`, helpers |
+| `PsarcHandler`      | `main.py` | CDLC: pyrocksmith convert → NAS staging                  |
+| `ScreenshotHandler` | `main.py` | Date-organized screenshots with AI rename + OCR          |
+
+## Entrypoint Structure
+
+`pyproject.toml` registers `wayward = "wayward.main:main"`. The `main()` function handles
+arg parsing (`--daemon`/`--no-daemon`), logging setup, and daemon context. The `run()`
+function creates the Watcher and enters the event loop. Logging must be set up inside
+`DaemonContext` to survive the fork's fd cleanup.
+
+## Observer Resilience
+
+The Watcher polls `observer.is_alive()` every 5 seconds and auto-restarts a dead observer.
+The `handle_created` method wraps all processing in a try/except so a single file error
+cannot crash the observer thread. `wait_for_file` handles `FileNotFoundError` for files
+that vanish mid-download. Downloads is watched non-recursively to avoid inotify flooding
+from subdirectories.
 
 ## File Stabilization Logic
 
-```python
-# main.py:248-254
-while historicalSize != os.path.getsize(file_path):
-    historicalSize = os.path.getsize(file_path)
-    time.sleep(1)
-```
-
-This prevents processing incomplete downloads. Firefox `.part` files are also explicitly skipped.
+Polls file size at 1-second intervals until stable. Returns 0 if the file disappears.
+Firefox `.part` files are explicitly skipped.
 
 ## External Dependencies
 
@@ -64,13 +73,13 @@ This prevents processing incomplete downloads. Firefox `.part` files are also ex
 
 ## Remote Integration
 
-CDLC files get `scp`'d to `ahonnecke@rocksmithytoo:/Users/ahonnecke/dlc/` and backed up to `~/nasty/music/Rocksmith_CDLC/unverified`.
+CDLC files are staged to `~/nasty/music/Rocksmith_CDLC/staging/`, then promoted to `live/` via `wayward-promote` which SCPs `_m.psarc` files to rocksmithytoo's local Steam DLC dir.
 
 ## Usage
 
 ```bash
-wayward --no-daemon   # foreground, stdout logging
-wayward --daemon      # default, daemonized
+wayward --no-daemon   # foreground, logs to stderr + file + syslog
+wayward               # default, daemonized, logs to file + syslog
 ```
 
-Logs to `/dev/log` (syslog) and `/tmp/wayward.log`.
+Logs to `/dev/log` (syslog) and `/tmp/wayward.log`. `--no-daemon` additionally logs to stderr.
