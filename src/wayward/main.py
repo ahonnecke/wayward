@@ -197,10 +197,6 @@ class ScreenshotHandler(FileTypeHandler):
         new_path = Path(os.path.join(dirname, path.name))
         shutil.move(path, new_path)
 
-        # Screenshot from flameshot
-        better_name = self.rename_picture_from_contents(new_path)
-        self.ocr_picture(better_name)
-
 
 class ImageHandler(FileTypeHandler):
     def __init__(self):
