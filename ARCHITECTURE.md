@@ -16,7 +16,7 @@ Handler (FileSystemEventHandler)
     └─ Routes to registered FileTypeHandlers
            │
            ├─ ScreenshotHandler  (shot_*.{png,jpg,...})
-           │     └─ ~/screenshots/YYYY-MM-DD/ + LLM rename + OCR
+           │     └─ ~/screenshots/YYYY-MM-DD/
            │
            ├─ ImageHandler  (*.{png,jpg,...} except screenshots)
            │     └─ ~/Downloads/images/YYYY-MM-DD/
@@ -41,7 +41,7 @@ Handler (FileSystemEventHandler)
 | `Handler`           | `main.py` | Event filtering, file stabilization, exception guarding  |
 | `FileTypeHandler`   | `main.py` | Base class with `sanitize_file()`, `is_image()`, helpers |
 | `PsarcHandler`      | `main.py` | CDLC: pyrocksmith convert → NAS staging                  |
-| `ScreenshotHandler` | `main.py` | Date-organized screenshots with AI rename + OCR          |
+| `ScreenshotHandler` | `main.py` | Date-organized screenshots                               |
 
 ## Entrypoint Structure
 
@@ -66,8 +66,6 @@ Firefox `.part` files are explicitly skipped.
 ## External Dependencies
 
 - **pyrocksmith**: CDLC conversion (`~/.pyenv/shims/pyrocksmith`)
-- **llava-v1.5-7b-q4.llamafile**: Local LLM for image description (`~/local/bin/`)
-- **pytesseract**: OCR (Tesseract wrapper)
 - **watchdog**: Filesystem events
 - **psutil**: Duplicate process detection
 
