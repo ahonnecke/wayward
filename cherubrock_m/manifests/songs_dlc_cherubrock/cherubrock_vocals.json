@@ -1,0 +1,57 @@
+{
+  "Entries": {
+    "FFD00941C6769AEF44B36CAF650898F7": {
+      "Attributes": {
+        "AlbumArt": "urn:image:dds:album_cherubrock",
+        "ArrangementName": "Vocals",
+        "ArrangementSort": 0,
+        "BlockAsset": "urn:emergent-world:cherubrock",
+        "DLC": true,
+        "DLCKey": "CherubRock",
+        "DynamicVisualDensity": [
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "FullName": "CherubRock_Vocals",
+        "InputEvent": "Play_Tone_Standard_Mic",
+        "LeaderboardChallengeRating": 0,
+        "ManifestUrn": "urn:database:json-db:cherubrock_vocals",
+        "MasterID_PS3": -1,
+        "MasterID_RDV": 30003,
+        "MasterID_XBox360": -1,
+        "PreviewBankPath": "song_cherubrock_preview.bnk",
+        "RelativeDifficulty": 0,
+        "Shipping": true,
+        "ShowlightsXML": "urn:application:xml:cherubrock_showlights",
+        "SKU": "RS2",
+        "SongAsset": "urn:application:musicgame-song:cherubrock_vocals",
+        "SongBank": "song_cherubrock.bnk",
+        "SongEvent": "Play_CherubRock",
+        "SongKey": "CherubRock",
+        "SongXml": "urn:application:xml:cherubrock_vocals",
+        "PersistentID": "FFD00941C6769AEF44B36CAF650898F7"
+      }
+    }
+  },
+  "ModelName": "RSEnumerable_Song",
+  "IterationVersion": 2,
+  "InsertRoot": "Static.Songs.Entries"
+}

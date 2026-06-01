@@ -1,0 +1,3040 @@
+{
+  "Entries": {
+    "66B74E25D7F82FAEAED532D7F6AC2B81": {
+      "Attributes": {
+        "AlbumArt": "urn:image:dds:album_cherubrock",
+        "AlbumName": "Siamese Dream",
+        "AlbumNameSort": "Siamese Dream",
+        "ArrangementName": "Combo",
+        "ArrangementProperties": {
+          "represent": 1,
+          "bonusArr": 0,
+          "standardTuning": 1,
+          "nonStandardChords": 0,
+          "barreChords": 0,
+          "powerChords": 0,
+          "dropDPower": 0,
+          "openChords": 1,
+          "fingerPicking": 0,
+          "pickDirection": 0,
+          "doubleStops": 1,
+          "palmMutes": 0,
+          "harmonics": 0,
+          "pinchHarmonics": 1,
+          "hopo": 1,
+          "tremolo": 1,
+          "slides": 1,
+          "unpitchedSlides": 1,
+          "bends": 1,
+          "tapping": 0,
+          "vibrato": 1,
+          "fretHandMutes": 1,
+          "slapPop": 0,
+          "twoFingerPicking": 0,
+          "fifthsAndOctaves": 0,
+          "syncopation": 0,
+          "bassPick": 0,
+          "sustain": 1,
+          "pathLead": 0,
+          "pathRhythm": 1,
+          "pathBass": 0,
+          "routeMask": 2
+        },
+        "ArrangementSort": 0,
+        "ArrangementType": 2,
+        "ArtistName": "The Smashing Pumpkins",
+        "ArtistNameSort": "Smashing Pumpkins",
+        "BlockAsset": "urn:emergent-world:cherubrock",
+        "CentOffset": 0.0,
+        "Chords": {
+          "5": {
+            "10": [
+              17
+            ],
+            "15": [
+              17
+            ],
+            "16": [
+              17
+            ],
+            "17": [
+              17
+            ],
+            "18": [
+              17
+            ],
+            "19": [
+              17
+            ],
+            "20": [
+              17
+            ],
+            "21": [
+              17
+            ],
+            "22": [
+              17
+            ],
+            "23": [
+              17
+            ],
+            "24": [
+              17
+            ],
+            "25": [
+              17
+            ]
+          },
+          "6": {
+            "10": [
+              8
+            ],
+            "15": [
+              8
+            ],
+            "16": [
+              8
+            ],
+            "17": [
+              8
+            ],
+            "18": [
+              8
+            ],
+            "19": [
+              8
+            ],
+            "20": [
+              8
+            ],
+            "21": [
+              8
+            ],
+            "22": [
+              8
+            ],
+            "23": [
+              8
+            ],
+            "24": [
+              8
+            ],
+            "25": [
+              8
+            ]
+          },
+          "7": {
+            "10": [
+              8
+            ],
+            "15": [
+              8
+            ],
+            "16": [
+              8
+            ],
+            "17": [
+              8
+            ],
+            "18": [
+              8
+            ],
+            "19": [
+              8
+            ],
+            "20": [
+              8
+            ],
+            "21": [
+              8
+            ],
+            "22": [
+              8
+            ],
+            "23": [
+              8
+            ],
+            "24": [
+              8
+            ],
+            "25": [
+              8
+            ]
+          },
+          "8": {
+            "10": [
+              8
+            ],
+            "15": [
+              8
+            ],
+            "16": [
+              8
+            ],
+            "17": [
+              8
+            ],
+            "18": [
+              8
+            ],
+            "19": [
+              8
+            ],
+            "20": [
+              8
+            ],
+            "21": [
+              8
+            ],
+            "22": [
+              8
+            ],
+            "23": [
+              8
+            ],
+            "24": [
+              8
+            ],
+            "25": [
+              8
+            ],
+            "27": [
+              8
+            ]
+          },
+          "9": {
+            "10": [
+              6,
+              7,
+              4
+            ],
+            "15": [
+              6,
+              7,
+              4
+            ],
+            "16": [
+              6,
+              7,
+              4
+            ],
+            "17": [
+              6,
+              7,
+              4
+            ],
+            "18": [
+              6,
+              7,
+              4
+            ],
+            "19": [
+              6,
+              7,
+              4
+            ],
+            "20": [
+              6,
+              7,
+              4
+            ],
+            "21": [
+              6,
+              7,
+              4
+            ],
+            "22": [
+              6,
+              7,
+              4
+            ],
+            "23": [
+              6,
+              7,
+              4
+            ],
+            "24": [
+              6,
+              7,
+              4
+            ]
+          },
+          "10": {
+            "10": [
+              6,
+              7,
+              4
+            ],
+            "15": [
+              6,
+              7,
+              4
+            ],
+            "16": [
+              6,
+              7,
+              4
+            ],
+            "17": [
+              6,
+              7,
+              4
+            ],
+            "18": [
+              6,
+              7,
+              4
+            ],
+            "19": [
+              6,
+              7,
+              4
+            ],
+            "20": [
+              6,
+              7,
+              4
+            ],
+            "21": [
+              6,
+              7,
+              4
+            ],
+            "22": [
+              6,
+              7,
+              4
+            ],
+            "23": [
+              6,
+              7,
+              4
+            ],
+            "24": [
+              6,
+              7,
+              4
+            ]
+          },
+          "11": {
+            "9": [
+              6,
+              7,
+              4,
+              5
+            ],
+            "10": [
+              6,
+              7,
+              4,
+              5
+            ],
+            "14": [
+              6,
+              7,
+              4,
+              5
+            ],
+            "15": [
+              6,
+              7,
+              4,
+              5
+            ],
+            "16": [
+              6,
+              7,
+              4,
+              5
+            ],
+            "17": [
+              6,
+              7,
+              4,
+              5
+            ],
+            "18": [
+              6,
+              7,
+              4,
+              5
+            ],
+            "19": [
+              6,
+              7,
+              4,
+              5
+            ],
+            "20": [
+              6,
+              7,
+              4,
+              5
+            ],
+            "21": [
+              6,
+              7,
+              4,
+              5
+            ],
+            "22": [
+              6,
+              7,
+              4,
+              5
+            ],
+            "23": [
+              6,
+              7,
+              4,
+              5
+            ],
+            "24": [
+              6,
+              7,
+              4,
+              5
+            ]
+          },
+          "12": {
+            "9": [
+              6,
+              7,
+              4,
+              5,
+              15
+            ],
+            "10": [
+              6,
+              7,
+              4,
+              5,
+              15
+            ],
+            "14": [
+              6,
+              7,
+              4,
+              5,
+              15
+            ],
+            "15": [
+              6,
+              7,
+              4,
+              5,
+              15
+            ],
+            "16": [
+              6,
+              7,
+              4,
+              5,
+              15
+            ],
+            "17": [
+              6,
+              7,
+              4,
+              5,
+              15
+            ],
+            "18": [
+              6,
+              7,
+              4,
+              5,
+              15
+            ],
+            "19": [
+              6,
+              7,
+              4,
+              5,
+              15
+            ],
+            "20": [
+              6,
+              7,
+              4,
+              5,
+              15
+            ],
+            "21": [
+              6,
+              7,
+              4,
+              5,
+              15
+            ],
+            "22": [
+              6,
+              7,
+              4,
+              5,
+              15
+            ],
+            "23": [
+              6,
+              7,
+              4,
+              5,
+              15
+            ],
+            "24": [
+              6,
+              7,
+              4,
+              5,
+              15
+            ]
+          },
+          "13": {
+            "9": [
+              8,
+              6,
+              7,
+              4,
+              5
+            ],
+            "10": [
+              8,
+              6,
+              7,
+              4,
+              5
+            ],
+            "14": [
+              8,
+              6,
+              7,
+              4,
+              5
+            ],
+            "15": [
+              8,
+              6,
+              7,
+              4,
+              5
+            ],
+            "16": [
+              8,
+              6,
+              7,
+              4,
+              5
+            ],
+            "17": [
+              8,
+              6,
+              7,
+              4,
+              5
+            ],
+            "18": [
+              8,
+              6,
+              7,
+              4,
+              5
+            ],
+            "19": [
+              8,
+              6,
+              7,
+              4,
+              5
+            ],
+            "20": [
+              8,
+              6,
+              7,
+              4,
+              5
+            ],
+            "21": [
+              8,
+              6,
+              7,
+              4,
+              5
+            ],
+            "22": [
+              8,
+              6,
+              7,
+              4,
+              5
+            ],
+            "23": [
+              8,
+              6,
+              7,
+              4,
+              5
+            ],
+            "24": [
+              8,
+              6,
+              7,
+              4,
+              5
+            ]
+          },
+          "14": {
+            "9": [],
+            "10": [],
+            "14": [],
+            "15": [],
+            "16": [],
+            "17": [],
+            "18": [],
+            "19": [],
+            "20": [],
+            "21": [],
+            "22": [],
+            "23": [],
+            "24": [],
+            "25": []
+          },
+          "15": {
+            "9": [],
+            "10": [],
+            "14": [],
+            "15": [],
+            "16": [],
+            "17": [],
+            "18": [],
+            "19": [],
+            "20": [],
+            "21": [],
+            "22": [],
+            "23": [],
+            "24": [],
+            "25": []
+          },
+          "16": {
+            "9": [
+              8,
+              6,
+              7,
+              4,
+              5
+            ],
+            "10": [
+              8,
+              6,
+              7,
+              4,
+              5
+            ],
+            "14": [
+              8,
+              6,
+              7,
+              4,
+              5
+            ],
+            "15": [
+              8,
+              6,
+              7,
+              4,
+              5
+            ],
+            "16": [
+              8,
+              6,
+              7,
+              4,
+              5
+            ],
+            "17": [
+              8,
+              6,
+              7,
+              4,
+              5
+            ],
+            "18": [
+              8,
+              6,
+              7,
+              4,
+              5
+            ],
+            "19": [
+              8,
+              6,
+              7,
+              4,
+              5
+            ],
+            "20": [
+              8,
+              6,
+              7,
+              4,
+              5
+            ],
+            "21": [
+              8,
+              6,
+              7,
+              4,
+              5
+            ],
+            "22": [
+              8,
+              6,
+              7,
+              4,
+              5
+            ],
+            "23": [
+              8,
+              6,
+              7,
+              4,
+              5
+            ],
+            "24": [
+              8,
+              6,
+              7,
+              4,
+              5
+            ]
+          },
+          "17": {
+            "5": [
+              6,
+              7
+            ],
+            "7": [
+              6,
+              7
+            ],
+            "8": [
+              6,
+              7
+            ],
+            "9": [
+              6,
+              7
+            ],
+            "12": [
+              6,
+              7
+            ],
+            "13": [
+              6,
+              7
+            ],
+            "14": [
+              6,
+              7
+            ],
+            "18": [
+              6,
+              7
+            ],
+            "19": [
+              6,
+              7
+            ]
+          },
+          "18": {
+            "5": [
+              6,
+              7
+            ],
+            "7": [
+              6,
+              7
+            ],
+            "8": [
+              6,
+              7
+            ],
+            "9": [
+              6,
+              7
+            ],
+            "12": [
+              6,
+              7
+            ],
+            "13": [
+              6,
+              7
+            ],
+            "14": [
+              6,
+              7
+            ],
+            "18": [
+              6,
+              7
+            ],
+            "19": [
+              6,
+              7
+            ]
+          },
+          "19": {
+            "5": [
+              6,
+              7
+            ],
+            "7": [
+              6,
+              7
+            ],
+            "8": [
+              6,
+              7
+            ],
+            "9": [
+              6,
+              7
+            ],
+            "12": [
+              6,
+              7
+            ],
+            "13": [
+              6,
+              7
+            ],
+            "14": [
+              6,
+              7
+            ],
+            "18": [
+              6,
+              7
+            ],
+            "19": [
+              6,
+              7
+            ]
+          }
+        },
+        "ChordTemplates": [
+          {
+            "ChordId": 4,
+            "ChordName": "C",
+            "Fingers": [
+              -1,
+              3,
+              2,
+              -1,
+              1,
+              -1
+            ],
+            "Frets": [
+              -1,
+              3,
+              2,
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "ChordId": 5,
+            "ChordName": "G",
+            "Fingers": [
+              2,
+              1,
+              -1,
+              -1,
+              3,
+              4
+            ],
+            "Frets": [
+              3,
+              2,
+              0,
+              0,
+              3,
+              3
+            ]
+          },
+          {
+            "ChordId": 6,
+            "ChordName": "D",
+            "Fingers": [
+              -1,
+              -1,
+              -1,
+              1,
+              3,
+              2
+            ],
+            "Frets": [
+              -1,
+              -1,
+              0,
+              2,
+              3,
+              2
+            ]
+          },
+          {
+            "ChordId": 7,
+            "ChordName": "A",
+            "Fingers": [
+              -1,
+              -1,
+              1,
+              2,
+              3,
+              -1
+            ],
+            "Frets": [
+              -1,
+              0,
+              2,
+              2,
+              2,
+              -1
+            ]
+          },
+          {
+            "ChordId": 8,
+            "ChordName": "E",
+            "Fingers": [
+              -1,
+              2,
+              3,
+              1,
+              -1,
+              -1
+            ],
+            "Frets": [
+              0,
+              2,
+              2,
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "ChordId": 12,
+            "ChordName": "D5",
+            "Fingers": [
+              -1,
+              -1,
+              -1,
+              1,
+              3,
+              -1
+            ],
+            "Frets": [
+              -1,
+              -1,
+              0,
+              2,
+              3,
+              -1
+            ]
+          },
+          {
+            "ChordId": 13,
+            "ChordName": "C",
+            "Fingers": [
+              -1,
+              3,
+              2,
+              -1,
+              -1,
+              -1
+            ],
+            "Frets": [
+              -1,
+              3,
+              2,
+              0,
+              -1,
+              -1
+            ]
+          },
+          {
+            "ChordId": 15,
+            "ChordName": "E5",
+            "Fingers": [
+              -1,
+              2,
+              3,
+              -1,
+              -1,
+              -1
+            ],
+            "Frets": [
+              0,
+              2,
+              2,
+              -1,
+              -1,
+              -1
+            ]
+          },
+          {
+            "ChordId": 17,
+            "ChordName": "E",
+            "Fingers": [
+              -1,
+              2,
+              3,
+              1,
+              -1,
+              -1
+            ],
+            "Frets": [
+              0,
+              2,
+              2,
+              1,
+              -1,
+              -1
+            ]
+          },
+          {
+            "ChordId": 21,
+            "ChordName": "C",
+            "Fingers": [
+              -1,
+              3,
+              2,
+              -1,
+              1,
+              -1
+            ],
+            "Frets": [
+              -1,
+              3,
+              2,
+              0,
+              1,
+              -1
+            ]
+          }
+        ],
+        "DLC": true,
+        "DLCKey": "CherubRock",
+        "DNA_Chords": 253.084,
+        "DNA_Riffs": 292.442,
+        "DNA_Solo": 0.0,
+        "DynamicVisualDensity": [
+          4.5,
+          4.3,
+          4.1,
+          3.9,
+          3.7,
+          3.4,
+          3.1,
+          2.8,
+          2.5,
+          2.2,
+          1.9,
+          1.7,
+          1.5,
+          1.3,
+          1.3,
+          1.3,
+          1.3,
+          1.3,
+          1.3,
+          1.3
+        ],
+        "EasyMastery": 0.200518578,
+        "FullName": "CherubRock_Combo2",
+        "LastConversionDateTime": "08-1-13 15:18",
+        "LeaderboardChallengeRating": 0,
+        "ManifestUrn": "urn:database:json-db:cherubrock_combo2",
+        "MasterID_PS3": -1,
+        "MasterID_RDV": 30002,
+        "MasterID_XBox360": -1,
+        "MaxPhraseDifficulty": 19,
+        "MediumMastery": 0.354364723,
+        "NotesEasy": 232.0,
+        "NotesHard": 1157.0,
+        "NotesMedium": 410.0,
+        "PhraseIterations": [
+          {
+            "PhraseIndex": 0,
+            "MaxDifficulty": 0,
+            "Name": "INTROBAR",
+            "StartTime": 10.0,
+            "EndTime": 15.289
+          },
+          {
+            "PhraseIndex": 1,
+            "MaxDifficulty": 12,
+            "Name": "A",
+            "StartTime": 15.289,
+            "EndTime": 23.898
+          },
+          {
+            "PhraseIndex": 1,
+            "MaxDifficulty": 12,
+            "Name": "A",
+            "StartTime": 23.898,
+            "EndTime": 32.372
+          },
+          {
+            "PhraseIndex": 6,
+            "MaxDifficulty": 13,
+            "Name": "AA",
+            "StartTime": 32.372,
+            "EndTime": 40.712
+          },
+          {
+            "PhraseIndex": 1,
+            "MaxDifficulty": 12,
+            "Name": "A",
+            "StartTime": 40.712,
+            "EndTime": 49.063
+          },
+          {
+            "PhraseIndex": 2,
+            "MaxDifficulty": 19,
+            "Name": "B",
+            "StartTime": 49.063,
+            "EndTime": 57.394
+          },
+          {
+            "PhraseIndex": 3,
+            "MaxDifficulty": 15,
+            "Name": "BB",
+            "StartTime": 57.394,
+            "EndTime": 68.58
+          },
+          {
+            "PhraseIndex": 2,
+            "MaxDifficulty": 19,
+            "Name": "B",
+            "StartTime": 68.58,
+            "EndTime": 76.902
+          },
+          {
+            "PhraseIndex": 2,
+            "MaxDifficulty": 19,
+            "Name": "B",
+            "StartTime": 76.902,
+            "EndTime": 85.251
+          },
+          {
+            "PhraseIndex": 2,
+            "MaxDifficulty": 19,
+            "Name": "B",
+            "StartTime": 85.251,
+            "EndTime": 93.583
+          },
+          {
+            "PhraseIndex": 7,
+            "MaxDifficulty": 16,
+            "Name": "CCC",
+            "StartTime": 93.583,
+            "EndTime": 112.593
+          },
+          {
+            "PhraseIndex": 3,
+            "MaxDifficulty": 15,
+            "Name": "BB",
+            "StartTime": 112.593,
+            "EndTime": 123.734
+          },
+          {
+            "PhraseIndex": 2,
+            "MaxDifficulty": 19,
+            "Name": "B",
+            "StartTime": 123.734,
+            "EndTime": 132.047
+          },
+          {
+            "PhraseIndex": 2,
+            "MaxDifficulty": 19,
+            "Name": "B",
+            "StartTime": 132.047,
+            "EndTime": 140.37
+          },
+          {
+            "PhraseIndex": 2,
+            "MaxDifficulty": 19,
+            "Name": "B",
+            "StartTime": 140.37,
+            "EndTime": 148.675
+          },
+          {
+            "PhraseIndex": 7,
+            "MaxDifficulty": 16,
+            "Name": "CCC",
+            "StartTime": 148.675,
+            "EndTime": 166.973
+          },
+          {
+            "PhraseIndex": 7,
+            "MaxDifficulty": 16,
+            "Name": "CCC",
+            "StartTime": 166.973,
+            "EndTime": 178.715
+          },
+          {
+            "PhraseIndex": 7,
+            "MaxDifficulty": 16,
+            "Name": "CCC",
+            "StartTime": 178.715,
+            "EndTime": 189.656
+          },
+          {
+            "PhraseIndex": 1,
+            "MaxDifficulty": 12,
+            "Name": "A",
+            "StartTime": 189.656,
+            "EndTime": 200.45
+          },
+          {
+            "PhraseIndex": 8,
+            "MaxDifficulty": 19,
+            "Name": "Cz",
+            "StartTime": 200.45,
+            "EndTime": 211.529
+          },
+          {
+            "PhraseIndex": 8,
+            "MaxDifficulty": 19,
+            "Name": "Cz",
+            "StartTime": 211.529,
+            "EndTime": 219.7
+          },
+          {
+            "PhraseIndex": 7,
+            "MaxDifficulty": 16,
+            "Name": "CCC",
+            "StartTime": 219.7,
+            "EndTime": 233.207
+          },
+          {
+            "PhraseIndex": 7,
+            "MaxDifficulty": 16,
+            "Name": "CCC",
+            "StartTime": 233.207,
+            "EndTime": 243.948
+          },
+          {
+            "PhraseIndex": 7,
+            "MaxDifficulty": 16,
+            "Name": "CCC",
+            "StartTime": 243.948,
+            "EndTime": 259.401
+          },
+          {
+            "PhraseIndex": 7,
+            "MaxDifficulty": 16,
+            "Name": "CCC",
+            "StartTime": 259.401,
+            "EndTime": 271.022
+          },
+          {
+            "PhraseIndex": 7,
+            "MaxDifficulty": 16,
+            "Name": "CCC",
+            "StartTime": 271.022,
+            "EndTime": 281.897
+          },
+          {
+            "PhraseIndex": 3,
+            "MaxDifficulty": 15,
+            "Name": "BB",
+            "StartTime": 281.897,
+            "EndTime": 292.931
+          },
+          {
+            "PhraseIndex": 3,
+            "MaxDifficulty": 15,
+            "Name": "BB",
+            "StartTime": 292.931,
+            "EndTime": 302.934
+          },
+          {
+            "PhraseIndex": 4,
+            "MaxDifficulty": 8,
+            "Name": "F",
+            "StartTime": 302.934,
+            "EndTime": 306.944
+          },
+          {
+            "PhraseIndex": 5,
+            "MaxDifficulty": 0,
+            "Name": "END",
+            "StartTime": 306.944,
+            "EndTime": 307.731
+          }
+        ],
+        "Phrases": [
+          {
+            "MaxDifficulty": 0,
+            "Name": "INTROBAR",
+            "IterationCount": 1
+          },
+          {
+            "MaxDifficulty": 12,
+            "Name": "A",
+            "IterationCount": 4
+          },
+          {
+            "MaxDifficulty": 19,
+            "Name": "B",
+            "IterationCount": 7
+          },
+          {
+            "MaxDifficulty": 15,
+            "Name": "BB",
+            "IterationCount": 4
+          },
+          {
+            "MaxDifficulty": 8,
+            "Name": "F",
+            "IterationCount": 1
+          },
+          {
+            "MaxDifficulty": 0,
+            "Name": "END",
+            "IterationCount": 1
+          },
+          {
+            "MaxDifficulty": 13,
+            "Name": "AA",
+            "IterationCount": 1
+          },
+          {
+            "MaxDifficulty": 16,
+            "Name": "CCC",
+            "IterationCount": 9
+          },
+          {
+            "MaxDifficulty": 19,
+            "Name": "Cz",
+            "IterationCount": 2
+          }
+        ],
+        "PreviewBankPath": "song_cherubrock_preview.bnk",
+        "RelativeDifficulty": 0,
+        "Score_MaxNotes": 1157.0,
+        "Score_PNV": 86.43042,
+        "Sections": [
+          {
+            "Name": "intro",
+            "UIName": "$[34286] Intro [1]",
+            "Number": 1,
+            "StartTime": 15.289,
+            "EndTime": 32.372,
+            "StartPhraseIterationIndex": 1,
+            "EndPhraseIterationIndex": 2,
+            "IsSolo": false
+          },
+          {
+            "Name": "intro",
+            "UIName": "$[34286] Intro [1]",
+            "Number": 2,
+            "StartTime": 32.372,
+            "EndTime": 49.063,
+            "StartPhraseIterationIndex": 3,
+            "EndPhraseIterationIndex": 4,
+            "IsSolo": false
+          },
+          {
+            "Name": "riff",
+            "UIName": "$[34298] Riff [1]",
+            "Number": 1,
+            "StartTime": 49.063,
+            "EndTime": 57.394,
+            "StartPhraseIterationIndex": 5,
+            "EndPhraseIterationIndex": 5,
+            "IsSolo": false
+          },
+          {
+            "Name": "riff2",
+            "UIName": "$[34298] Riff [1]|2",
+            "Number": 1,
+            "StartTime": 57.394,
+            "EndTime": 68.58,
+            "StartPhraseIterationIndex": 6,
+            "EndPhraseIterationIndex": 6,
+            "IsSolo": false
+          },
+          {
+            "Name": "verse",
+            "UIName": "$[34304] Verse [1]",
+            "Number": 1,
+            "StartTime": 68.58,
+            "EndTime": 76.902,
+            "StartPhraseIterationIndex": 7,
+            "EndPhraseIterationIndex": 7,
+            "IsSolo": false
+          },
+          {
+            "Name": "verse",
+            "UIName": "$[34304] Verse [1]",
+            "Number": 2,
+            "StartTime": 76.902,
+            "EndTime": 85.251,
+            "StartPhraseIterationIndex": 8,
+            "EndPhraseIterationIndex": 8,
+            "IsSolo": false
+          },
+          {
+            "Name": "verse",
+            "UIName": "$[34304] Verse [1]",
+            "Number": 3,
+            "StartTime": 85.251,
+            "EndTime": 93.583,
+            "StartPhraseIterationIndex": 9,
+            "EndPhraseIterationIndex": 9,
+            "IsSolo": false
+          },
+          {
+            "Name": "chorus",
+            "UIName": "$[34279] Chorus [1]",
+            "Number": 1,
+            "StartTime": 93.583,
+            "EndTime": 112.593,
+            "StartPhraseIterationIndex": 10,
+            "EndPhraseIterationIndex": 10,
+            "IsSolo": false
+          },
+          {
+            "Name": "riff2",
+            "UIName": "$[34298] Riff [1]|2",
+            "Number": 2,
+            "StartTime": 112.593,
+            "EndTime": 123.734,
+            "StartPhraseIterationIndex": 11,
+            "EndPhraseIterationIndex": 11,
+            "IsSolo": false
+          },
+          {
+            "Name": "riff",
+            "UIName": "$[34298] Riff [1]",
+            "Number": 2,
+            "StartTime": 123.734,
+            "EndTime": 132.047,
+            "StartPhraseIterationIndex": 12,
+            "EndPhraseIterationIndex": 12,
+            "IsSolo": false
+          },
+          {
+            "Name": "riff",
+            "UIName": "$[34298] Riff [1]",
+            "Number": 3,
+            "StartTime": 132.047,
+            "EndTime": 140.37,
+            "StartPhraseIterationIndex": 13,
+            "EndPhraseIterationIndex": 13,
+            "IsSolo": false
+          },
+          {
+            "Name": "riff",
+            "UIName": "$[34298] Riff [1]",
+            "Number": 4,
+            "StartTime": 140.37,
+            "EndTime": 148.675,
+            "StartPhraseIterationIndex": 14,
+            "EndPhraseIterationIndex": 14,
+            "IsSolo": false
+          },
+          {
+            "Name": "chorus",
+            "UIName": "$[34279] Chorus [1]",
+            "Number": 2,
+            "StartTime": 148.675,
+            "EndTime": 166.973,
+            "StartPhraseIterationIndex": 15,
+            "EndPhraseIterationIndex": 15,
+            "IsSolo": false
+          },
+          {
+            "Name": "postchorus",
+            "UIName": "$[34293] Post Chorus [1]",
+            "Number": 1,
+            "StartTime": 166.973,
+            "EndTime": 178.715,
+            "StartPhraseIterationIndex": 16,
+            "EndPhraseIterationIndex": 16,
+            "IsSolo": false
+          },
+          {
+            "Name": "postchorus",
+            "UIName": "$[34293] Post Chorus [1]",
+            "Number": 2,
+            "StartTime": 178.715,
+            "EndTime": 189.656,
+            "StartPhraseIterationIndex": 17,
+            "EndPhraseIterationIndex": 17,
+            "IsSolo": false
+          },
+          {
+            "Name": "buildup",
+            "UIName": "$[34278] Buildup [1]",
+            "Number": 1,
+            "StartTime": 189.656,
+            "EndTime": 200.45,
+            "StartPhraseIterationIndex": 18,
+            "EndPhraseIterationIndex": 18,
+            "IsSolo": false
+          },
+          {
+            "Name": "interlude",
+            "UIName": "$[34285] Interlude [1]",
+            "Number": 1,
+            "StartTime": 200.45,
+            "EndTime": 219.7,
+            "StartPhraseIterationIndex": 19,
+            "EndPhraseIterationIndex": 20,
+            "IsSolo": false
+          },
+          {
+            "Name": "bridge",
+            "UIName": "$[34282] Bridge [1]",
+            "Number": 1,
+            "StartTime": 219.7,
+            "EndTime": 233.207,
+            "StartPhraseIterationIndex": 21,
+            "EndPhraseIterationIndex": 21,
+            "IsSolo": false
+          },
+          {
+            "Name": "bridge",
+            "UIName": "$[34282] Bridge [1]",
+            "Number": 2,
+            "StartTime": 233.207,
+            "EndTime": 243.948,
+            "StartPhraseIterationIndex": 22,
+            "EndPhraseIterationIndex": 22,
+            "IsSolo": false
+          },
+          {
+            "Name": "chorus",
+            "UIName": "$[34279] Chorus [1]",
+            "Number": 3,
+            "StartTime": 243.948,
+            "EndTime": 259.401,
+            "StartPhraseIterationIndex": 23,
+            "EndPhraseIterationIndex": 23,
+            "IsSolo": false
+          },
+          {
+            "Name": "postchorus",
+            "UIName": "$[34293] Post Chorus [1]",
+            "Number": 3,
+            "StartTime": 259.401,
+            "EndTime": 271.022,
+            "StartPhraseIterationIndex": 24,
+            "EndPhraseIterationIndex": 24,
+            "IsSolo": false
+          },
+          {
+            "Name": "postchorus",
+            "UIName": "$[34293] Post Chorus [1]",
+            "Number": 4,
+            "StartTime": 271.022,
+            "EndTime": 281.897,
+            "StartPhraseIterationIndex": 25,
+            "EndPhraseIterationIndex": 25,
+            "IsSolo": false
+          },
+          {
+            "Name": "riff2",
+            "UIName": "$[34298] Riff [1]|2",
+            "Number": 3,
+            "StartTime": 281.897,
+            "EndTime": 292.931,
+            "StartPhraseIterationIndex": 26,
+            "EndPhraseIterationIndex": 26,
+            "IsSolo": false
+          },
+          {
+            "Name": "outro",
+            "UIName": "$[34291] Outro [1]",
+            "Number": 1,
+            "StartTime": 292.931,
+            "EndTime": 306.944,
+            "StartPhraseIterationIndex": 27,
+            "EndPhraseIterationIndex": 28,
+            "IsSolo": false
+          },
+          {
+            "Name": "noguitar",
+            "UIName": "$[6091] No Guitar [1]",
+            "Number": 1,
+            "StartTime": 306.944,
+            "EndTime": 307.731,
+            "StartPhraseIterationIndex": 29,
+            "EndPhraseIterationIndex": 29,
+            "IsSolo": false
+          }
+        ],
+        "Shipping": true,
+        "ShowlightsXML": "urn:application:xml:cherubrock_showlights",
+        "SKU": "RS2",
+        "SongAsset": "urn:application:musicgame-song:cherubrock_combo2",
+        "SongAverageTempo": 88.0,
+        "SongBank": "song_cherubrock.bnk",
+        "SongDiffEasy": 0.334288627,
+        "SongDiffHard": 0.402717739,
+        "SongDifficulty": 0.402717739,
+        "SongDiffMed": 0.330829471,
+        "SongEvent": "Play_CherubRock",
+        "SongKey": "CherubRock",
+        "SongLength": 307.731,
+        "SongName": "Cherub Rock",
+        "SongNameSort": "Cherub Rock",
+        "SongOffset": -10.0,
+        "SongPartition": 2,
+        "SongXml": "urn:application:xml:cherubrock_combo2",
+        "SongYear": 1993,
+        "TargetScore": 100000,
+        "Techniques": {
+          "5": {
+            "10": [
+              35
+            ],
+            "15": [
+              35
+            ],
+            "16": [
+              35
+            ],
+            "17": [
+              35
+            ],
+            "18": [
+              35
+            ],
+            "19": [
+              35
+            ],
+            "20": [
+              35
+            ],
+            "21": [
+              35
+            ],
+            "22": [
+              35
+            ],
+            "23": [
+              35
+            ],
+            "24": [
+              35
+            ],
+            "25": [
+              35
+            ]
+          },
+          "6": {
+            "10": [
+              35,
+              38
+            ],
+            "15": [
+              35,
+              38
+            ],
+            "16": [
+              35,
+              38
+            ],
+            "17": [
+              35,
+              38
+            ],
+            "18": [
+              35
+            ],
+            "19": [
+              35
+            ],
+            "20": [
+              35,
+              38
+            ],
+            "21": [
+              35,
+              38
+            ],
+            "22": [
+              38,
+              35
+            ],
+            "23": [
+              38,
+              35
+            ],
+            "24": [
+              35,
+              38
+            ],
+            "25": [
+              35,
+              38
+            ]
+          },
+          "7": {
+            "5": [
+              11,
+              13
+            ],
+            "6": [
+              11,
+              13
+            ],
+            "7": [
+              11,
+              13
+            ],
+            "8": [
+              11,
+              13
+            ],
+            "9": [
+              11,
+              13
+            ],
+            "11": [
+              11,
+              13
+            ],
+            "12": [
+              11,
+              13
+            ],
+            "13": [
+              11,
+              13
+            ],
+            "14": [
+              11,
+              13
+            ],
+            "26": [
+              11,
+              13
+            ],
+            "0": [
+              11,
+              13
+            ],
+            "10": [
+              35,
+              38
+            ],
+            "15": [
+              35,
+              38
+            ],
+            "16": [
+              35,
+              38
+            ],
+            "17": [
+              35,
+              38
+            ],
+            "18": [
+              35
+            ],
+            "19": [
+              35
+            ],
+            "20": [
+              35,
+              38
+            ],
+            "21": [
+              35,
+              38
+            ],
+            "22": [
+              38,
+              35
+            ],
+            "23": [
+              38,
+              35
+            ],
+            "24": [
+              35,
+              38
+            ],
+            "25": [
+              35,
+              38
+            ]
+          },
+          "8": {
+            "4": [
+              11,
+              13
+            ],
+            "5": [
+              11,
+              13
+            ],
+            "6": [
+              11,
+              13
+            ],
+            "7": [
+              11,
+              13
+            ],
+            "8": [
+              11,
+              13
+            ],
+            "9": [
+              11,
+              13
+            ],
+            "10": [
+              11,
+              13,
+              38
+            ],
+            "11": [
+              11,
+              13
+            ],
+            "12": [
+              11,
+              13
+            ],
+            "13": [
+              11,
+              13
+            ],
+            "14": [
+              11,
+              13
+            ],
+            "25": [
+              11,
+              13,
+              38
+            ],
+            "26": [
+              11,
+              13
+            ],
+            "0": [
+              11,
+              13
+            ],
+            "15": [
+              38
+            ],
+            "16": [
+              38
+            ],
+            "17": [
+              38
+            ],
+            "18": [
+              38
+            ],
+            "19": [
+              38
+            ],
+            "20": [
+              38
+            ],
+            "21": [
+              38
+            ],
+            "22": [
+              38
+            ],
+            "23": [
+              38
+            ],
+            "24": [
+              38
+            ],
+            "27": [
+              38
+            ]
+          },
+          "9": {
+            "4": [
+              11,
+              13
+            ],
+            "5": [
+              11,
+              13
+            ],
+            "6": [
+              11,
+              13
+            ],
+            "7": [
+              11,
+              13
+            ],
+            "8": [
+              11,
+              13
+            ],
+            "9": [
+              11,
+              13
+            ],
+            "10": [
+              11,
+              13,
+              38
+            ],
+            "11": [
+              11,
+              13
+            ],
+            "12": [
+              11,
+              13
+            ],
+            "13": [
+              11,
+              13
+            ],
+            "14": [
+              11,
+              13
+            ],
+            "25": [
+              11,
+              13
+            ],
+            "26": [
+              11,
+              13
+            ],
+            "0": [
+              11,
+              13
+            ],
+            "15": [
+              38
+            ],
+            "16": [
+              38
+            ],
+            "17": [
+              38
+            ],
+            "18": [
+              38
+            ],
+            "19": [
+              38
+            ],
+            "20": [
+              38
+            ],
+            "21": [
+              38
+            ],
+            "22": [
+              38
+            ],
+            "23": [
+              38
+            ],
+            "24": [
+              38
+            ]
+          },
+          "10": {
+            "4": [
+              11,
+              13
+            ],
+            "5": [
+              11,
+              13
+            ],
+            "6": [
+              11,
+              13
+            ],
+            "7": [
+              11,
+              13
+            ],
+            "8": [
+              11,
+              13
+            ],
+            "9": [
+              11,
+              13
+            ],
+            "10": [
+              11,
+              13,
+              38
+            ],
+            "11": [
+              11,
+              13
+            ],
+            "12": [
+              11,
+              13
+            ],
+            "13": [
+              11,
+              13
+            ],
+            "14": [
+              11,
+              13
+            ],
+            "25": [
+              11,
+              13
+            ],
+            "26": [
+              11,
+              13
+            ],
+            "0": [
+              11,
+              13
+            ],
+            "15": [
+              38
+            ],
+            "16": [
+              38
+            ],
+            "17": [
+              38
+            ],
+            "18": [
+              38
+            ],
+            "19": [
+              38
+            ],
+            "20": [
+              38
+            ],
+            "21": [
+              38
+            ],
+            "22": [
+              38
+            ],
+            "23": [
+              38
+            ],
+            "24": [
+              38
+            ]
+          },
+          "11": {
+            "4": [
+              11,
+              13
+            ],
+            "5": [
+              11,
+              13
+            ],
+            "6": [
+              11,
+              13
+            ],
+            "7": [
+              11,
+              13
+            ],
+            "8": [
+              11,
+              13
+            ],
+            "9": [
+              11,
+              13,
+              38
+            ],
+            "10": [
+              11,
+              13,
+              38
+            ],
+            "11": [
+              11,
+              13
+            ],
+            "12": [
+              11,
+              13
+            ],
+            "13": [
+              11,
+              13
+            ],
+            "14": [
+              11,
+              13,
+              38
+            ],
+            "25": [
+              11,
+              13
+            ],
+            "26": [
+              11,
+              13
+            ],
+            "0": [
+              11,
+              13
+            ],
+            "15": [
+              38
+            ],
+            "16": [
+              38
+            ],
+            "17": [
+              38
+            ],
+            "18": [
+              38
+            ],
+            "19": [
+              38
+            ],
+            "20": [
+              38
+            ],
+            "21": [
+              38
+            ],
+            "22": [
+              38
+            ],
+            "23": [
+              38
+            ],
+            "24": [
+              38
+            ]
+          },
+          "12": {
+            "4": [
+              11,
+              13
+            ],
+            "5": [
+              11,
+              13
+            ],
+            "6": [
+              11,
+              13
+            ],
+            "7": [
+              11,
+              13
+            ],
+            "8": [
+              11,
+              13
+            ],
+            "9": [
+              11,
+              13,
+              38
+            ],
+            "10": [
+              11,
+              13,
+              38
+            ],
+            "11": [
+              11,
+              13
+            ],
+            "12": [
+              11,
+              13
+            ],
+            "13": [
+              11,
+              13
+            ],
+            "14": [
+              11,
+              13,
+              38
+            ],
+            "25": [
+              11,
+              13
+            ],
+            "26": [
+              11,
+              13
+            ],
+            "0": [
+              11,
+              13
+            ],
+            "15": [
+              38
+            ],
+            "16": [
+              35,
+              38
+            ],
+            "17": [
+              38,
+              35
+            ],
+            "18": [
+              38
+            ],
+            "19": [
+              38
+            ],
+            "20": [
+              38
+            ],
+            "21": [
+              38
+            ],
+            "22": [
+              38
+            ],
+            "23": [
+              38
+            ],
+            "24": [
+              35,
+              38
+            ]
+          },
+          "13": {
+            "3": [
+              12,
+              13
+            ],
+            "4": [
+              11,
+              13
+            ],
+            "5": [
+              11,
+              13
+            ],
+            "6": [
+              11,
+              13
+            ],
+            "7": [
+              11,
+              13
+            ],
+            "8": [
+              11,
+              13
+            ],
+            "9": [
+              11,
+              13,
+              38
+            ],
+            "10": [
+              11,
+              13,
+              38
+            ],
+            "11": [
+              11,
+              13
+            ],
+            "12": [
+              11,
+              13
+            ],
+            "13": [
+              11,
+              13
+            ],
+            "14": [
+              11,
+              13,
+              38
+            ],
+            "25": [
+              11,
+              13
+            ],
+            "26": [
+              11,
+              13
+            ],
+            "0": [
+              11,
+              13
+            ],
+            "15": [
+              38
+            ],
+            "16": [
+              38
+            ],
+            "17": [
+              38
+            ],
+            "18": [
+              38
+            ],
+            "19": [
+              38
+            ],
+            "20": [
+              38
+            ],
+            "21": [
+              38
+            ],
+            "22": [
+              38
+            ],
+            "23": [
+              38
+            ],
+            "24": [
+              38
+            ]
+          },
+          "14": {
+            "4": [
+              44,
+              11,
+              13
+            ],
+            "5": [
+              44,
+              11,
+              13
+            ],
+            "6": [
+              44,
+              11,
+              13
+            ],
+            "7": [
+              44,
+              11,
+              13
+            ],
+            "8": [
+              44,
+              11,
+              13
+            ],
+            "9": [
+              44,
+              11,
+              13,
+              38
+            ],
+            "10": [
+              38,
+              44,
+              11,
+              13
+            ],
+            "11": [
+              44,
+              11,
+              13
+            ],
+            "12": [
+              44,
+              11,
+              13
+            ],
+            "13": [
+              44,
+              11,
+              13
+            ],
+            "14": [
+              44,
+              11,
+              13,
+              38
+            ],
+            "15": [
+              38
+            ],
+            "16": [
+              38
+            ],
+            "17": [
+              38
+            ],
+            "18": [
+              38
+            ],
+            "19": [
+              38
+            ],
+            "20": [
+              38
+            ],
+            "21": [
+              38
+            ],
+            "22": [
+              38
+            ],
+            "23": [
+              38
+            ],
+            "24": [
+              38
+            ],
+            "25": [
+              38,
+              44,
+              11,
+              13
+            ],
+            "26": [
+              44,
+              11,
+              13
+            ]
+          },
+          "15": {
+            "4": [
+              44,
+              11,
+              13
+            ],
+            "5": [
+              44,
+              11,
+              13
+            ],
+            "6": [
+              44,
+              11,
+              13
+            ],
+            "7": [
+              44,
+              11,
+              13
+            ],
+            "8": [
+              44,
+              11,
+              13
+            ],
+            "9": [
+              44,
+              11,
+              13,
+              38
+            ],
+            "10": [
+              38,
+              0,
+              44,
+              11,
+              13
+            ],
+            "11": [
+              44,
+              11,
+              13
+            ],
+            "12": [
+              44,
+              11,
+              13
+            ],
+            "13": [
+              44,
+              11,
+              13
+            ],
+            "14": [
+              44,
+              11,
+              13,
+              38
+            ],
+            "15": [
+              38,
+              0
+            ],
+            "16": [
+              38
+            ],
+            "17": [
+              38
+            ],
+            "18": [
+              38
+            ],
+            "19": [
+              38
+            ],
+            "20": [
+              38
+            ],
+            "21": [
+              38
+            ],
+            "22": [
+              38
+            ],
+            "23": [
+              38,
+              0
+            ],
+            "24": [
+              38
+            ],
+            "25": [
+              38,
+              44,
+              11,
+              13
+            ],
+            "26": [
+              44,
+              11,
+              13
+            ]
+          },
+          "16": {
+            "4": [
+              44,
+              11,
+              13
+            ],
+            "5": [
+              44,
+              11,
+              13
+            ],
+            "6": [
+              44,
+              11,
+              13
+            ],
+            "7": [
+              44,
+              11,
+              13
+            ],
+            "8": [
+              44,
+              11,
+              13
+            ],
+            "9": [
+              44,
+              11,
+              13,
+              38
+            ],
+            "10": [
+              38,
+              0
+            ],
+            "11": [
+              44,
+              11,
+              13
+            ],
+            "12": [
+              44,
+              11,
+              13
+            ],
+            "13": [
+              44,
+              11,
+              13
+            ],
+            "14": [
+              44,
+              11,
+              13,
+              38
+            ],
+            "15": [
+              38,
+              0
+            ],
+            "16": [
+              38
+            ],
+            "17": [
+              38
+            ],
+            "18": [
+              38
+            ],
+            "19": [
+              38,
+              44,
+              11,
+              13
+            ],
+            "20": [
+              38,
+              44,
+              11,
+              13
+            ],
+            "21": [
+              38
+            ],
+            "22": [
+              38
+            ],
+            "23": [
+              38,
+              0
+            ],
+            "24": [
+              38
+            ]
+          },
+          "17": {
+            "4": [
+              44,
+              11,
+              13
+            ],
+            "5": [
+              44,
+              11,
+              13,
+              38
+            ],
+            "6": [
+              44,
+              11,
+              13
+            ],
+            "7": [
+              44,
+              11,
+              13,
+              38
+            ],
+            "8": [
+              44,
+              11,
+              13,
+              38
+            ],
+            "9": [
+              44,
+              11,
+              13,
+              38
+            ],
+            "11": [
+              44,
+              11,
+              13
+            ],
+            "12": [
+              44,
+              11,
+              13,
+              38
+            ],
+            "13": [
+              44,
+              11,
+              13,
+              38
+            ],
+            "14": [
+              44,
+              11,
+              13,
+              38
+            ],
+            "18": [
+              38
+            ],
+            "19": [
+              38,
+              44,
+              11,
+              13
+            ]
+          },
+          "18": {
+            "4": [
+              44,
+              11,
+              13
+            ],
+            "5": [
+              44,
+              11,
+              13,
+              38
+            ],
+            "6": [
+              44,
+              11,
+              13
+            ],
+            "7": [
+              44,
+              11,
+              13,
+              38
+            ],
+            "8": [
+              44,
+              11,
+              13,
+              38
+            ],
+            "9": [
+              44,
+              11,
+              13,
+              38
+            ],
+            "11": [
+              44,
+              11,
+              13
+            ],
+            "12": [
+              44,
+              11,
+              13,
+              38
+            ],
+            "13": [
+              44,
+              11,
+              13,
+              38
+            ],
+            "14": [
+              44,
+              11,
+              13,
+              38
+            ],
+            "18": [
+              38
+            ],
+            "19": [
+              38,
+              44,
+              11,
+              13
+            ]
+          },
+          "19": {
+            "4": [
+              44,
+              11,
+              13
+            ],
+            "5": [
+              44,
+              11,
+              13,
+              38
+            ],
+            "6": [
+              44,
+              11,
+              13
+            ],
+            "7": [
+              44,
+              11,
+              13,
+              38
+            ],
+            "8": [
+              44,
+              11,
+              13,
+              38
+            ],
+            "9": [
+              44,
+              11,
+              13,
+              38
+            ],
+            "11": [
+              44,
+              11,
+              13
+            ],
+            "12": [
+              44,
+              11,
+              13,
+              38
+            ],
+            "13": [
+              44,
+              11,
+              13,
+              38
+            ],
+            "14": [
+              44,
+              11,
+              13,
+              38
+            ],
+            "18": [
+              38
+            ],
+            "19": [
+              38,
+              44,
+              11,
+              13
+            ]
+          }
+        },
+        "Tone_A": "CherubRock_dist",
+        "Tone_B": "",
+        "Tone_Base": "CherubRock_clean",
+        "Tone_C": "CherubRock_higain",
+        "Tone_D": "",
+        "Tone_Multiplayer": "",
+        "Tones": [
+          {
+            "GearList": {
+              "Rack1": {
+                "Type": "Racks",
+                "KnobValues": {
+                  "Rack_StudioEQ_BassFreq": 149.0,
+                  "Rack_StudioEQ_HiMidFreq": 4.0,
+                  "Rack_StudioEQ_TrebleFreq": 5.0,
+                  "Rack_StudioEQ_LoMidFreq": 1600.0,
+                  "Rack_StudioEQ_Treble": 6.0,
+                  "Rack_StudioEQ_LoMidQ": 0.0,
+                  "Rack_StudioEQ_Bass": 3.0,
+                  "Rack_StudioEQ_HiMid": 3.0,
+                  "Rack_StudioEQ_LoMid": 3.0,
+                  "Rack_StudioEQ_HiMidQ": 0.0
+                },
+                "Key": "Rack_StudioEQ"
+              },
+              "Amp": {
+                "Type": "Amps",
+                "KnobValues": {
+                  "Amp_AT20_Treble": 85.0,
+                  "Amp_AT20_Bass": 50.0,
+                  "Amp_AT20_Gain": 1.0
+                },
+                "Key": "Amp_AT20"
+              },
+              "Cabinet": {
+                "Type": "Cabinets",
+                "KnobValues": {},
+                "Key": "Cab_GB412CMKIII_Condenser_Cone"
+              },
+              "PrePedal1": {
+                "Type": "Pedals",
+                "KnobValues": {
+                  "Pedal_ModernFlanger_Regen": 1.0,
+                  "Pedal_ModernFlanger_Mix": 26.0,
+                  "Pedal_ModernFlanger_Depth": 1.0,
+                  "Pedal_ModernFlanger_Rate": 1.0
+                },
+                "Key": "Pedal_ModernFlanger"
+              }
+            },
+            "IsCustom": true,
+            "Volume": "-14.65",
+            "ToneDescriptors": [
+              "$[35720]CLEAN"
+            ],
+            "Key": "CherubRock_clean",
+            "NameSeparator": " - ",
+            "Name": "CherubRock_clean",
+            "SortOrder": 20.0
+          },
+          {
+            "GearList": {
+              "Rack1": {
+                "Type": "Racks",
+                "KnobValues": {
+                  "Rack_StudioEQ_BassFreq": 149.0,
+                  "Rack_StudioEQ_HiMidFreq": 4.0,
+                  "Rack_StudioEQ_TrebleFreq": 5.0,
+                  "Rack_StudioEQ_LoMidFreq": 1600.0,
+                  "Rack_StudioEQ_Treble": -7.0,
+                  "Rack_StudioEQ_LoMidQ": 0.0,
+                  "Rack_StudioEQ_Bass": 3.0,
+                  "Rack_StudioEQ_HiMid": 9.0,
+                  "Rack_StudioEQ_LoMid": 3.0,
+                  "Rack_StudioEQ_HiMidQ": 0.0
+                },
+                "Key": "Rack_StudioEQ"
+              },
+              "Amp": {
+                "Type": "Amps",
+                "KnobValues": {
+                  "Amp_GB100_Bass": 100.0,
+                  "Amp_GB100_Mid": 41.0,
+                  "Amp_GB100_Gain": 100.0,
+                  "Amp_GB100_Treble": 1.0,
+                  "Amp_GB100_Pres": 1.0
+                },
+                "Key": "Amp_GB100"
+              },
+              "Cabinet": {
+                "Type": "Cabinets",
+                "KnobValues": {},
+                "Key": "Cab_GB412CMKIII_Condenser_Cone"
+              },
+              "PrePedal1": {
+                "Type": "Pedals",
+                "KnobValues": {
+                  "Pedal_CustomDrive_Tone": 48.0,
+                  "Pedal_CustomDrive_Gain": 100.0,
+                  "Pedal_CustomDrive_Voice": 0.0
+                },
+                "Key": "Pedal_CustomDrive"
+              },
+              "PrePedal2": {
+                "Type": "Pedals",
+                "KnobValues": {
+                  "Pedal_Compression_Release": 75.0,
+                  "Pedal_Compression_Attack": 29.0,
+                  "Pedal_Compression_Comp": 51.0
+                },
+                "Key": "Pedal_Compression"
+              }
+            },
+            "IsCustom": true,
+            "Volume": "-20.65",
+            "ToneDescriptors": [
+              "$[35722]DISTORTION"
+            ],
+            "Key": "CherubRock_dist",
+            "NameSeparator": " - ",
+            "Name": "CherubRock_dist",
+            "SortOrder": 20.0
+          },
+          {
+            "GearList": {
+              "Rack1": {
+                "Type": "Racks",
+                "KnobValues": {
+                  "Rack_StudioEQ_BassFreq": 149.0,
+                  "Rack_StudioEQ_HiMidFreq": 4.0,
+                  "Rack_StudioEQ_TrebleFreq": 5.0,
+                  "Rack_StudioEQ_LoMidFreq": 1600.0,
+                  "Rack_StudioEQ_Treble": -2.0,
+                  "Rack_StudioEQ_LoMidQ": 0.0,
+                  "Rack_StudioEQ_Bass": 3.0,
+                  "Rack_StudioEQ_HiMid": 9.0,
+                  "Rack_StudioEQ_LoMid": 3.0,
+                  "Rack_StudioEQ_HiMidQ": 0.0
+                },
+                "Key": "Rack_StudioEQ"
+              },
+              "Amp": {
+                "Type": "Amps",
+                "KnobValues": {
+                  "Amp_GB100_Bass": 100.0,
+                  "Amp_GB100_Mid": 41.0,
+                  "Amp_GB100_Gain": 100.0,
+                  "Amp_GB100_Treble": 1.0,
+                  "Amp_GB100_Pres": 1.0
+                },
+                "Key": "Amp_GB100"
+              },
+              "Cabinet": {
+                "Type": "Cabinets",
+                "KnobValues": {},
+                "Key": "Cab_GB412CMKIII_Condenser_Cone"
+              },
+              "PrePedal1": {
+                "Type": "Pedals",
+                "KnobValues": {
+                  "Pedal_CustomDrive_Tone": 48.0,
+                  "Pedal_CustomDrive_Gain": 36.0,
+                  "Pedal_CustomDrive_Voice": 0.0
+                },
+                "Key": "Pedal_CustomDrive"
+              },
+              "PrePedal2": {
+                "Type": "Pedals",
+                "KnobValues": {
+                  "Pedal_Compression_Release": 75.0,
+                  "Pedal_Compression_Attack": 29.0,
+                  "Pedal_Compression_Comp": 51.0
+                },
+                "Key": "Pedal_Compression"
+              }
+            },
+            "IsCustom": true,
+            "Volume": "-20.209452",
+            "ToneDescriptors": [
+              "$[35755]HIGH GAIN"
+            ],
+            "Key": "CherubRock_higain",
+            "NameSeparator": " - ",
+            "Name": "CherubRock_higain",
+            "SortOrder": 20.0
+          }
+        ],
+        "Tuning": {
+          "string0": 0,
+          "string1": 0,
+          "string2": 0,
+          "string3": 0,
+          "string4": 0,
+          "string5": 0
+        },
+        "PersistentID": "66B74E25D7F82FAEAED532D7F6AC2B81"
+      }
+    }
+  },
+  "ModelName": "RSEnumerable_Song",
+  "IterationVersion": 2,
+  "InsertRoot": "Static.Songs.Entries"
+}

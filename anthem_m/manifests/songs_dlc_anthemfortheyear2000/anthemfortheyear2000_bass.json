@@ -1,0 +1,521 @@
+{
+  "Entries": {
+    "1299515680344621844389EC8F1C72C9": {
+      "Attributes": {
+        "ArrangementProperties": {
+          "bonusArr": 0,
+          "Metronome": 0,
+          "pathLead": 0,
+          "pathRhythm": 0,
+          "pathBass": 1,
+          "routeMask": 4,
+          "represent": 1,
+          "standardTuning": 0,
+          "nonStandardChords": 0,
+          "barreChords": 0,
+          "powerChords": 0,
+          "dropDPower": 0,
+          "openChords": 0,
+          "fingerPicking": 0,
+          "pickDirection": 0,
+          "doubleStops": 0,
+          "palmMutes": 0,
+          "harmonics": 0,
+          "pinchHarmonics": 0,
+          "hopo": 1,
+          "tremolo": 0,
+          "slides": 0,
+          "unpitchedSlides": 0,
+          "bends": 0,
+          "tapping": 0,
+          "vibrato": 0,
+          "fretHandMutes": 0,
+          "slapPop": 0,
+          "twoFingerPicking": 0,
+          "fifthsAndOctaves": 0,
+          "syncopation": 0,
+          "bassPick": 0,
+          "sustain": 1
+        },
+        "ArrangementSort": 0,
+        "ArrangementType": 3,
+        "BlockAsset": "urn:emergent-world:anthemfortheyear2000",
+        "ChordTemplates": [],
+        "DynamicVisualDensity": [
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5
+        ],
+        "FullName": "AnthemfortheYear2000_Bass",
+        "LastConversionDateTime": "7-2-16 1:44",
+        "MasterID_PS3": 2060547479,
+        "MasterID_XBox360": 2060547479,
+        "MaxPhraseDifficulty": 0,
+        "PhraseIterations": [
+          {
+            "PhraseIndex": 0,
+            "MaxDifficulty": 0,
+            "Name": "COUNT",
+            "StartTime": 0.0,
+            "EndTime": 30.056
+          },
+          {
+            "PhraseIndex": 3,
+            "MaxDifficulty": 0,
+            "Name": "verse",
+            "StartTime": 30.056,
+            "EndTime": 41.0
+          },
+          {
+            "PhraseIndex": 3,
+            "MaxDifficulty": 0,
+            "Name": "verse",
+            "StartTime": 41.0,
+            "EndTime": 51.939
+          },
+          {
+            "PhraseIndex": 2,
+            "MaxDifficulty": 0,
+            "Name": "noguitar",
+            "StartTime": 51.939,
+            "EndTime": 73.733
+          },
+          {
+            "PhraseIndex": 3,
+            "MaxDifficulty": 0,
+            "Name": "verse",
+            "StartTime": 73.733,
+            "EndTime": 84.605
+          },
+          {
+            "PhraseIndex": 3,
+            "MaxDifficulty": 0,
+            "Name": "verse",
+            "StartTime": 84.605,
+            "EndTime": 95.477
+          },
+          {
+            "PhraseIndex": 2,
+            "MaxDifficulty": 0,
+            "Name": "noguitar",
+            "StartTime": 95.477,
+            "EndTime": 111.633
+          },
+          {
+            "PhraseIndex": 3,
+            "MaxDifficulty": 0,
+            "Name": "verse",
+            "StartTime": 111.633,
+            "EndTime": 122.449
+          },
+          {
+            "PhraseIndex": 3,
+            "MaxDifficulty": 0,
+            "Name": "verse",
+            "StartTime": 122.449,
+            "EndTime": 133.205
+          },
+          {
+            "PhraseIndex": 3,
+            "MaxDifficulty": 0,
+            "Name": "verse",
+            "StartTime": 133.205,
+            "EndTime": 144.113
+          },
+          {
+            "PhraseIndex": 3,
+            "MaxDifficulty": 0,
+            "Name": "verse",
+            "StartTime": 144.113,
+            "EndTime": 154.979
+          },
+          {
+            "PhraseIndex": 1,
+            "MaxDifficulty": 0,
+            "Name": "postvs",
+            "StartTime": 154.979,
+            "EndTime": 165.697
+          },
+          {
+            "PhraseIndex": 3,
+            "MaxDifficulty": 0,
+            "Name": "verse",
+            "StartTime": 165.697,
+            "EndTime": 176.55
+          },
+          {
+            "PhraseIndex": 3,
+            "MaxDifficulty": 0,
+            "Name": "verse",
+            "StartTime": 176.55,
+            "EndTime": 187.385
+          },
+          {
+            "PhraseIndex": 2,
+            "MaxDifficulty": 0,
+            "Name": "noguitar",
+            "StartTime": 187.385,
+            "EndTime": 198.213
+          },
+          {
+            "PhraseIndex": 3,
+            "MaxDifficulty": 0,
+            "Name": "verse",
+            "StartTime": 198.213,
+            "EndTime": 209.06
+          },
+          {
+            "PhraseIndex": 3,
+            "MaxDifficulty": 0,
+            "Name": "verse",
+            "StartTime": 209.06,
+            "EndTime": 219.844
+          },
+          {
+            "PhraseIndex": 3,
+            "MaxDifficulty": 0,
+            "Name": "verse",
+            "StartTime": 219.844,
+            "EndTime": 230.613
+          },
+          {
+            "PhraseIndex": 4,
+            "MaxDifficulty": 0,
+            "Name": "postchorus",
+            "StartTime": 230.613,
+            "EndTime": 241.933
+          },
+          {
+            "PhraseIndex": 5,
+            "MaxDifficulty": 0,
+            "Name": "END",
+            "StartTime": 241.933,
+            "EndTime": 249.718
+          }
+        ],
+        "Phrases": [
+          {
+            "MaxDifficulty": 0,
+            "Name": "COUNT",
+            "IterationCount": 1
+          },
+          {
+            "MaxDifficulty": 0,
+            "Name": "postvs",
+            "IterationCount": 1
+          },
+          {
+            "MaxDifficulty": 0,
+            "Name": "noguitar",
+            "IterationCount": 3
+          },
+          {
+            "MaxDifficulty": 0,
+            "Name": "verse",
+            "IterationCount": 13
+          },
+          {
+            "MaxDifficulty": 0,
+            "Name": "postchorus",
+            "IterationCount": 1
+          },
+          {
+            "MaxDifficulty": 0,
+            "Name": "END",
+            "IterationCount": 1
+          }
+        ],
+        "PreviewBankPath": "song_anthemfortheyear2000_preview.bnk",
+        "RelativeDifficulty": 0,
+        "Score_MaxNotes": 348.0,
+        "Score_PNV": 287.356323,
+        "Sections": [
+          {
+            "Name": "intro",
+            "UIName": "$[34286] Intro [1]",
+            "Number": 1,
+            "StartTime": 30.056,
+            "EndTime": 51.939,
+            "StartPhraseIterationIndex": 1,
+            "EndPhraseIterationIndex": 2,
+            "IsSolo": false
+          },
+          {
+            "Name": "noguitar",
+            "UIName": "$[6091] No Guitar [1]",
+            "Number": 1,
+            "StartTime": 51.939,
+            "EndTime": 73.733,
+            "StartPhraseIterationIndex": 3,
+            "EndPhraseIterationIndex": 3,
+            "IsSolo": false
+          },
+          {
+            "Name": "verse",
+            "UIName": "$[34304] Verse [1]",
+            "Number": 1,
+            "StartTime": 73.733,
+            "EndTime": 95.477,
+            "StartPhraseIterationIndex": 4,
+            "EndPhraseIterationIndex": 5,
+            "IsSolo": false
+          },
+          {
+            "Name": "noguitar",
+            "UIName": "$[6091] No Guitar [1]",
+            "Number": 2,
+            "StartTime": 95.477,
+            "EndTime": 111.633,
+            "StartPhraseIterationIndex": 6,
+            "EndPhraseIterationIndex": 6,
+            "IsSolo": false
+          },
+          {
+            "Name": "verse",
+            "UIName": "$[34304] Verse [1]",
+            "Number": 2,
+            "StartTime": 111.633,
+            "EndTime": 133.205,
+            "StartPhraseIterationIndex": 7,
+            "EndPhraseIterationIndex": 8,
+            "IsSolo": false
+          },
+          {
+            "Name": "chorus",
+            "UIName": "$[34279] Chorus [1]",
+            "Number": 1,
+            "StartTime": 133.205,
+            "EndTime": 154.979,
+            "StartPhraseIterationIndex": 9,
+            "EndPhraseIterationIndex": 10,
+            "IsSolo": false
+          },
+          {
+            "Name": "postvs",
+            "UIName": "$[34294] Post Verse [1]",
+            "Number": 1,
+            "StartTime": 154.979,
+            "EndTime": 165.697,
+            "StartPhraseIterationIndex": 11,
+            "EndPhraseIterationIndex": 11,
+            "IsSolo": false
+          },
+          {
+            "Name": "solo",
+            "UIName": "$[34300] Solo [1]",
+            "Number": 1,
+            "StartTime": 165.697,
+            "EndTime": 187.385,
+            "StartPhraseIterationIndex": 12,
+            "EndPhraseIterationIndex": 13,
+            "IsSolo": true
+          },
+          {
+            "Name": "noguitar",
+            "UIName": "$[6091] No Guitar [1]",
+            "Number": 3,
+            "StartTime": 187.385,
+            "EndTime": 198.213,
+            "StartPhraseIterationIndex": 14,
+            "EndPhraseIterationIndex": 14,
+            "IsSolo": false
+          },
+          {
+            "Name": "chorus",
+            "UIName": "$[34279] Chorus [1]",
+            "Number": 2,
+            "StartTime": 198.213,
+            "EndTime": 219.844,
+            "StartPhraseIterationIndex": 15,
+            "EndPhraseIterationIndex": 16,
+            "IsSolo": false
+          },
+          {
+            "Name": "chorus",
+            "UIName": "$[34279] Chorus [1]",
+            "Number": 3,
+            "StartTime": 219.844,
+            "EndTime": 230.613,
+            "StartPhraseIterationIndex": 17,
+            "EndPhraseIterationIndex": 17,
+            "IsSolo": false
+          },
+          {
+            "Name": "postchorus",
+            "UIName": "$[34293] Post Chorus [1]",
+            "Number": 1,
+            "StartTime": 230.613,
+            "EndTime": 249.718,
+            "StartPhraseIterationIndex": 18,
+            "EndPhraseIterationIndex": 19,
+            "IsSolo": false
+          }
+        ],
+        "ShowlightsXML": "urn:application:xml:anthemfortheyear2000_showlights",
+        "SongAsset": "urn:application:musicgame-song:anthemfortheyear2000_bass",
+        "SongAverageTempo": 89.0,
+        "SongBank": "song_anthemfortheyear2000.bnk",
+        "SongEvent": "Play_AnthemfortheYear2000",
+        "SongOffset": 0.0,
+        "SongPartition": 1,
+        "SongXml": "urn:application:xml:anthemfortheyear2000_bass",
+        "TargetScore": 100000,
+        "Techniques": {},
+        "Tone_A": "",
+        "Tone_B": "",
+        "Tone_Base": "Anthem_For_The_Year_2000_Bass",
+        "Tone_C": "",
+        "Tone_D": "",
+        "Tone_Multiplayer": "",
+        "Tones": [
+          {
+            "GearList": {
+              "Rack1": {
+                "Type": "Racks",
+                "KnobValues": {
+                  "Rack_StudioEQ_Bass": 2.0,
+                  "Rack_StudioEQ_BassFreq": 250.0,
+                  "Rack_StudioEQ_LoMid": -8.0,
+                  "Rack_StudioEQ_LoMidFreq": 200.0,
+                  "Rack_StudioEQ_LoMidQ": 0.0,
+                  "Rack_StudioEQ_HiMid": 4.0,
+                  "Rack_StudioEQ_HiMidFreq": 1.8,
+                  "Rack_StudioEQ_HiMidQ": 0.0,
+                  "Rack_StudioEQ_Treble": 4.0,
+                  "Rack_StudioEQ_TrebleFreq": 2.4
+                },
+                "Key": "Rack_StudioEQ",
+                "Category": "Filter"
+              },
+              "Rack2": {
+                "Type": "Racks",
+                "KnobValues": {
+                  "Rack_StudioCompressor_Threshold": -16.0,
+                  "Rack_StudioCompressor_Ratio": 3.0,
+                  "Rack_StudioCompressor_Attack": 21.0,
+                  "Rack_StudioCompressor_Release": 60.0
+                },
+                "Key": "Rack_StudioCompressor",
+                "Category": "Dynamics"
+              },
+              "Amp": {
+                "Type": "Amps",
+                "KnobValues": {
+                  "Bass_Amp_HT300B_Gain": 15.0,
+                  "Bass_Amp_HT300B_Bass": 65.0,
+                  "Bass_Amp_HT300B_Mid": 90.0,
+                  "Bass_Amp_HT300B_MidFreq": 4.0,
+                  "Bass_Amp_HT300B_Treble": 88.0,
+                  "Bass_Amp_HT300B_HiShift": 1.0,
+                  "Bass_Amp_HT300B_LoShift": 1.0
+                },
+                "Key": "Bass_Amp_HT300B",
+                "Category": "Amp"
+              },
+              "Cabinet": {
+                "Type": "Cabinets",
+                "KnobValues": {},
+                "Key": "Bass_Cab_AT810BC_57_Cone",
+                "Category": "Dynamic_Cone"
+              },
+              "PrePedal1": {
+                "Type": "Pedals",
+                "KnobValues": {
+                  "Pedal_NoiseGate_Thresh": -70.0,
+                  "Pedal_NoiseGate_Rate": 81.0
+                },
+                "Key": "Pedal_NoiseGate",
+                "Category": "Dynamics"
+              },
+              "PostPedal1": {
+                "Type": "Pedals",
+                "KnobValues": {
+                  "Bass_Pedal_BassFuzz_Gain": 9.0,
+                  "Bass_Pedal_BassFuzz_Tone": 25.0,
+                  "Bass_Pedal_BassFuzz_Filter": 75.0
+                },
+                "Key": "Bass_Pedal_BassFuzz",
+                "Category": "Distortion"
+              }
+            },
+            "IsCustom": true,
+            "Volume": "-32",
+            "ToneDescriptors": [
+              "$[35715]BASS"
+            ],
+            "Key": "Anthem_For_The_Year_2000_Bass",
+            "NameSeparator": " - ",
+            "Name": "Anthem_For_The_Year_2000_Bass",
+            "SortOrder": 0.0
+          }
+        ],
+        "SongVolume": -6.5,
+        "PreviewVolume": -6.5,
+        "AlbumArt": "urn:image:dds:album_anthemfortheyear2000",
+        "AlbumName": "Neon Ballroom",
+        "AlbumNameSort": "Neon Ballroom",
+        "ArrangementName": "Bass",
+        "ArtistName": "Silverchair",
+        "ArtistNameSort": "Silverchair",
+        "CapoFret": 0.0,
+        "CentOffset": 0.0,
+        "DLC": true,
+        "DLCKey": "AnthemfortheYear2000",
+        "DNA_Chords": 0.0,
+        "DNA_Riffs": 0.0,
+        "DNA_Solo": 0.0,
+        "EasyMastery": 1.0,
+        "LeaderboardChallengeRating": 0,
+        "ManifestUrn": "urn:database:json-db:anthemfortheyear2000_bass",
+        "MasterID_RDV": 2060547479,
+        "Metronome": 0,
+        "MediumMastery": 1.0,
+        "NotesEasy": 348.0,
+        "NotesHard": 348.0,
+        "NotesMedium": 348.0,
+        "Representative": 1,
+        "RouteMask": 4,
+        "Shipping": true,
+        "SKU": "RS2",
+        "SongDiffEasy": 0.71758046643487339,
+        "SongDiffHard": 0.71758046643487339,
+        "SongDiffMed": 0.71758046643487339,
+        "SongDifficulty": 0.71758046643487339,
+        "SongKey": "AnthemfortheYear2000",
+        "SongLength": 249.718,
+        "SongName": "Anthem for the Year 2000",
+        "SongNameSort": "Anthem for the Year 2000",
+        "SongYear": 1999,
+        "Tuning": {
+          "string0": -2,
+          "string1": 0,
+          "string2": 0,
+          "string3": 0,
+          "string4": 0,
+          "string5": 0
+        },
+        "PersistentID": "1299515680344621844389EC8F1C72C9"
+      }
+    }
+  },
+  "ModelName": "RSEnumerable_Song",
+  "IterationVersion": 2,
+  "InsertRoot": "Static.Songs.Entries"
+}

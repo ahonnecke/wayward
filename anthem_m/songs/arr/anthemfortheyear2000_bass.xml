@@ -1,0 +1,869 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<song version="7">
+  <!-- CST v2.6.1.0-a83e9de1 -->
+  <title>Anthem for the Year 2000</title>
+  <arrangement>Bass</arrangement>
+  <part>1</part>
+  <offset>0</offset>
+  <centOffset>0</centOffset>
+  <songLength>249.718</songLength>
+  <startBeat>0</startBeat>
+  <averageTempo>89</averageTempo>
+  <tuning string0="-2" string1="0" string2="0" string3="0" string4="0" string5="0" />
+  <capo>0</capo>
+  <artistName>Silverchair</artistName>
+  <artistNameSort>Silverchair</artistNameSort>
+  <albumName>Neon Ballroom</albumName>
+  <albumYear>1999</albumYear>
+  <crowdSpeed>1</crowdSpeed>
+  <arrangementProperties represent="1" standardTuning="0" nonStandardChords="0" barreChords="0" powerChords="0" dropDPower="0" openChords="0" fingerPicking="0" pickDirection="0" doubleStops="0" palmMutes="0" harmonics="0" pinchHarmonics="0" hopo="1" tremolo="0" slides="0" unpitchedSlides="0" bends="0" tapping="0" vibrato="0" fretHandMutes="0" slapPop="0" twoFingerPicking="0" fifthsAndOctaves="0" syncopation="0" bassPick="0" sustain="1" bonusArr="0" Metronome="0" pathLead="0" pathRhythm="0" pathBass="1" routeMask="0" />
+  <lastConversionDateTime>7-2-16 1:44</lastConversionDateTime>
+  <phrases count="6">
+    <phrase disparity="0" ignore="0" maxDifficulty="0" name="COUNT" solo="0" />
+    <phrase disparity="0" ignore="0" maxDifficulty="0" name="postvs" solo="0" />
+    <phrase disparity="0" ignore="0" maxDifficulty="0" name="noguitar" solo="0" />
+    <phrase disparity="0" ignore="0" maxDifficulty="0" name="verse" solo="0" />
+    <phrase disparity="0" ignore="0" maxDifficulty="0" name="postchorus" solo="0" />
+    <phrase disparity="0" ignore="0" maxDifficulty="0" name="END" solo="0" />
+  </phrases>
+  <newLinkedDiffs count="0" />
+  <phraseIterations count="20">
+    <phraseIteration time="0" phraseId="0" />
+    <phraseIteration time="30.056" phraseId="3" />
+    <phraseIteration time="41" phraseId="3" />
+    <phraseIteration time="51.939" phraseId="2" />
+    <phraseIteration time="73.733" phraseId="3" />
+    <phraseIteration time="84.605" phraseId="3" />
+    <phraseIteration time="95.477" phraseId="2" />
+    <phraseIteration time="111.633" phraseId="3" />
+    <phraseIteration time="122.449" phraseId="3" />
+    <phraseIteration time="133.205" phraseId="3" />
+    <phraseIteration time="144.113" phraseId="3" />
+    <phraseIteration time="154.979" phraseId="1" />
+    <phraseIteration time="165.697" phraseId="3" />
+    <phraseIteration time="176.55" phraseId="3" />
+    <phraseIteration time="187.385" phraseId="2" />
+    <phraseIteration time="198.213" phraseId="3" />
+    <phraseIteration time="209.06" phraseId="3" />
+    <phraseIteration time="219.844" phraseId="3" />
+    <phraseIteration time="230.613" phraseId="4" />
+    <phraseIteration time="241.933" phraseId="5" />
+  </phraseIterations>
+  <linkedDiffs count="0" />
+  <phraseProperties count="0" />
+  <chordTemplates count="0" />
+  <fretHandMuteTemplates count="0" />
+  <ebeats count="369">
+    <ebeat time="0" measure="1" />
+    <ebeat time="2.712" measure="2" />
+    <ebeat time="3.396" measure="-1" />
+    <ebeat time="4.079" measure="-1" />
+    <ebeat time="4.763" measure="-1" />
+    <ebeat time="5.447" measure="3" />
+    <ebeat time="6.13" measure="-1" />
+    <ebeat time="6.814" measure="-1" />
+    <ebeat time="7.498" measure="-1" />
+    <ebeat time="8.181" measure="4" />
+    <ebeat time="8.865" measure="-1" />
+    <ebeat time="9.549" measure="-1" />
+    <ebeat time="10.232" measure="-1" />
+    <ebeat time="10.916" measure="5" />
+    <ebeat time="11.6" measure="-1" />
+    <ebeat time="12.283" measure="-1" />
+    <ebeat time="12.967" measure="-1" />
+    <ebeat time="13.651" measure="6" />
+    <ebeat time="14.334" measure="-1" />
+    <ebeat time="15.018" measure="-1" />
+    <ebeat time="15.702" measure="-1" />
+    <ebeat time="16.385" measure="7" />
+    <ebeat time="17.069" measure="-1" />
+    <ebeat time="17.753" measure="-1" />
+    <ebeat time="18.436" measure="-1" />
+    <ebeat time="19.12" measure="8" />
+    <ebeat time="19.807" measure="-1" />
+    <ebeat time="20.494" measure="-1" />
+    <ebeat time="21.182" measure="-1" />
+    <ebeat time="21.869" measure="9" />
+    <ebeat time="22.553" measure="-1" />
+    <ebeat time="23.236" measure="-1" />
+    <ebeat time="23.92" measure="-1" />
+    <ebeat time="24.604" measure="10" />
+    <ebeat time="25.28" measure="-1" />
+    <ebeat time="25.957" measure="-1" />
+    <ebeat time="26.633" measure="-1" />
+    <ebeat time="27.318" measure="11" />
+    <ebeat time="28.002" measure="-1" />
+    <ebeat time="28.687" measure="-1" />
+    <ebeat time="29.371" measure="-1" />
+    <ebeat time="30.056" measure="12" />
+    <ebeat time="30.744" measure="-1" />
+    <ebeat time="31.431" measure="-1" />
+    <ebeat time="32.119" measure="-1" />
+    <ebeat time="32.807" measure="13" />
+    <ebeat time="33.491" measure="-1" />
+    <ebeat time="34.175" measure="-1" />
+    <ebeat time="34.859" measure="-1" />
+    <ebeat time="35.543" measure="14" />
+    <ebeat time="36.224" measure="-1" />
+    <ebeat time="36.905" measure="-1" />
+    <ebeat time="37.586" measure="-1" />
+    <ebeat time="38.267" measure="15" />
+    <ebeat time="38.95" measure="-1" />
+    <ebeat time="39.633" measure="-1" />
+    <ebeat time="40.317" measure="-1" />
+    <ebeat time="41" measure="16" />
+    <ebeat time="41.684" measure="-1" />
+    <ebeat time="42.368" measure="-1" />
+    <ebeat time="43.052" measure="-1" />
+    <ebeat time="43.736" measure="17" />
+    <ebeat time="44.416" measure="-1" />
+    <ebeat time="45.095" measure="-1" />
+    <ebeat time="45.775" measure="-1" />
+    <ebeat time="46.466" measure="18" />
+    <ebeat time="47.15" measure="-1" />
+    <ebeat time="47.834" measure="-1" />
+    <ebeat time="48.518" measure="-1" />
+    <ebeat time="49.202" measure="19" />
+    <ebeat time="49.887" measure="-1" />
+    <ebeat time="50.571" measure="-1" />
+    <ebeat time="51.255" measure="-1" />
+    <ebeat time="51.939" measure="20" />
+    <ebeat time="52.618" measure="-1" />
+    <ebeat time="53.296" measure="-1" />
+    <ebeat time="53.974" measure="-1" />
+    <ebeat time="54.653" measure="21" />
+    <ebeat time="55.331" measure="-1" />
+    <ebeat time="56.014" measure="-1" />
+    <ebeat time="56.697" measure="-1" />
+    <ebeat time="57.388" measure="22" />
+    <ebeat time="58.067" measure="-1" />
+    <ebeat time="58.745" measure="-1" />
+    <ebeat time="59.424" measure="-1" />
+    <ebeat time="60.112" measure="23" />
+    <ebeat time="60.793" measure="-1" />
+    <ebeat time="61.475" measure="-1" />
+    <ebeat time="62.156" measure="-1" />
+    <ebeat time="62.837" measure="24" />
+    <ebeat time="63.518" measure="-1" />
+    <ebeat time="64.2" measure="-1" />
+    <ebeat time="64.881" measure="-1" />
+    <ebeat time="65.562" measure="25" />
+    <ebeat time="66.243" measure="-1" />
+    <ebeat time="66.925" measure="-1" />
+    <ebeat time="67.606" measure="-1" />
+    <ebeat time="68.288" measure="26" />
+    <ebeat time="68.971" measure="-1" />
+    <ebeat time="69.653" measure="-1" />
+    <ebeat time="70.336" measure="-1" />
+    <ebeat time="71.018" measure="27" />
+    <ebeat time="71.697" measure="-1" />
+    <ebeat time="72.375" measure="-1" />
+    <ebeat time="73.054" measure="-1" />
+    <ebeat time="73.733" measure="28" />
+    <ebeat time="74.414" measure="-1" />
+    <ebeat time="75.095" measure="-1" />
+    <ebeat time="75.776" measure="-1" />
+    <ebeat time="76.457" measure="29" />
+    <ebeat time="77.138" measure="-1" />
+    <ebeat time="77.819" measure="-1" />
+    <ebeat time="78.5" measure="-1" />
+    <ebeat time="79.181" measure="30" />
+    <ebeat time="79.858" measure="-1" />
+    <ebeat time="80.534" measure="-1" />
+    <ebeat time="81.211" measure="-1" />
+    <ebeat time="81.89" measure="31" />
+    <ebeat time="82.569" measure="-1" />
+    <ebeat time="83.247" measure="-1" />
+    <ebeat time="83.926" measure="-1" />
+    <ebeat time="84.605" measure="32" />
+    <ebeat time="85.286" measure="-1" />
+    <ebeat time="85.966" measure="-1" />
+    <ebeat time="86.647" measure="-1" />
+    <ebeat time="87.328" measure="33" />
+    <ebeat time="88.009" measure="-1" />
+    <ebeat time="88.689" measure="-1" />
+    <ebeat time="89.37" measure="-1" />
+    <ebeat time="90.051" measure="34" />
+    <ebeat time="90.732" measure="-1" />
+    <ebeat time="91.412" measure="-1" />
+    <ebeat time="92.093" measure="-1" />
+    <ebeat time="92.77" measure="35" />
+    <ebeat time="93.447" measure="-1" />
+    <ebeat time="94.123" measure="-1" />
+    <ebeat time="94.8" measure="-1" />
+    <ebeat time="95.477" measure="36" />
+    <ebeat time="96.154" measure="-1" />
+    <ebeat time="96.83" measure="-1" />
+    <ebeat time="97.507" measure="-1" />
+    <ebeat time="98.184" measure="37" />
+    <ebeat time="98.847" measure="-1" />
+    <ebeat time="99.51" measure="-1" />
+    <ebeat time="100.173" measure="-1" />
+    <ebeat time="100.836" measure="38" />
+    <ebeat time="101.52" measure="-1" />
+    <ebeat time="102.203" measure="-1" />
+    <ebeat time="102.887" measure="-1" />
+    <ebeat time="103.584" measure="39" />
+    <ebeat time="104.245" measure="-1" />
+    <ebeat time="104.913" measure="-1" />
+    <ebeat time="105.582" measure="-1" />
+    <ebeat time="106.288" measure="40" />
+    <ebeat time="106.967" measure="-1" />
+    <ebeat time="107.646" measure="-1" />
+    <ebeat time="108.325" measure="-1" />
+    <ebeat time="109.003" measure="41" />
+    <ebeat time="109.667" measure="-1" />
+    <ebeat time="110.338" measure="-1" />
+    <ebeat time="111.009" measure="-1" />
+    <ebeat time="111.633" measure="42" />
+    <ebeat time="112.311" measure="-1" />
+    <ebeat time="112.992" measure="-1" />
+    <ebeat time="113.673" measure="-1" />
+    <ebeat time="114.353" measure="43" />
+    <ebeat time="115.034" measure="-1" />
+    <ebeat time="115.715" measure="-1" />
+    <ebeat time="116.396" measure="-1" />
+    <ebeat time="117.054" measure="44" />
+    <ebeat time="117.733" measure="-1" />
+    <ebeat time="118.412" measure="-1" />
+    <ebeat time="119.09" measure="-1" />
+    <ebeat time="119.769" measure="45" />
+    <ebeat time="120.445" measure="-1" />
+    <ebeat time="121.115" measure="-1" />
+    <ebeat time="121.785" measure="-1" />
+    <ebeat time="122.449" measure="46" />
+    <ebeat time="123.121" measure="-1" />
+    <ebeat time="123.792" measure="-1" />
+    <ebeat time="124.464" measure="-1" />
+    <ebeat time="125.155" measure="47" />
+    <ebeat time="125.832" measure="-1" />
+    <ebeat time="126.508" measure="-1" />
+    <ebeat time="127.185" measure="-1" />
+    <ebeat time="127.858" measure="48" />
+    <ebeat time="128.538" measure="-1" />
+    <ebeat time="129.217" measure="-1" />
+    <ebeat time="129.897" measure="-1" />
+    <ebeat time="130.561" measure="49" />
+    <ebeat time="131.234" measure="-1" />
+    <ebeat time="131.907" measure="-1" />
+    <ebeat time="132.574" measure="-1" />
+    <ebeat time="133.205" measure="50" />
+    <ebeat time="133.896" measure="-1" />
+    <ebeat time="134.588" measure="-1" />
+    <ebeat time="135.271" measure="-1" />
+    <ebeat time="135.954" measure="51" />
+    <ebeat time="136.634" measure="-1" />
+    <ebeat time="137.315" measure="-1" />
+    <ebeat time="137.988" measure="-1" />
+    <ebeat time="138.661" measure="52" />
+    <ebeat time="139.348" measure="-1" />
+    <ebeat time="140.035" measure="-1" />
+    <ebeat time="140.722" measure="-1" />
+    <ebeat time="141.407" measure="53" />
+    <ebeat time="142.091" measure="-1" />
+    <ebeat time="142.775" measure="-1" />
+    <ebeat time="143.444" measure="-1" />
+    <ebeat time="144.113" measure="54" />
+    <ebeat time="144.797" measure="-1" />
+    <ebeat time="145.481" measure="-1" />
+    <ebeat time="146.172" measure="-1" />
+    <ebeat time="146.836" measure="55" />
+    <ebeat time="147.52" measure="-1" />
+    <ebeat time="148.205" measure="-1" />
+    <ebeat time="148.879" measure="-1" />
+    <ebeat time="149.554" measure="56" />
+    <ebeat time="150.238" measure="-1" />
+    <ebeat time="150.923" measure="-1" />
+    <ebeat time="151.607" measure="-1" />
+    <ebeat time="152.292" measure="57" />
+    <ebeat time="152.963" measure="-1" />
+    <ebeat time="153.635" measure="-1" />
+    <ebeat time="154.307" measure="-1" />
+    <ebeat time="154.979" measure="58" />
+    <ebeat time="155.7" measure="-1" />
+    <ebeat time="156.342" measure="-1" />
+    <ebeat time="157.018" measure="-1" />
+    <ebeat time="157.694" measure="59" />
+    <ebeat time="158.371" measure="-1" />
+    <ebeat time="159.047" measure="-1" />
+    <ebeat time="159.729" measure="-1" />
+    <ebeat time="160.412" measure="60" />
+    <ebeat time="161.085" measure="-1" />
+    <ebeat time="161.726" measure="-1" />
+    <ebeat time="162.368" measure="-1" />
+    <ebeat time="163.042" measure="61" />
+    <ebeat time="163.717" measure="-1" />
+    <ebeat time="164.391" measure="-1" />
+    <ebeat time="165.054" measure="-1" />
+    <ebeat time="165.697" measure="62" />
+    <ebeat time="166.364" measure="-1" />
+    <ebeat time="167.043" measure="-1" />
+    <ebeat time="167.721" measure="-1" />
+    <ebeat time="168.4" measure="63" />
+    <ebeat time="169.073" measure="-1" />
+    <ebeat time="169.749" measure="-1" />
+    <ebeat time="170.425" measure="-1" />
+    <ebeat time="171.107" measure="64" />
+    <ebeat time="171.777" measure="-1" />
+    <ebeat time="172.457" measure="-1" />
+    <ebeat time="173.138" measure="-1" />
+    <ebeat time="173.82" measure="65" />
+    <ebeat time="174.501" measure="-1" />
+    <ebeat time="175.183" measure="-1" />
+    <ebeat time="175.865" measure="-1" />
+    <ebeat time="176.55" measure="66" />
+    <ebeat time="177.226" measure="-1" />
+    <ebeat time="177.906" measure="-1" />
+    <ebeat time="178.587" measure="-1" />
+    <ebeat time="179.275" measure="67" />
+    <ebeat time="179.954" measure="-1" />
+    <ebeat time="180.632" measure="-1" />
+    <ebeat time="181.311" measure="-1" />
+    <ebeat time="181.99" measure="68" />
+    <ebeat time="182.673" measure="-1" />
+    <ebeat time="183.355" measure="-1" />
+    <ebeat time="184.038" measure="-1" />
+    <ebeat time="184.684" measure="69" />
+    <ebeat time="185.36" measure="-1" />
+    <ebeat time="186.033" measure="-1" />
+    <ebeat time="186.706" measure="-1" />
+    <ebeat time="187.385" measure="70" />
+    <ebeat time="188.082" measure="-1" />
+    <ebeat time="188.755" measure="-1" />
+    <ebeat time="189.428" measure="-1" />
+    <ebeat time="190.092" measure="71" />
+    <ebeat time="190.744" measure="-1" />
+    <ebeat time="191.429" measure="-1" />
+    <ebeat time="192.113" measure="-1" />
+    <ebeat time="192.798" measure="72" />
+    <ebeat time="193.462" measure="-1" />
+    <ebeat time="194.145" measure="-1" />
+    <ebeat time="194.828" measure="-1" />
+    <ebeat time="195.513" measure="73" />
+    <ebeat time="196.195" measure="-1" />
+    <ebeat time="196.876" measure="-1" />
+    <ebeat time="197.558" measure="-1" />
+    <ebeat time="198.213" measure="74" />
+    <ebeat time="198.907" measure="-1" />
+    <ebeat time="199.571" measure="-1" />
+    <ebeat time="200.235" measure="-1" />
+    <ebeat time="200.923" measure="75" />
+    <ebeat time="201.602" measure="-1" />
+    <ebeat time="202.282" measure="-1" />
+    <ebeat time="202.961" measure="-1" />
+    <ebeat time="203.641" measure="76" />
+    <ebeat time="204.321" measure="-1" />
+    <ebeat time="205.001" measure="-1" />
+    <ebeat time="205.666" measure="-1" />
+    <ebeat time="206.341" measure="77" />
+    <ebeat time="207.017" measure="-1" />
+    <ebeat time="207.709" measure="-1" />
+    <ebeat time="208.384" measure="-1" />
+    <ebeat time="209.06" measure="78" />
+    <ebeat time="209.749" measure="-1" />
+    <ebeat time="210.405" measure="-1" />
+    <ebeat time="211.085" measure="-1" />
+    <ebeat time="211.747" measure="79" />
+    <ebeat time="212.419" measure="-1" />
+    <ebeat time="213.092" measure="-1" />
+    <ebeat time="213.76" measure="-1" />
+    <ebeat time="214.431" measure="80" />
+    <ebeat time="215.111" measure="-1" />
+    <ebeat time="215.8" measure="-1" />
+    <ebeat time="216.472" measure="-1" />
+    <ebeat time="217.145" measure="81" />
+    <ebeat time="217.807" measure="-1" />
+    <ebeat time="218.502" measure="-1" />
+    <ebeat time="219.17" measure="-1" />
+    <ebeat time="219.844" measure="82" />
+    <ebeat time="220.522" measure="-1" />
+    <ebeat time="221.2" measure="-1" />
+    <ebeat time="221.878" measure="-1" />
+    <ebeat time="222.537" measure="83" />
+    <ebeat time="223.208" measure="-1" />
+    <ebeat time="223.879" measure="-1" />
+    <ebeat time="224.535" measure="-1" />
+    <ebeat time="225.218" measure="84" />
+    <ebeat time="225.896" measure="-1" />
+    <ebeat time="226.574" measure="-1" />
+    <ebeat time="227.252" measure="-1" />
+    <ebeat time="227.932" measure="85" />
+    <ebeat time="228.609" measure="-1" />
+    <ebeat time="229.275" measure="-1" />
+    <ebeat time="229.942" measure="-1" />
+    <ebeat time="230.613" measure="86" />
+    <ebeat time="231.305" measure="-1" />
+    <ebeat time="231.97" measure="-1" />
+    <ebeat time="232.617" measure="-1" />
+    <ebeat time="233.294" measure="87" />
+    <ebeat time="233.953" measure="-1" />
+    <ebeat time="234.651" measure="-1" />
+    <ebeat time="235.319" measure="-1" />
+    <ebeat time="235.975" measure="88" />
+    <ebeat time="236.64" measure="-1" />
+    <ebeat time="237.296" measure="-1" />
+    <ebeat time="237.952" measure="-1" />
+    <ebeat time="238.587" measure="89" />
+    <ebeat time="239.24" measure="-1" />
+    <ebeat time="239.923" measure="-1" />
+    <ebeat time="240.585" measure="-1" />
+    <ebeat time="241.259" measure="90" />
+    <ebeat time="241.933" measure="-1" />
+    <ebeat time="242.607" measure="-1" />
+    <ebeat time="243.282" measure="-1" />
+    <ebeat time="243.956" measure="91" />
+    <ebeat time="244.63" measure="-1" />
+    <ebeat time="245.304" measure="-1" />
+    <ebeat time="245.978" measure="-1" />
+    <ebeat time="246.652" measure="92" />
+    <ebeat time="247.327" measure="-1" />
+    <ebeat time="248.001" measure="-1" />
+    <ebeat time="248.675" measure="-1" />
+    <ebeat time="249.349" measure="93" />
+    <ebeat time="250.023" measure="-1" />
+    <ebeat time="250.697" measure="-1" />
+    <ebeat time="251.371" measure="-1" />
+  </ebeats>
+  <tonebase>Anthem_For_The_Year_2000_Bass</tonebase>
+  <sections count="12">
+    <section name="intro" number="1" startTime="30.056" />
+    <section name="noguitar" number="1" startTime="51.939" />
+    <section name="verse" number="1" startTime="73.733" />
+    <section name="noguitar" number="2" startTime="95.477" />
+    <section name="verse" number="2" startTime="111.633" />
+    <section name="chorus" number="1" startTime="133.205" />
+    <section name="postvs" number="1" startTime="154.979" />
+    <section name="solo" number="1" startTime="165.697" />
+    <section name="noguitar" number="3" startTime="187.385" />
+    <section name="chorus" number="2" startTime="198.213" />
+    <section name="chorus" number="3" startTime="219.844" />
+    <section name="postchorus" number="1" startTime="230.613" />
+  </sections>
+  <events count="1">
+    <event time="2.712" code="TS:4/4" />
+  </events>
+  <transcriptionTrack difficulty="-1">
+    <notes count="0" />
+    <chords count="0" />
+    <anchors count="0" />
+    <handShapes count="0" />
+  </transcriptionTrack>
+  <levels count="1">
+    <level difficulty="0">
+      <notes count="348">
+        <note time="30.056" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="30.142" linkNext="0" accent="0" bend="0" fret="7" hammerOn="1" harmonic="0" hopo="1" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.43" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="30.744" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="31.087" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="31.431" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="31.775" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="32.463" linkNext="0" accent="0" bend="0" fret="2" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="32.807" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.513" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="33.491" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="33.833" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="1" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="34.175" linkNext="0" accent="0" bend="0" fret="0" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.513" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="34.859" linkNext="0" accent="0" bend="0" fret="0" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.513" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="35.543" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="35.628" linkNext="0" accent="0" bend="0" fret="7" hammerOn="1" harmonic="0" hopo="1" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.426" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="36.224" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="36.564" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="36.905" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="37.245" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="37.926" linkNext="0" accent="0" bend="0" fret="2" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="38.267" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.512" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="38.95" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="39.292" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="1" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="39.633" linkNext="0" accent="0" bend="0" fret="0" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.513" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="40.317" linkNext="0" accent="0" bend="0" fret="0" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.512" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="41" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="41.085" linkNext="0" accent="0" bend="0" fret="7" hammerOn="1" harmonic="0" hopo="1" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.428" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="41.684" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="42.026" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="42.368" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="42.71" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="43.394" linkNext="0" accent="0" bend="0" fret="2" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="43.736" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.51" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="44.416" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="44.755" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="1" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="45.095" linkNext="0" accent="0" bend="0" fret="0" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.51" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="45.775" linkNext="0" accent="0" bend="0" fret="0" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.518" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="46.466" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="46.551" linkNext="0" accent="0" bend="0" fret="7" hammerOn="1" harmonic="0" hopo="1" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.428" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="47.15" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="47.492" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="47.834" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="48.176" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="48.86" linkNext="0" accent="0" bend="0" fret="2" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="49.202" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.514" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="49.887" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="50.229" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="1" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="50.571" linkNext="0" accent="0" bend="0" fret="0" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.513" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="51.255" linkNext="0" accent="0" bend="0" fret="0" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.684" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="73.733" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="73.818" linkNext="0" accent="0" bend="0" fret="7" hammerOn="1" harmonic="0" hopo="1" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.426" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="74.414" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="74.754" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="75.095" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="75.435" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="76.116" linkNext="0" accent="0" bend="0" fret="2" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="76.457" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.511" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="77.138" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="77.478" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="1" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="77.819" linkNext="0" accent="0" bend="0" fret="0" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.511" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="78.5" linkNext="0" accent="0" bend="0" fret="0" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.511" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="79.181" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="79.266" linkNext="0" accent="0" bend="0" fret="7" hammerOn="1" harmonic="0" hopo="1" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.423" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="79.858" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="80.196" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="80.534" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="80.873" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="81.55" linkNext="0" accent="0" bend="0" fret="2" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="81.89" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.509" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="82.569" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="82.908" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="1" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="83.247" linkNext="0" accent="0" bend="0" fret="0" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.51" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="83.926" linkNext="0" accent="0" bend="0" fret="0" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.509" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="84.605" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="84.69" linkNext="0" accent="0" bend="0" fret="7" hammerOn="1" harmonic="0" hopo="1" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.426" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="85.286" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="85.626" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="85.966" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="86.307" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="86.988" linkNext="0" accent="0" bend="0" fret="2" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="87.328" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.511" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="88.009" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="88.349" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="1" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="88.689" linkNext="0" accent="0" bend="0" fret="0" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.511" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="89.37" linkNext="0" accent="0" bend="0" fret="0" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.511" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="90.051" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="90.136" linkNext="0" accent="0" bend="0" fret="7" hammerOn="1" harmonic="0" hopo="1" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.426" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="90.732" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="91.072" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="91.412" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="91.753" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="92.431" linkNext="0" accent="0" bend="0" fret="2" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="92.77" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.507" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="93.447" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="93.785" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="1" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="94.123" linkNext="0" accent="0" bend="0" fret="0" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.508" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="94.8" linkNext="0" accent="0" bend="0" fret="0" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.677" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="111.633" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="111.718" linkNext="0" accent="0" bend="0" fret="7" hammerOn="1" harmonic="0" hopo="1" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.423" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="112.311" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="112.651" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="112.992" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="113.332" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="113.673" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="114.013" linkNext="0" accent="0" bend="0" fret="2" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="114.353" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.511" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="115.034" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="115.375" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="1" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="115.715" linkNext="0" accent="0" bend="0" fret="0" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.511" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="116.396" linkNext="0" accent="0" bend="0" fret="0" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.493" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="117.054" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="117.139" linkNext="0" accent="0" bend="0" fret="7" hammerOn="1" harmonic="0" hopo="1" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.424" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="117.733" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="118.072" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="118.412" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="118.751" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="119.09" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="119.43" linkNext="0" accent="0" bend="0" fret="2" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="119.769" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.507" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="120.445" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="120.78" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="1" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="121.115" linkNext="0" accent="0" bend="0" fret="0" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.502" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="121.785" linkNext="0" accent="0" bend="0" fret="0" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.498" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="122.449" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="122.533" linkNext="0" accent="0" bend="0" fret="7" hammerOn="1" harmonic="0" hopo="1" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.42" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="123.121" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="123.456" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="123.792" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="124.128" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="124.464" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="124.809" linkNext="0" accent="0" bend="0" fret="2" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="125.155" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.508" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="125.832" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="126.17" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="1" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="126.508" linkNext="0" accent="0" bend="0" fret="0" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.508" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="127.185" linkNext="0" accent="0" bend="0" fret="0" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.505" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="127.858" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="127.943" linkNext="0" accent="0" bend="0" fret="7" hammerOn="1" harmonic="0" hopo="1" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.425" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="128.538" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="128.877" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="129.217" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="129.557" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="129.897" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="130.229" linkNext="0" accent="0" bend="0" fret="2" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="130.561" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.505" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="131.234" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="131.57" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="1" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="131.907" linkNext="0" accent="0" bend="0" fret="0" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.5" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="132.574" linkNext="0" accent="0" bend="0" fret="0" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.473" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="133.205" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="133.291" linkNext="0" accent="0" bend="0" fret="7" hammerOn="1" harmonic="0" hopo="1" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.432" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="133.896" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="134.242" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="134.588" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="134.929" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="135.271" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="135.612" linkNext="0" accent="0" bend="0" fret="2" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="135.954" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.51" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="136.634" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="136.975" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="1" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="137.315" linkNext="0" accent="0" bend="0" fret="0" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.505" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="137.988" linkNext="0" accent="0" bend="0" fret="0" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.505" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="138.661" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="138.747" linkNext="0" accent="0" bend="0" fret="7" hammerOn="1" harmonic="0" hopo="1" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.429" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="139.348" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="139.691" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="140.035" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="140.378" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="140.722" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="141.064" linkNext="0" accent="0" bend="0" fret="2" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="141.407" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.513" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="142.091" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="142.433" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="1" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="142.775" linkNext="0" accent="0" bend="0" fret="0" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.502" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="143.444" linkNext="0" accent="0" bend="0" fret="0" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.502" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="144.113" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="144.198" linkNext="0" accent="0" bend="0" fret="7" hammerOn="1" harmonic="0" hopo="1" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.428" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="144.797" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="145.139" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="145.481" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="145.826" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="146.172" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="146.504" linkNext="0" accent="0" bend="0" fret="2" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="146.836" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.513" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="147.52" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="147.863" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="1" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="148.205" linkNext="0" accent="0" bend="0" fret="0" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.505" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="148.879" linkNext="0" accent="0" bend="0" fret="0" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.507" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="149.554" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="149.639" linkNext="0" accent="0" bend="0" fret="7" hammerOn="1" harmonic="0" hopo="1" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.428" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="150.238" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="150.581" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="150.923" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="151.265" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="151.607" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="151.95" linkNext="0" accent="0" bend="0" fret="2" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="152.292" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.503" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="152.963" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="153.299" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="1" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="153.635" linkNext="0" accent="0" bend="0" fret="0" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.504" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="154.307" linkNext="0" accent="0" bend="0" fret="0" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.504" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="154.979" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="155.069" linkNext="0" accent="0" bend="0" fret="7" hammerOn="1" harmonic="0" hopo="1" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="155.7" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="155.78" linkNext="0" accent="0" bend="0" fret="7" hammerOn="1" harmonic="0" hopo="1" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="158.709" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="1" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="159.047" linkNext="0" accent="0" bend="0" fret="0" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.511" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="159.729" linkNext="0" accent="0" bend="0" fret="0" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.513" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="160.412" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="160.496" linkNext="0" accent="0" bend="0" fret="7" hammerOn="1" harmonic="0" hopo="1" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="161.085" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="161.165" linkNext="0" accent="0" bend="0" fret="7" hammerOn="1" harmonic="0" hopo="1" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="164.054" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="1" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="164.391" linkNext="0" accent="0" bend="0" fret="0" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.497" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="165.054" linkNext="0" accent="0" bend="0" fret="0" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.482" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="165.697" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.5" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="166.364" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="166.703" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="167.043" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="167.382" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="167.721" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="168.061" linkNext="0" accent="0" bend="0" fret="2" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="168.4" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.505" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="169.073" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="169.411" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="1" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="169.749" linkNext="0" accent="0" bend="0" fret="0" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.507" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="170.425" linkNext="0" accent="0" bend="0" fret="0" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.511" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="171.107" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.502" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="171.777" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="172.117" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="172.457" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="172.798" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="173.138" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="173.479" linkNext="0" accent="0" bend="0" fret="2" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="173.82" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.51" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="174.501" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="174.842" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="1" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="175.183" linkNext="0" accent="0" bend="0" fret="0" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.512" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="175.865" linkNext="0" accent="0" bend="0" fret="0" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.514" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="176.55" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.507" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="177.226" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="177.566" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="177.906" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="178.247" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="178.587" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="178.931" linkNext="0" accent="0" bend="0" fret="2" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="179.275" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.509" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="179.954" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="180.293" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="1" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="180.632" linkNext="0" accent="0" bend="0" fret="0" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.51" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="181.311" linkNext="0" accent="0" bend="0" fret="0" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.509" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="181.99" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.512" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="182.673" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="183.014" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="183.355" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="183.697" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="184.038" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="184.361" linkNext="0" accent="0" bend="0" fret="2" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="184.684" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.507" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="185.36" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="185.696" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="1" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="186.033" linkNext="0" accent="0" bend="0" fret="0" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.505" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="186.706" linkNext="0" accent="0" bend="0" fret="0" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.679" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="198.213" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.52" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="198.907" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="199.239" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="199.571" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="199.903" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="200.235" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="200.579" linkNext="0" accent="0" bend="0" fret="2" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="200.923" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.509" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="201.602" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="201.942" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="1" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="202.282" linkNext="0" accent="0" bend="0" fret="0" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.509" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="202.961" linkNext="0" accent="0" bend="0" fret="0" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.51" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="203.641" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.51" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="204.321" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="204.661" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="205.001" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="205.333" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="205.666" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="206.003" linkNext="0" accent="0" bend="0" fret="2" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="206.341" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.507" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="207.017" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="207.363" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="1" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="207.709" linkNext="0" accent="0" bend="0" fret="0" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.506" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="208.384" linkNext="0" accent="0" bend="0" fret="0" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.507" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="209.06" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.517" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="209.749" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="210.077" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="210.405" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="210.745" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="211.085" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="211.416" linkNext="0" accent="0" bend="0" fret="2" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="211.747" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.504" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="212.419" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="212.756" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="1" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="213.092" linkNext="0" accent="0" bend="0" fret="0" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.501" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="213.76" linkNext="0" accent="0" bend="0" fret="0" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.503" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="214.431" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.51" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="215.111" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="215.455" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="215.8" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="216.136" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="216.472" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="216.809" linkNext="0" accent="0" bend="0" fret="2" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="217.145" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.496" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="217.807" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="218.154" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="1" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="218.502" linkNext="0" accent="0" bend="0" fret="0" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.501" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="219.17" linkNext="0" accent="0" bend="0" fret="0" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.505" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="219.844" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.508" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="220.522" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="220.861" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="221.2" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="221.539" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="221.878" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="222.207" linkNext="0" accent="0" bend="0" fret="2" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="222.537" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.503" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="223.208" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="223.543" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="1" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="223.879" linkNext="0" accent="0" bend="0" fret="0" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.492" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="224.535" linkNext="0" accent="0" bend="0" fret="0" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.512" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="225.218" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.508" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="225.896" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="226.235" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="226.574" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="226.913" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="227.252" linkNext="0" accent="0" bend="0" fret="7" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="227.592" linkNext="0" accent="0" bend="0" fret="2" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="227.932" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.508" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="228.609" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="228.942" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="1" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="229.275" linkNext="0" accent="0" bend="0" fret="0" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.501" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="229.942" linkNext="0" accent="0" bend="0" fret="0" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.503" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="230.613" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="230.699" linkNext="0" accent="0" bend="0" fret="7" hammerOn="1" harmonic="0" hopo="1" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="231.305" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="231.388" linkNext="0" accent="0" bend="0" fret="7" hammerOn="1" harmonic="0" hopo="1" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="234.302" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="1" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="234.651" linkNext="0" accent="0" bend="0" fret="0" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.501" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="235.319" linkNext="0" accent="0" bend="0" fret="0" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.492" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="235.975" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="236.058" linkNext="0" accent="0" bend="0" fret="7" hammerOn="1" harmonic="0" hopo="1" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="236.64" linkNext="0" accent="0" bend="0" fret="5" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="236.722" linkNext="0" accent="0" bend="0" fret="7" hammerOn="1" harmonic="0" hopo="1" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="239.581" linkNext="0" accent="0" bend="0" fret="3" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="1" sustain="0" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="239.923" linkNext="0" accent="0" bend="0" fret="0" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.496" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+        <note time="240.585" linkNext="0" accent="0" bend="0" fret="0" hammerOn="0" harmonic="0" hopo="0" ignore="0" leftHand="-1" mute="0" palmMute="0" pluck="-1" pullOff="0" slap="-1" slideTo="-1" string="0" sustain="0.674" tremolo="0" harmonicPinch="0" pickDirection="0" rightHand="-1" slideUnpitchTo="-1" tap="0" vibrato="0" />
+      </notes>
+      <chords count="0" />
+      <anchors count="60">
+        <anchor time="30.056" fret="5" width="4" />
+        <anchor time="32.463" fret="2" width="4" />
+        <anchor time="35.543" fret="5" width="4" />
+        <anchor time="37.926" fret="2" width="4" />
+        <anchor time="41" fret="5" width="4" />
+        <anchor time="43.394" fret="2" width="4" />
+        <anchor time="46.466" fret="5" width="4" />
+        <anchor time="48.86" fret="2" width="4" />
+        <anchor time="73.733" fret="5" width="4" />
+        <anchor time="76.116" fret="2" width="4" />
+        <anchor time="79.181" fret="5" width="4" />
+        <anchor time="81.55" fret="2" width="4" />
+        <anchor time="84.605" fret="5" width="4" />
+        <anchor time="86.988" fret="2" width="4" />
+        <anchor time="90.051" fret="5" width="4" />
+        <anchor time="92.431" fret="2" width="4" />
+        <anchor time="111.633" fret="5" width="4" />
+        <anchor time="114.013" fret="2" width="4" />
+        <anchor time="117.054" fret="5" width="4" />
+        <anchor time="119.43" fret="2" width="4" />
+        <anchor time="122.449" fret="5" width="4" />
+        <anchor time="124.809" fret="2" width="4" />
+        <anchor time="127.858" fret="5" width="4" />
+        <anchor time="130.229" fret="2" width="4" />
+        <anchor time="133.205" fret="5" width="4" />
+        <anchor time="135.612" fret="2" width="4" />
+        <anchor time="138.661" fret="5" width="4" />
+        <anchor time="141.064" fret="2" width="4" />
+        <anchor time="144.113" fret="5" width="4" />
+        <anchor time="146.504" fret="2" width="4" />
+        <anchor time="149.554" fret="5" width="4" />
+        <anchor time="151.95" fret="2" width="4" />
+        <anchor time="154.979" fret="5" width="4" />
+        <anchor time="158.709" fret="3" width="4" />
+        <anchor time="160.412" fret="5" width="4" />
+        <anchor time="164.054" fret="3" width="4" />
+        <anchor time="165.697" fret="5" width="4" />
+        <anchor time="168.061" fret="2" width="4" />
+        <anchor time="171.107" fret="5" width="4" />
+        <anchor time="173.479" fret="2" width="4" />
+        <anchor time="176.55" fret="5" width="4" />
+        <anchor time="178.931" fret="2" width="4" />
+        <anchor time="181.99" fret="5" width="4" />
+        <anchor time="184.361" fret="2" width="4" />
+        <anchor time="198.213" fret="5" width="4" />
+        <anchor time="200.579" fret="2" width="4" />
+        <anchor time="203.641" fret="5" width="4" />
+        <anchor time="206.003" fret="2" width="4" />
+        <anchor time="209.06" fret="5" width="4" />
+        <anchor time="211.416" fret="2" width="4" />
+        <anchor time="214.431" fret="5" width="4" />
+        <anchor time="216.809" fret="2" width="4" />
+        <anchor time="219.844" fret="5" width="4" />
+        <anchor time="222.207" fret="2" width="4" />
+        <anchor time="225.218" fret="5" width="4" />
+        <anchor time="227.592" fret="2" width="4" />
+        <anchor time="230.613" fret="5" width="4" />
+        <anchor time="234.302" fret="3" width="4" />
+        <anchor time="235.975" fret="5" width="4" />
+        <anchor time="239.581" fret="3" width="4" />
+      </anchors>
+      <handShapes count="0" />
+    </level>
+  </levels>
+</song>

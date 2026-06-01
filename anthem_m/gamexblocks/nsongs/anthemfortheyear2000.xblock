@@ -1,0 +1,175 @@
+<?xml version="1.0"?>
+<game>
+  <entitySet>
+    <entity id="8872dbb164164df5bbfb16d3dc94a16b" modelName="RSEnumerable_Song" name="AnthemfortheYear2000_Lead" iterations="0">
+      <properties>
+        <property name="Header">
+          <set value="urn:database:hsan-db:songs_dlc_anthemfortheyear2000" />
+        </property>
+        <property name="Manifest">
+          <set value="urn:database:json-db:anthemfortheyear2000_lead" />
+        </property>
+        <property name="SngAsset">
+          <set value="urn:application:musicgame-song:anthemfortheyear2000_lead" />
+        </property>
+        <property name="AlbumArtSmall">
+          <set value="urn:image:dds:album_anthemfortheyear2000_64" />
+        </property>
+        <property name="AlbumArtMedium">
+          <set value="urn:image:dds:album_anthemfortheyear2000_128" />
+        </property>
+        <property name="AlbumArtLarge">
+          <set value="urn:image:dds:album_anthemfortheyear2000_256" />
+        </property>
+        <property name="LyricArt">
+          <set value="" />
+        </property>
+        <property name="ShowLightsXMLAsset">
+          <set value="urn:application:xml:anthemfortheyear2000_showlights" />
+        </property>
+        <property name="SoundBank">
+          <set value="urn:audio:wwise-sound-bank:song_anthemfortheyear2000" />
+        </property>
+        <property name="PreviewSoundBank">
+          <set value="urn:audio:wwise-sound-bank:song_anthemfortheyear2000_preview" />
+        </property>
+      </properties>
+    </entity>
+    <entity id="bacde47d47264733b251f74d5cbb440d" modelName="RSEnumerable_Song" name="AnthemfortheYear2000_Rhythm" iterations="0">
+      <properties>
+        <property name="Header">
+          <set value="urn:database:hsan-db:songs_dlc_anthemfortheyear2000" />
+        </property>
+        <property name="Manifest">
+          <set value="urn:database:json-db:anthemfortheyear2000_rhythm" />
+        </property>
+        <property name="SngAsset">
+          <set value="urn:application:musicgame-song:anthemfortheyear2000_rhythm" />
+        </property>
+        <property name="AlbumArtSmall">
+          <set value="urn:image:dds:album_anthemfortheyear2000_64" />
+        </property>
+        <property name="AlbumArtMedium">
+          <set value="urn:image:dds:album_anthemfortheyear2000_128" />
+        </property>
+        <property name="AlbumArtLarge">
+          <set value="urn:image:dds:album_anthemfortheyear2000_256" />
+        </property>
+        <property name="LyricArt">
+          <set value="" />
+        </property>
+        <property name="ShowLightsXMLAsset">
+          <set value="urn:application:xml:anthemfortheyear2000_showlights" />
+        </property>
+        <property name="SoundBank">
+          <set value="urn:audio:wwise-sound-bank:song_anthemfortheyear2000" />
+        </property>
+        <property name="PreviewSoundBank">
+          <set value="urn:audio:wwise-sound-bank:song_anthemfortheyear2000_preview" />
+        </property>
+      </properties>
+    </entity>
+    <entity id="1299515680344621844389ec8f1c72c9" modelName="RSEnumerable_Song" name="AnthemfortheYear2000_Bass" iterations="0">
+      <properties>
+        <property name="Header">
+          <set value="urn:database:hsan-db:songs_dlc_anthemfortheyear2000" />
+        </property>
+        <property name="Manifest">
+          <set value="urn:database:json-db:anthemfortheyear2000_bass" />
+        </property>
+        <property name="SngAsset">
+          <set value="urn:application:musicgame-song:anthemfortheyear2000_bass" />
+        </property>
+        <property name="AlbumArtSmall">
+          <set value="urn:image:dds:album_anthemfortheyear2000_64" />
+        </property>
+        <property name="AlbumArtMedium">
+          <set value="urn:image:dds:album_anthemfortheyear2000_128" />
+        </property>
+        <property name="AlbumArtLarge">
+          <set value="urn:image:dds:album_anthemfortheyear2000_256" />
+        </property>
+        <property name="LyricArt">
+          <set value="" />
+        </property>
+        <property name="ShowLightsXMLAsset">
+          <set value="urn:application:xml:anthemfortheyear2000_showlights" />
+        </property>
+        <property name="SoundBank">
+          <set value="urn:audio:wwise-sound-bank:song_anthemfortheyear2000" />
+        </property>
+        <property name="PreviewSoundBank">
+          <set value="urn:audio:wwise-sound-bank:song_anthemfortheyear2000_preview" />
+        </property>
+      </properties>
+    </entity>
+    <entity id="660f4e6b87514bf0b950a8ed7a27e4f1" modelName="RSEnumerable_Song" name="AnthemfortheYear2000_Vocals" iterations="0">
+      <properties>
+        <property name="Header">
+          <set value="urn:database:hsan-db:songs_dlc_anthemfortheyear2000" />
+        </property>
+        <property name="Manifest">
+          <set value="urn:database:json-db:anthemfortheyear2000_vocals" />
+        </property>
+        <property name="SngAsset">
+          <set value="urn:application:musicgame-song:anthemfortheyear2000_vocals" />
+        </property>
+        <property name="AlbumArtSmall">
+          <set value="urn:image:dds:album_anthemfortheyear2000_64" />
+        </property>
+        <property name="AlbumArtMedium">
+          <set value="urn:image:dds:album_anthemfortheyear2000_128" />
+        </property>
+        <property name="AlbumArtLarge">
+          <set value="urn:image:dds:album_anthemfortheyear2000_256" />
+        </property>
+        <property name="LyricArt">
+          <set value="" />
+        </property>
+        <property name="ShowLightsXMLAsset">
+          <set value="urn:application:xml:anthemfortheyear2000_showlights" />
+        </property>
+        <property name="SoundBank">
+          <set value="urn:audio:wwise-sound-bank:song_anthemfortheyear2000" />
+        </property>
+        <property name="PreviewSoundBank">
+          <set value="urn:audio:wwise-sound-bank:song_anthemfortheyear2000_preview" />
+        </property>
+      </properties>
+    </entity>
+    <entity id="ec6a80c25c2a4416890135bafd9a515c" modelName="RSEnumerable_Song" name="AnthemfortheYear2000_Lead2" iterations="0">
+      <properties>
+        <property name="Header">
+          <set value="urn:database:hsan-db:songs_dlc_anthemfortheyear2000" />
+        </property>
+        <property name="Manifest">
+          <set value="urn:database:json-db:anthemfortheyear2000_lead2" />
+        </property>
+        <property name="SngAsset">
+          <set value="urn:application:musicgame-song:anthemfortheyear2000_lead2" />
+        </property>
+        <property name="AlbumArtSmall">
+          <set value="urn:image:dds:album_anthemfortheyear2000_64" />
+        </property>
+        <property name="AlbumArtMedium">
+          <set value="urn:image:dds:album_anthemfortheyear2000_128" />
+        </property>
+        <property name="AlbumArtLarge">
+          <set value="urn:image:dds:album_anthemfortheyear2000_256" />
+        </property>
+        <property name="LyricArt">
+          <set value="" />
+        </property>
+        <property name="ShowLightsXMLAsset">
+          <set value="urn:application:xml:anthemfortheyear2000_showlights" />
+        </property>
+        <property name="SoundBank">
+          <set value="urn:audio:wwise-sound-bank:song_anthemfortheyear2000" />
+        </property>
+        <property name="PreviewSoundBank">
+          <set value="urn:audio:wwise-sound-bank:song_anthemfortheyear2000_preview" />
+        </property>
+      </properties>
+    </entity>
+  </entitySet>
+</game>

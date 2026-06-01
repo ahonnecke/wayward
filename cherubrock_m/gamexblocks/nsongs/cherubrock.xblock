@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<game>
+  <entitySet>
+    <entity id="ef32eb429ed2f7900445d5107cd225e0" modelName="RSEnumerable_Song" name="CherubRock_Bass" iterations="0">
+      <properties>
+        <property name="Header">
+          <set value="urn:database:hsan-db:songs_dlc_cherubrock" />
+        </property>
+        <property name="Manifest">
+          <set value="urn:database:json-db:cherubrock_bass" />
+        </property>
+        <property name="SngAsset">
+          <set value="urn:application:musicgame-song:cherubrock_bass" />
+        </property>
+        <property name="AlbumArtSmall">
+          <set value="urn:image:dds:album_cherubrock_64" />
+        </property>
+        <property name="AlbumArtMedium">
+          <set value="urn:image:dds:album_cherubrock_128" />
+        </property>
+        <property name="AlbumArtLarge">
+          <set value="urn:image:dds:album_cherubrock_256" />
+        </property>
+        <property name="LyricArt">
+          <set value="" />
+        </property>
+        <property name="ShowLightsXMLAsset">
+          <set value="urn:application:xml:cherubrock_showlights" />
+        </property>
+        <property name="SoundBank">
+          <set value="urn:audio:wwise-sound-bank:song_cherubrock" />
+        </property>
+        <property name="PreviewSoundBank">
+          <set value="urn:audio:wwise-sound-bank:song_cherubrock_preview" />
+        </property>
+      </properties>
+    </entity>
+    <entity id="c796083a200d6f5f72141159ae99b235" modelName="RSEnumerable_Song" name="CherubRock_Combo" iterations="0">
+      <properties>
+        <property name="Header">
+          <set value="urn:database:hsan-db:songs_dlc_cherubrock" />
+        </property>
+        <property name="Manifest">
+          <set value="urn:database:json-db:cherubrock_combo" />
+        </property>
+        <property name="SngAsset">
+          <set value="urn:application:musicgame-song:cherubrock_combo" />
+        </property>
+        <property name="AlbumArtSmall">
+          <set value="urn:image:dds:album_cherubrock_64" />
+        </property>
+        <property name="AlbumArtMedium">
+          <set value="urn:image:dds:album_cherubrock_128" />
+        </property>
+        <property name="AlbumArtLarge">
+          <set value="urn:image:dds:album_cherubrock_256" />
+        </property>
+        <property name="LyricArt">
+          <set value="" />
+        </property>
+        <property name="ShowLightsXMLAsset">
+          <set value="urn:application:xml:cherubrock_showlights" />
+        </property>
+        <property name="SoundBank">
+          <set value="urn:audio:wwise-sound-bank:song_cherubrock" />
+        </property>
+        <property name="PreviewSoundBank">
+          <set value="urn:audio:wwise-sound-bank:song_cherubrock_preview" />
+        </property>
+      </properties>
+    </entity>
+    <entity id="66b74e25d7f82faeaed532d7f6ac2b81" modelName="RSEnumerable_Song" name="CherubRock_Combo2" iterations="0">
+      <properties>
+        <property name="Header">
+          <set value="urn:database:hsan-db:songs_dlc_cherubrock" />
+        </property>
+        <property name="Manifest">
+          <set value="urn:database:json-db:cherubrock_combo2" />
+        </property>
+        <property name="SngAsset">
+          <set value="urn:application:musicgame-song:cherubrock_combo2" />
+        </property>
+        <property name="AlbumArtSmall">
+          <set value="urn:image:dds:album_cherubrock_64" />
+        </property>
+        <property name="AlbumArtMedium">
+          <set value="urn:image:dds:album_cherubrock_128" />
+        </property>
+        <property name="AlbumArtLarge">
+          <set value="urn:image:dds:album_cherubrock_256" />
+        </property>
+        <property name="LyricArt">
+          <set value="" />
+        </property>
+        <property name="ShowLightsXMLAsset">
+          <set value="urn:application:xml:cherubrock_showlights" />
+        </property>
+        <property name="SoundBank">
+          <set value="urn:audio:wwise-sound-bank:song_cherubrock" />
+        </property>
+        <property name="PreviewSoundBank">
+          <set value="urn:audio:wwise-sound-bank:song_cherubrock_preview" />
+        </property>
+      </properties>
+    </entity>
+    <entity id="ffd00941c6769aef44b36caf650898f7" modelName="RSEnumerable_Song" name="CherubRock_Vocals" iterations="0">
+      <properties>
+        <property name="Header">
+          <set value="urn:database:hsan-db:songs_dlc_cherubrock" />
+        </property>
+        <property name="Manifest">
+          <set value="urn:database:json-db:cherubrock_vocals" />
+        </property>
+        <property name="SngAsset">
+          <set value="urn:application:musicgame-song:cherubrock_vocals" />
+        </property>
+        <property name="AlbumArtSmall">
+          <set value="urn:image:dds:album_cherubrock_64" />
+        </property>
+        <property name="AlbumArtMedium">
+          <set value="urn:image:dds:album_cherubrock_128" />
+        </property>
+        <property name="AlbumArtLarge">
+          <set value="urn:image:dds:album_cherubrock_256" />
+        </property>
+        <property name="LyricArt">
+          <set value="" />
+        </property>
+        <property name="ShowLightsXMLAsset">
+          <set value="urn:application:xml:cherubrock_showlights" />
+        </property>
+        <property name="SoundBank">
+          <set value="urn:audio:wwise-sound-bank:song_cherubrock" />
+        </property>
+        <property name="PreviewSoundBank">
+          <set value="urn:audio:wwise-sound-bank:song_cherubrock_preview" />
+        </property>
+      </properties>
+    </entity>
+  </entitySet>
+</game>
