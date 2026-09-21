@@ -21,7 +21,6 @@ DOWNLOADS_DIR = _path("WAYWARD_DOWNLOADS", HOME / "Downloads")
 # --- routing destinations ---
 SCREENSHOTS_DIR = _path("WAYWARD_SCREENSHOTS", HOME / "screenshots")
 IMAGES_DIR = _path("WAYWARD_IMAGES", HOME / "Downloads" / "images")
-QMK_DIR = _path("WAYWARD_QMK", HOME / "qmk")
 STL_DIR = _path("WAYWARD_STL", HOME / "stl")
 
 # --- psarc → feedBack ingest ---

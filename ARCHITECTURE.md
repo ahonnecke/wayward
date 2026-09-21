@@ -19,7 +19,6 @@ Handler (FileSystemEventHandler)
            ├─ ScreenshotHandler  (shot_*.{png,jpg,...})  → ~/screenshots/YYYY-MM-DD/
            ├─ ImageHandler       (other images)          → ~/Downloads/images/YYYY-MM-DD/
            ├─ PsarcHandler       (*.psarc)               → feedBack via psarc2fb
-           ├─ QmkHandler         (*.bin)                 → ~/qmk/
            └─ STL lambda         (*.stl)                 → ~/stl/
 ```
 

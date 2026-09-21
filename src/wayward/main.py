@@ -150,18 +150,6 @@ class ImageHandler(FileTypeHandler):
         shutil.move(path, new_path)
 
 
-class QmkHandler(FileTypeHandler):
-    def __init__(self):
-        self.DEST = config.QMK_DIR
-
-    def file_filter(self, path) -> bool:
-        # TODO: figure out how to filter for qmk files, not just .bin
-        return path.suffix == ".bin"
-
-    def file_handler(self, path):
-        return shutil.move(path, os.path.join(self.DEST, path.name))
-
-
 class Handler(FileSystemEventHandler):
     def __init__(self, file_handlers: List[FileTypeHandler]):
         self.file_handlers = file_handlers
@@ -247,7 +235,6 @@ def run():
                 ScreenshotHandler(),
                 ImageHandler(),
                 PsarcHandler(),
-                QmkHandler(),
                 FileTypeHandler(
                     file_filter=lambda path: path.suffix == ".stl",
                     file_handler=lambda path: shutil.move(

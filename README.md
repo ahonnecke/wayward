@@ -11,7 +11,6 @@ downloads aren't touched), then files it by type.
 | `shot_*` screenshot | `~/screenshots/YYYY-MM-DD/`                    |
 | other images        | `~/Downloads/images/YYYY-MM-DD/`              |
 | `*.psarc` (CDLC)    | feedBack, via the `psarc2fb` CLI              |
-| `*.bin` (keyboard)  | `~/qmk/`                                       |
 | `*.stl` (3D print)  | `~/stl/`                                       |
 
 ### Rocksmith CDLC → feedBack
