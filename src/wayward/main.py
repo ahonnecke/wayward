@@ -18,6 +18,8 @@ import logging.handlers
 import daemon
 
 
+from wayward import config
+
 NAME = "wayward"
 logger = logging.getLogger(NAME)
 
@@ -90,10 +92,8 @@ class PsarcHandler(FileTypeHandler):
     """
 
     def __init__(self):
-        from wayward.config import PSARC2FB_DIR, PSARC2FB_PYTHON
-
-        self.PSARC2FB_DIR = Path(PSARC2FB_DIR)
-        self.PSARC2FB_PYTHON = Path(PSARC2FB_PYTHON)
+        self.PSARC2FB_DIR = Path(config.PSARC2FB_DIR)
+        self.PSARC2FB_PYTHON = Path(config.PSARC2FB_PYTHON)
 
     def file_filter(self, path) -> bool:
         return path.suffix == ".psarc"
@@ -120,7 +120,7 @@ class PsarcHandler(FileTypeHandler):
 
 class ScreenshotHandler(FileTypeHandler):
     def __init__(self):
-        self.DEST = Path("/home/ahonnecke/screenshots")
+        self.DEST = config.SCREENSHOTS_DIR
 
     def file_filter(self, path) -> bool:
         return self.is_screen_shot(path)
@@ -136,7 +136,7 @@ class ScreenshotHandler(FileTypeHandler):
 
 class ImageHandler(FileTypeHandler):
     def __init__(self):
-        self.DEST = Path("/home/ahonnecke/Downloads/images")
+        self.DEST = config.IMAGES_DIR
 
     def file_filter(self, path) -> bool:
         return self.is_image(path) and not self.is_screen_shot(path)
@@ -152,7 +152,7 @@ class ImageHandler(FileTypeHandler):
 
 class QmkHandler(FileTypeHandler):
     def __init__(self):
-        self.DEST = Path("/home/ahonnecke/qmk/")
+        self.DEST = config.QMK_DIR
 
     def file_filter(self, path) -> bool:
         # TODO: figure out how to filter for qmk files, not just .bin
@@ -239,8 +239,9 @@ def setup_logging(foreground=False):
 
 def run():
     """Watch for file events and dispatch to handlers."""
+    config.STL_DIR.mkdir(parents=True, exist_ok=True)
     w = Watcher(
-        Path("/home/ahonnecke/Downloads/"),
+        str(config.DOWNLOADS_DIR),
         Handler(
             file_handlers=[
                 ScreenshotHandler(),
@@ -250,7 +251,7 @@ def run():
                 FileTypeHandler(
                     file_filter=lambda path: path.suffix == ".stl",
                     file_handler=lambda path: shutil.move(
-                        path, f"/home/ahonnecke/stl/{path.name}"
+                        str(path), str(config.STL_DIR / path.name)
                     ),
                 ),
             ]
