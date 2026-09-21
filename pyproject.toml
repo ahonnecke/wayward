@@ -5,15 +5,18 @@ description = "Watch folder and move files based on type."
 authors = [
     {name = "Ashton Honnecke", email = "ashton@pixelstub.com"},
 ]
-dependencies = []
+dependencies = [
+    "watchdog",
+    "psutil",
+    "setproctitle",
+    "python-daemon",
+]
 requires-python = ">=3.8"
 readme = "README.md"
 license = {text = "MIT"}
 
 [project.scripts]
 wayward = "wayward.main:main"
-wayward-promote = "wayward.promote:main"
-wayward-quarantine = "wayward.quarantine:main"
 
 [build-system]
 requires = ["pdm-pep517>=1.0", "argdantic", "watchdog"]

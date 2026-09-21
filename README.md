@@ -1,74 +1,59 @@
 # Wayward
 
-**Wayward** is an automated file processing daemon that watches a designated directory (e.g., `~/Downloads`) for newly created or modified files. When a file is detected, Wayward waits for it to stabilize (i.e., stop changing in size), then processes it based on its type — such as `.psarc` CDLC files or screenshots — using a handler pipeline.
+**Wayward** is a file-routing daemon that watches `~/Downloads` for new files.
+When a file appears, Wayward waits for it to stop changing size (so partial
+downloads aren't touched), then files it by type.
 
-<img width="1681" height="398" alt="Image" src="https://github.com/user-attachments/assets/e94a8029-9198-4279-beb9-822376c30a2f" />
+## What it routes
 
-## Features
+| Download            | Destination                                   |
+| ------------------- | --------------------------------------------- |
+| `shot_*` screenshot | `~/screenshots/YYYY-MM-DD/`                    |
+| other images        | `~/Downloads/images/YYYY-MM-DD/`              |
+| `*.psarc` (CDLC)    | feedBack, via the `psarc2fb` CLI              |
+| `*.bin` (keyboard)  | `~/qmk/`                                       |
+| `*.stl` (3D print)  | `~/stl/`                                       |
 
-- 📂 **Automatic file detection** in `~/Downloads`
-- ⏳ **Waits for file stabilization** to avoid processing incomplete downloads
-- 🎸 **Processes Rocksmith CDLC** with `pyrocksmith`, converts and stages to NAS
-- 🖼️ **Renames screenshots** using OCR to generate human-readable filenames
-- 📦 **NAS-based CDLC pipeline** with staging/live/quarantine lifecycle
-- 🧹 **Cleans up local files** after processing to keep things tidy
+### Rocksmith CDLC → feedBack
 
-## CDLC Pipeline
-
-The NAS (`nasty`) is the source of truth for Rocksmith CDLC. The pipeline:
-
-1. **Download** — `.psarc` lands in `~/Downloads`
-2. **wayward** — detects, converts with `pyrocksmith`, moves both `_m.psarc` and `_p.psarc` to NAS `staging/`
-3. **Play-test** — try songs in Rocksmith after promoting to `live/`
-4. **Promote** — `wayward-promote` moves files from `staging/` to `live/`, then SCPs `_m.psarc` to rocksmithytoo
-5. **Quarantine** — `wayward-quarantine` isolates bad files and removes them from rocksmithytoo
-
-### NAS Directory Structure
-
-```
-/nasty/music/Rocksmith_CDLC/
-├── live/           # Verified, game-ready — NAS is source of truth
-├── staging/        # New downloads awaiting play-test
-└── quarantine/     # Files that crashed the game
-```
-
-### rocksmithytoo Sync
-
-NFS mount over WiFi is too slow (~540 KB/s) for Rocksmith to read psarcs directly. Instead, `_m.psarc` files are synced to rocksmithytoo's local Steam DLC dir via SCP/rsync:
-
-- **On promote** — each `_m.psarc` is SCPed to `~/Library/Application Support/Steam/steamapps/common/Rocksmith2014/dlc/`
-- **On quarantine** — the file is SSH-removed from rocksmithytoo
-- **On restore** — the file is SCPed back
-- **Catchup** — `wayward-promote --sync` rsyncs all `_m.psarc` files from `live/` to rocksmithytoo
-
-The NFS mount remains at `~/mnt/nasty_cdlc_live` on rocksmithytoo for browsing, but Rocksmith reads from the local Steam DLC dir.
-
-## Usage
+A downloaded `.psarc` is handed to **psarc2fb** (`~/src/psarc2feedback`), which
+converts it to a `.sloppak` and `POST`s it to feedBack's upload API. feedBack
+owns library writes and the scan index, so it installs the song and re-indexes
+automatically. Wayward removes the local `.psarc` only after `psarc2fb` exits 0
+(which includes the "already in the library" case). The equivalent by hand:
 
 ```bash
-wayward --no-daemon   # Run in foreground, logs to console
-wayward --daemon      # Run in background (default)
+cd ~/src/psarc2feedback && ./.venv/bin/python psarc2fb.py <file-or-dir>
+```
 
-# Promote CDLC from staging to live (+ sync to rocksmithytoo)
-wayward-promote --list              # List staging files
-wayward-promote <filename>          # Promote specific file, SCP _m.psarc to Mac
-wayward-promote --all               # Promote everything
-wayward-promote --sync              # Rsync all _m.psarc from live/ to rocksmithytoo
+Requires feedBack to be running (default `http://localhost:8001`) and `ffmpeg`
+on `PATH`.
 
-# Quarantine bad CDLC (+ remove from rocksmithytoo)
-wayward-quarantine <filename>       # Move to quarantine, rm from Mac
-wayward-quarantine --list           # List quarantined files
-wayward-quarantine --restore <file> # Restore to live, SCP back to Mac
+## Running it
+
+Wayward runs as a systemd **user** service, so it starts on login/boot and
+restarts on failure:
+
+```bash
+systemctl --user status wayward       # is it running?
+systemctl --user restart wayward      # after a code change / reinstall
+journalctl --user -u wayward -f       # follow the log
+```
+
+Or run it directly:
+
+```bash
+wayward --no-daemon   # foreground, logs to stderr + /tmp/wayward.log + syslog
+wayward --daemon      # detach (python-daemon); not used under systemd
 ```
 
 ## Installation
 
-Clone the repository and install with pip:
-
 ```bash
-pip install -e .
+pipx install -e .     # registers the `wayward` command
 ```
 
-This registers `wayward`, `wayward-promote`, and `wayward-quarantine` as CLI commands.
+Then install the service unit at `~/.config/systemd/user/wayward.service` and
+`systemctl --user enable --now wayward`.
 
-Dependencies: `pyrocksmith`, `watchdog`, `psutil`, `setproctitle`, `python-daemon`.
+Dependencies: `watchdog`, `psutil`, `setproctitle`, `python-daemon`.

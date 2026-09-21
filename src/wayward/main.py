@@ -6,7 +6,6 @@ from os import getpid
 from typing import List
 import psutil
 import os
-import re
 import shutil
 import subprocess
 import sys
@@ -68,17 +67,6 @@ class FileTypeHandler:
                 logger.error(f"Failed to handle file ({path}) with {self}.")
                 logger.exception(e)
 
-    def sanitize_file(self, current):
-        dirname = current.parent.absolute()
-        new = Path(re.sub(r"[^\w_. -]", "_", current.name).replace(" ", "_"))
-        from_path = Path(f"{dirname}/{current.name}")
-        to_path = Path(f"{dirname}/{new}")
-
-        if from_path != to_path:
-            logger.info(f"Renaming {from_path} => {to_path}")
-            os.rename(from_path, to_path)
-            return to_path
-
     def is_image(self, path) -> bool:
         return path.suffix.lower() in [
             ".png",
@@ -92,94 +80,42 @@ class FileTypeHandler:
     def is_screen_shot(self, path) -> bool:
         return self.is_image(path) and "shot_" == path.name.lower()[0:5]
 
-    def rename_picture_from_contents(self, path: Path) -> Path:
-        logger.info("Renaming picture from contents...")
-        RENAMER = "/home/ahonnecke/bin/rename_picure_from_contents.py"
-        cmd = [
-            RENAMER,
-            str(path),
-        ]
-
-        proc = subprocess.Popen(
-            cmd,
-            stdout=subprocess.PIPE,  # Capture stdout
-            stderr=subprocess.PIPE,  # Capture stderr
-        )
-        stdout, stderr = proc.communicate()
-
-        if not stdout:
-            raise RuntimeError(stderr.decode())
-
-        return Path(stdout.decode().strip())
-
-    def ocr_picture(self, path: Path):
-        OCR_BIN = "/home/ahonnecke/bin/ocr_image.py"
-        logger.info(f"OCRing image:{path}")
-        cmd = [OCR_BIN, str(path)]
-
-        proc = subprocess.Popen(
-            cmd,
-            stdout=subprocess.PIPE,  # Capture stdout
-            stderr=subprocess.PIPE,  # Capture stderr
-        )
-        stdout, stderr = proc.communicate()
-
-        if not stdout:
-            raise RuntimeError(stderr.decode())
-
-        return stdout.decode().strip()
-
 
 class PsarcHandler(FileTypeHandler):
+    """Ingest a downloaded .psarc into feedBack via the psarc2fb CLI.
+
+    psarc2fb converts the psarc to a .sloppak and POSTs it to feedBack's upload
+    API, which writes it into the library and re-indexes. wayward just hands it
+    each downloaded psarc and removes the local copy once the upload succeeds.
+    """
+
     def __init__(self):
-        self.BUILDSPACE = Path("/home/ahonnecke/cdlc_buildspace")
-        self.PYROCKSMITH = Path("/home/ahonnecke/.pyenv/shims/pyrocksmith")
+        from wayward.config import PSARC2FB_DIR, PSARC2FB_PYTHON
+
+        self.PSARC2FB_DIR = Path(PSARC2FB_DIR)
+        self.PSARC2FB_PYTHON = Path(PSARC2FB_PYTHON)
 
     def file_filter(self, path) -> bool:
         return path.suffix == ".psarc"
 
-    def sanitize_psarcs_in_dir(self, dirpath, target_file):
-        """Sanitize all psarc filenames in dir, return new path of target_file."""
-        logger.info(f"Sanitizing filenames in {dirpath}")
-        target_basename = os.path.basename(target_file)
-        result_path = target_file
-
-        for file in dirpath.glob("*.psarc*"):
-            new_path = self.sanitize_file(file)
-            if new_path and file.name == target_basename:
-                result_path = str(new_path)
-
-        return result_path
-
-    def move_cdlc_to_staging(self):
-        from wayward.config import STAGING as STAGING_DEST
-
-        logger.info("Moving CDLC to NAS staging")
-        for filename in os.listdir(self.BUILDSPACE):
-            filepath = self.BUILDSPACE / filename
-
-            if ".psarc" in filename:
-                dest = STAGING_DEST / filename
-                shutil.move(str(filepath), str(dest))
-                logger.info(f"Moved {filepath} to {dest}")
-            else:
-                os.remove(filepath)
-                logger.info(f"Removed non-psarc {filepath}")
-
     def file_handler(self, path):
-        file_path = Path(path)
-        filename = os.path.basename(file_path)
-        fullpath = f"{self.BUILDSPACE}/{filename}"
+        src = Path(path)
 
-        shutil.move(path, fullpath)
-        fullpath = self.sanitize_psarcs_in_dir(self.BUILDSPACE, fullpath)
-
-        subprocess.run(
-            [self.PYROCKSMITH, "--convert", fullpath],
-            stdout=subprocess.PIPE,
+        result = subprocess.run(
+            [str(self.PSARC2FB_PYTHON), "psarc2fb.py", str(src)],
+            cwd=str(self.PSARC2FB_DIR),
+            capture_output=True,
+            text=True,
         )
-        logger.info(f"Processed {fullpath} with pyrocksmith.")
-        self.move_cdlc_to_staging()
+        if result.returncode != 0:
+            detail = result.stderr.strip() or result.stdout.strip()
+            raise RuntimeError(f"psarc2fb failed for {src.name} (rc={result.returncode}): {detail}")
+
+        logger.info(f"Ingested {src.name} into feedBack")
+        if result.stdout.strip():
+            logger.info(result.stdout.strip())
+        src.unlink()  # only remove local copy after a successful upload
+        logger.info(f"Removed local {src}")
 
 
 class ScreenshotHandler(FileTypeHandler):
