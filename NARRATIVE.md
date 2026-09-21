@@ -22,8 +22,12 @@ file-router** and its one live pipeline (psarc → feedBack) rewired.
 - **Trimmed.** Deleted `promote.py`, `quarantine.py`, `ocr_image.py`,
   `rename_picure_from_contents.py`, the dead `sanitize_file`/`ocr_picture`/
   `rename_picture_from_contents` methods, stale NAS/rocksmithytoo config, and
-  the two extra console-script entrypoints. What's left is the router:
-  Screenshot / Image / Psarc / Qmk / STL handlers.
+  the two extra console-script entrypoints. Also removed **QmkHandler** — QMK
+  firmware is handled by a separate LLM-driven process now. What's left is the
+  router: Screenshot / Image / Psarc / STL handlers.
+- **Config.** All paths (Downloads, screenshots, images, stl, psarc2fb) live in
+  `config.py` with `WAYWARD_*` env overrides + sensible defaults; `main.py`
+  reads them via `config.*`. No code edit needed to move a destination.
 - **Installed + supervised.** `pyproject.toml` deps declared
   (watchdog/psutil/setproctitle/python-daemon); `pipx install -e .`. Runs as a
   systemd **user** service (`wayward.service`, enabled, lingering on) →
@@ -39,9 +43,9 @@ file-router** and its one live pipeline (psarc → feedBack) rewired.
   have overwritten pre-existing entries there, so a blind delete risks removing
   a legit one. Purge only if slopsmith staging is defunct.
 
-## Improvement ideas (see chat)
-- Hardcoded paths → config file / env (Downloads dir, feedBack URL, dest dirs).
-- QmkHandler filters *all* `.bin` (too broad); ImageHandler moves *every* image
-  out of Downloads (aggressive — may surprise).
-- No early-return on handler match (every handler runs on every file).
+## Improvement ideas (remaining)
+- No early-return on handler match (every handler's filter runs on every file).
 - SIGTERM handling is implicit via systemd; graceful stop could be explicit.
+- `python-daemon` / `--daemon` path is now dead weight under systemd.
+- ImageHandler moves *every* non-screenshot image into `~/Downloads/images/
+  YYYY-MM-DD/` — kept deliberately (user: fine as long as easy to reach).
